@@ -1,0 +1,124 @@
+hp|生命|Health|points
+damage|伤害|Damage|points
+range|攻击距离|Attack range|distance
+interval|攻击间隔|Attack interval|seconds
+speed|移动速度|Movement speed|speed
+radius|作用半径|Effect radius|distance
+duration|持续时间|Duration|seconds
+deploy_time|部署等待|Deployment delay|seconds
+pre_deploy_time|额外部署等待|Extra deployment delay|seconds
+lifespan|建筑寿命|Building lifetime|seconds
+heal_amount|治疗量|Healing|points
+cost|技能费用|Ability cost|gold
+cooldown|冷却|Cooldown|seconds
+max_uses|每次部署可用次数|Uses per deployment|count
+cast_duration|施法时间|Cast time|seconds
+impact_delay|效果执行延迟|Effect delay|seconds
+stun_duration|眩晕时间|Stun duration|seconds
+slow_duration|减速时间|Slow duration|seconds
+slow_multiplier|减速后移动倍率|Slowed movement multiplier|multiplier
+attack_slow_multiplier|减速后攻速倍率|Slowed attack-speed multiplier|multiplier
+zone_damage|区域每次伤害|Zone damage per tick|points
+zone_duration|区域持续|Zone duration|seconds
+zone_tick_interval|区域伤害间隔|Zone tick interval|seconds
+zone_slow_multiplier|区域移动倍率|Zone movement multiplier|multiplier
+length|作用长度|Effect length|distance
+width|作用宽度|Effect width|distance
+projectile_count|弹体数量|Projectile count|count
+projectile_explosion_radius|爆炸半径|Explosion radius|distance
+resource_full_damage_multiplier|满层伤害倍率|Full-charge damage multiplier|multiplier
+resource_full_stun_multiplier|满层眩晕倍率|Full-charge stun multiplier|multiplier
+shockwave_damage|冲击波伤害|Shockwave damage|points
+shockwave_duration|冲击波时间|Shockwave duration|seconds
+spawn_count|召唤数量|Summon count|count
+spawn_interval|召唤周期|Summon interval|seconds
+spawn_initial_delay|首次召唤延迟|First summon delay|seconds
+spawn_sequence_interval|逐只召唤间隔|Time between summons|seconds
+attack_speed_multiplier|攻速倍率|Attack-speed multiplier|multiplier
+speed_multiplier|移速倍率|Movement-speed multiplier|multiplier
+damage_multiplier|伤害倍率|Damage multiplier|multiplier
+empowered_damage_multiplier|强化伤害倍率|Empowered damage multiplier|multiplier
+empowered_speed_multiplier|强化移速倍率|Empowered movement multiplier|multiplier
+shield|护盾|Shield|points
+shield_duration|护盾时间|Shield duration|seconds
+heal_ratio|生命伤害吸血比例|Health-damage life steal|percent
+heal_multiplier|治疗倍率|Healing multiplier|multiplier
+overheal_shield_ratio|溢出治疗转盾比例|Overheal shield conversion|percent
+health_bonus_ratio|额外生命比例|Bonus health|percent
+body_scale_multiplier|体型倍率|Body-size multiplier|multiplier
+max_health_ratio|可达到的生命上限倍率|Maximum health cap multiplier|multiplier
+blind_charges|致盲攻击次数|Blinded attacks|count
+knockback|击退距离|Knockback distance|distance
+knockback_radius|击退半径|Knockback radius|distance
+cleave_damage|追加范围伤害|Bonus cleave damage|points
+cleave_radius|追加范围半径|Cleave radius|distance
+hit_heal|命中治疗|Healing on hit|points
+on_hit_max_health_ratio|目标最大生命附伤|Target max-health bonus damage|percent
+on_hit_tower_damage|塔与水晶固定附伤|Flat tower and Nexus bonus damage|points
+strike_count|电击次数|Strike count|count
+strike_interval|电击间隔|Strike interval|seconds
+strike_damage_multiplier|电击伤害倍率|Strike damage multiplier|multiplier
+tower_damage_multiplier|塔与水晶伤害倍率|Tower and Nexus damage multiplier|multiplier
+active_cost_bonus|主动席额外费用|Active-seat extra cost|gold
+timed_revival_delay|孵化时间|Hatch time|seconds
+death_replacement_charges|化蛋次数|Rebirth charges|count
+transform_after_hits|变大所需命中|Hits to transform|count
+revert_after_hits|变小所需命中|Hits to revert|count
+splash_radius|溅射半径|Splash radius|distance
+bleed_damage_per_second|每层流血伤害|Bleed damage per stack|perSecond
+bleed_duration|流血持续|Bleed duration|seconds
+bleed_max_stacks|流血上限|Maximum bleed stacks|count
+blood_rage_damage_multiplier|血怒伤害倍率|Noxian Might damage multiplier|multiplier
+blood_rage_duration|血怒持续|Noxian Might duration|seconds
+hit_haste_per_stack|每层额外攻速|Attack speed per stack|percent
+hit_haste_max_stacks|攻速层数上限|Maximum haste stacks|count
+hit_haste_duration|攻速层数持续|Haste-stack duration|seconds
+deployment_shield|部署护盾|Deployment shield|points
+deployment_shield_reduction|部署护盾减伤|Deployment shield damage reduction|percent
+death_spawn_count|死亡召唤数量|Summons on death|count
+death_form_delay|复生等待|Revival delay|seconds
+death_form_decay_duration|狂暴生命耗尽时间|Berserk health-decay duration|seconds
+form_lifetime|强化形态持续|Empowered form duration|seconds
+form_speed_boost_duration|形态加速时间|Form speed-boost duration|seconds
+form_speed_boost_multiplier|形态移速倍率|Form movement multiplier|multiplier
+growth_melee_hits|近战任务命中数|Melee quest hits|count
+growth_ranged_hits|远程任务命中数|Ranged quest hits|count
+terrain_entry_heal|进入地形治疗|Terrain-entry healing|points
+terrain_entry_speed_multiplier|进入地形移速倍率|Terrain-entry movement multiplier|multiplier
+attack_wave_damage|焰浪伤害|Flame-wave damage|points
+first_strike_damage_multiplier|首次攻击伤害倍率|First-strike damage multiplier|multiplier
+heal_every_hits|治疗命中周期|Hits per healing trigger|count
+skill_resource_max|资源层数上限|Maximum resource stacks|count
+team_attack_boost_first_delay|首次锻造准备|Initial forge preparation|seconds
+team_attack_boost_interval|锻造冷却|Forge cooldown|seconds
+team_attack_boost_multiplier|锻造普攻倍率|Forged attack multiplier|multiplier
+rush_building_damage|冲撞建筑伤害|Charge structure damage|points
+rush_path_damage|冲撞路径伤害|Charge path damage|points
+rush_self_health_ratio|冲撞消耗当前生命|Current health spent on charge|percent
+rush_spawn_count|冲撞召唤数量|Summons on charge|count
+structure_mend_per_second|建筑前自疗|Healing near structures|perSecond
+death_heal_duration|死亡治疗区持续|Death healing-zone duration|seconds
+death_heal_radius|死亡治疗区半径|Death healing-zone radius|distance
+death_heal_per_second|治疗区每秒治疗|Zone healing per second|perSecond
+death_enemy_elixir|敌方击杀赏金|Enemy kill bounty|gold
+sacrifice_damage|牺牲爆炸伤害|Sacrifice damage|points
+sacrifice_delay|牺牲爆炸延迟|Sacrifice delay|seconds
+stealth_delay|脱战隐身等待|Out-of-combat stealth delay|seconds
+rage_crit_multiplier|怒气暴击倍率|Fury critical multiplier|multiplier
+resource_shield_max|满豪意护盾|Full-Grit shield|points
+resource_damage_scale_max|资源增伤上限倍率|Maximum resource damage multiplier|multiplier
+center_damage_multiplier|中心伤害倍率|Center damage multiplier|multiplier
+full_resource_first_hit_heal|满层首次命中治疗|Full-charge first-hit healing|points
+damage_reduction|减伤比例|Damage reduction|percent
+damage_per_dodge|每次闪避额外伤害比例|Bonus damage per dodge|percent
+max_dodges|增伤闪避次数上限|Maximum damage-scaling dodges|count
+block_attack_speed_multiplier|格挡后攻速倍率|Post-block attack-speed multiplier|multiplier
+block_haste_duration|格挡后攻速持续|Post-block haste duration|seconds
+piercing_distance|穿透飞行距离|Piercing travel distance|distance
+range_bonus|额外攻击距离|Bonus attack range|distance
+execute_damage_per_stack|每层流血增伤|Damage bonus per bleed stack|percent
+cost_by_use|逐次施放费用（末档封顶）|Cost per cast (capped at last tier)|gold
+damage_by_use|逐次施放伤害|Damage per cast|points
+attack_lifesteal_ratios|普攻循环吸血比例|Life steal through attack cycle|percent
+attack_passive_multipliers|普攻循环被动倍率|Passive multiplier through attack cycle|multiplier
+resource_hit_damage_sequences|充能剪切伤害序列|Snip damage by charge|points

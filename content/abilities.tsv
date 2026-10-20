@@ -1,0 +1,60 @@
+大灭|World Ender|增加生命并暂时升空，强化吸血和被动循环；击杀刷新形态时间与加速。结束时生命截回基础上限。|Gain health and temporarily fly, with stronger life steal and passive strikes. Kills refresh the form and speed boost. Health above the base maximum is removed when it ends.
+冰雪风暴|Glacial Storm|在身前创造风暴，落地伤害后周期造成伤害与减速。施法锁定移动、攻击和朝向；已落地风暴独立存在。|Create a storm ahead that deals impact damage followed by periodic damage and slows. Casting locks movement, attacks and facing; a landed storm persists independently.
+海克斯穿透激光|Hextech Piercing Laser|沿朝向发射穿透激光，伤害路径上的地面敌人。|Fire a piercing laser forward, damaging ground enemies along its path.
+万箭齐发|Volley|向前方扇形发射箭矢，每箭在首个敌人处消失；同次施法对同一目标不重复伤害，并触发冰霜减速。|Fire a fan of arrows that stop at the first enemy. A target takes damage only once per cast and receives the frost slow.
+星落/天瀑|Falling Star / The Skies Descend|击杀充能，向前方降星造成伤害与眩晕；满层强化伤害和眩晕，并产生全场扩散冲击波。|Kills build charges. Drop a star ahead for damage and a stun; full charges empower both and add an arena-wide expanding shockwave.
+沙兵现身|Arise!|在自身四周召唤黄沙士兵。|Summon Sand Soldiers around the caster.
+虚空激流|Void Surge|向前突进，对路径上空地敌军及建筑造成一次伤害。|Dash forward and damage each enemy ground unit, air unit or structure on the path once.
+火箭轰击|Missile Barrage|导弹碰到首个敌人后爆炸；最后一发为强化导弹。未命中则在射程尽头消失。|The missile explodes on first enemy contact. The final missile is empowered; missed missiles vanish at maximum range.
+强化腐蚀|Empowered Corrosion|敌方进入腐蚀区域立即受到移动减速，离开后迅速消退。|Enemies are slowed immediately on entering Corrosion; the slow fades quickly after leaving.
+诺克萨斯断头台|Noxian Guillotine|强化下一击，按目标流血层数增伤；血怒进一步强化。技能不受致盲影响，击杀赠送免费追斩。|Empower the next strike, scaling with the target’s bleed stacks and Noxian Might. Unaffected by blind; a kill grants a free follow-up.
+烈性火药|Volatile Powder|提高爆炸伤害，不改变范围或击退。|Increase explosion damage without changing the area or knockback.
+强化冰冻|Empowered Freeze|施放时另建更大的减速区域，降低移动与攻击速度；减速区域比冻结持续更久，不扩大冻结本身。|Create a larger slowing zone on cast, reducing movement and attack speed. It outlasts the freeze but does not expand the frozen area.
+致命打击|Decisive Strike|强化下一次普攻并刷新攻击前摇，尚未打出时加速移动。|Empower the next basic attack and restart its wind-up, gaining movement speed until it is delivered.
+审判|Judgment|旋转并周期伤害周围地面敌人。期间不能普攻，但仍可移动和转向。|Spin to periodically damage nearby ground enemies. Basic attacks are locked, but movement and turning remain possible.
+怒气爆发|Rage Burst|向前重击并眩晕地面敌人；小纳尔先变为大纳尔。|Slam forward to damage and stun ground enemies. Mini Gnar transforms first.
+快刀乱剪|Snip Snip!|普攻命中积攒剪切次数。每剪附带被动，中央提高基础伤害；满层首次实际命中回血，空放不回血。|Basic-attack hits add snips. Each snip applies the passive, with higher base damage in the center. At full charge, the first actual hit heals; a miss does not.
+丝缕缠流|Hallowed Mist|创建固定圣霭，阻止圈外敌人选取格温或施加新效果；已有状态继续生效，格温离开则结界消失。|Create fixed mist that prevents outside enemies from targeting Gwen or applying new effects. Existing effects continue; leaving the area removes the mist.
+强化治疗|Empowered Heal|治疗全场友方普通单位，落点范围内治疗量进一步提高，不提供护盾。|Heal allied non-structure units across the arena, with increased healing near the chosen point. Grants no shield.
+过量治疗|Overheal|提高范围治疗量，部分溢出治疗转为限时护盾。|Increase area healing and convert part of excess healing into a temporary shield.
+男爵之力|Hand of Baron|强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。|Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses.
+反击风暴|Counter Strike|暂时免疫普攻伤害，仍可移动攻击；结束时伤害并眩晕周围地面敌人，闪避的攻击提高伤害。死亡取消，凝滞到期不补发。|Temporarily ignore basic-attack damage while still moving and attacking. Then damage and stun nearby ground enemies, scaling with attacks avoided. Death cancels it; expiry in stasis does not defer the burst.
+枪炮交响曲！|Switcheroo!|切换武器并重置旧普攻后摇，切换期间不能攻击；机枪命中叠攻速，换武器清空层数。|Switch weapons and reset the old attack recovery. Attacks are locked during the switch. Minigun hits stack attack speed; switching clears those stacks.
+虚空行走|Riftwalk|向前传送并伤害落点附近敌人。连续使用提高费用和伤害，达到上限后不再增加；建筑阻挡会调整落点。|Blink forward and damage nearby enemies on arrival. Repeated casts increase cost and damage up to a cap. Structures force the landing point to adjust.
+星界恩典|Celestial Blessing|回复自身生命并短暂加速。|Restore health and briefly increase movement speed.
+巨镰横扫|Reaping Slash|向前突进后旋转，分段伤害地面敌人。拉亚斯特附加最大生命伤害，并在每段命中时回复生命。|Dash forward, then spin, damaging ground enemies in separate stages. Rhaast adds max-health damage and heals on a hit in each stage.
+递增电击|Escalating Lightning|逐段提高电击伤害；某段无目标不会改变后续段的伤害档位。|Increase damage with each strike. A strike with no target does not change later damage tiers.
+狂野生长|Wild Growth|选择范围内费用最高、同费最近的未增益友军，永久增加生命和体型并击退周围敌军。不能重复增益；无目标则退还消耗。|Permanently increase health and size for the highest-cost eligible ally in range, preferring the nearest on ties, and knock back nearby enemies. Cannot stack; no valid target refunds the cast.
+大地震颤|Ground Slam|伤害周围地面敌人，同时降低移动和攻击速度。|Damage nearby ground enemies and reduce their movement and attack speed.
+冥府之握|Nether Grasp|下一击命中后引导眩晕，自身不能移动或攻击。控制可打断引导，但已建立的持续伤害区域独立存在。|The next hit begins a stunning channel that locks the caster’s movement and attacks. Control can interrupt the channel, but the established damage zone persists independently.
+虚空虫群|Void Swarm|施法期间停止普攻，开启裂隙依次召唤虚灵。|Pause basic attacks while casting, opening a rift that summons Voidlings in sequence.
+高原血统|Highlander|提高移动与攻击速度，并免疫移速和攻速减速。|Increase movement and attack speed while ignoring slows to either.
+大步流星|Strut|短暂提高移动速度与攻击速度。|Temporarily increase movement and attack speed.
+黑暗庇护|Shroud of Darkness|抵挡一次完整敌方攻击、法术或技能及其附带效果，成功后加攻速。已有状态和友方效果不受影响。|Block one complete enemy attack, spell or ability and its attached effects, then gain attack speed. Existing statuses and allied effects remain unaffected.
+暗影之刃|Umbra Blades|强化下一次普攻，追加周围范围伤害并按实际生命伤害回血；不能叠加储存。|Empower the next basic attack with nearby area damage and healing based on actual health damage. Cannot store multiple charges.
+残暴打击|Vicious Strikes|本批存活狂战士获得限时护盾、攻速和普攻吸血。护盾耗尽不会提前结束其他增益。|Grant surviving Olafs in the group a temporary shield, attack speed and basic-attack life steal. Losing the shield does not end the other buffs.
+熔铸冲锋|Searing Charge|蓄力后向前冲锋，路径伤害较低；撞上建筑、河流或边界才触发范围伤害与眩晕。|Charge forward after a wind-up, dealing minor path damage. Only collision with a structure, river or arena edge triggers area damage and a stun.
+贯星长枪|Comet Spear|向前刺击地面敌人，满红怒时消耗全部层数提高伤害；未满时保留并增加红怒。|Thrust into ground enemies ahead. Full Mortal Will is consumed for higher damage; otherwise retain and add a stack.
+仙灵汲取|Faerie Siphon|本批存活皮克斯的后续普攻按实际生命伤害回血，可暂时超过基础生命上限；护盾伤害与过量伤害不计入。|Surviving Pix in this group heal from actual health damage dealt by subsequent basic attacks, up to an increased health cap. Shield damage and overkill do not count.
+旋转重拳|Sweeping Strike|伤害前方半圆的地面敌军及建筑，冲撞的准备、冲刺与收势期间不可用。|Damage ground enemies and structures in a forward semicircle. Unavailable during charge preparation, movement and recovery.
+黄沙庇护|Sand Aegis|为本次部署成员提供护盾，到期时逐人判断，盾未破则回满生命。召唤士兵不自动获得主动资格。|Shield deployment members; on expiry, each member with an intact shield heals to full. Summoned soldiers do not automatically gain active eligibility.
+谦卑|Humility|降低周围敌人的移动与攻击速度。|Reduce nearby enemies’ movement and attack speed.
+蓄意轰拳|Haymaker|锁定行动后向前轰出梯形冲击波，豪意提高伤害，中心伤害更高；消耗的豪意同时提供衰减护盾。|Lock actions to release a trapezoid blast. Grit increases damage, with extra damage in the center, and provides a decaying shield.
+灵魂熔炉|Soul Furnace|获得护盾，计时结束时若护盾未破，移除剩余护盾并对周围空地单位及建筑造成伤害。|Gain a shield. If it survives until expiry, remove it and damage nearby ground units, air units and structures.
+友军优待|Friendly Favor|缩短友军凝滞时间，敌方时长不变。|Shorten allied stasis without changing enemy duration.
+日耀庇护|Solar Aegis|为攻击范围内所有存活友方单位和建筑提供限时护盾，包括防御塔和水晶。|Grant a temporary shield to living allies within attack range, including buildings, towers and the Nexus.
+余震|Aftershock|暂时减伤，到期后向周围爆炸；死亡取消，凝滞中到期不爆炸。|Temporarily reduce damage, then explode nearby. Death cancels the explosion; expiry during stasis prevents it.
+致盲|Blinding Dart|下一次出手改为技能吹箭，使目标后续普攻无法造成伤害。该吹箭自身不受致盲影响，也不消耗致盲次数。|Replace the next strike with an ability dart that prevents damage from subsequent basic attacks. The dart ignores blind and does not consume blind charges.
+亡者集结|Gather the Fallen|立即召唤额外的雾行者。|Summon additional Mist Walkers.
+急速射击|Rapid Fire|暂时提高攻击速度，缩短攻击间隔。|Temporarily increase attack speed and shorten the attack interval.
+无尽怒火|Undying Rage|立即满怒并暂时拒绝死亡，暴击不消耗怒气。除凝滞外可在控制中使用，不解除控制，也不治疗。|Fill Fury and temporarily prevent death; critical hits do not consume Fury. Usable under control except stasis, but does not cleanse control or heal.
+万能牌|Wild Cards|向前方发射穿透牌，命中空地敌军；同次施法对同一敌人只造成一次伤害。|Fire piercing cards ahead at ground and air enemies. Each enemy takes damage only once per cast.
+火力全开|Spray and Pray|提高攻速、弹速与射程，普攻改为固定方向的穿透弩箭，不再追踪移动目标。|Increase attack speed, projectile speed and range. Attacks become straight piercing bolts that no longer track moving targets.
+虚空迸发|Void Burst|立即摧毁传送门并召唤虚空兽。|Immediately destroy the portal and summon Voidspawn.
+归于虚空|Return to the Void|立即死亡并留下治疗区，不给敌方金币赏金。|Die immediately and leave the healing zone, without granting enemy bounty gold.
+虚空强化|Void Empowerment|永久提高本批成员的伤害、生命、体型和移动速度。|Permanently increase this group’s damage, health, size and movement speed.
+虚空献祭|Void Sacrifice|区域持续期间，双方符合条件的非建筑单位真正死亡时生成己方近战虚空鱼；近战虚空鱼不参与转化。|During the zone’s lifetime, eligible non-structure units from either team create allied melee remora on actual death. Melee remora are excluded.
+虚空再生|Void Regeneration|限时标记本批存活成员，期间被击杀则原地生成新鱼；新鱼不继承再生或主动资格。|Temporarily mark surviving members. A marked unit killed during the effect is replaced at its death position. Replacements inherit neither regeneration nor active eligibility.
+新月护卫|Crescent Guard|挥舞长枪伤害并击退周围敌人，施放期间锁定移动、攻击和朝向。|Sweep the spear to damage and knock back nearby enemies, locking movement, attacks and facing while casting.
+临终仪式|Last Rites|强化下一次范围攻击，命中时固定回复生命，每次攻击只治疗一次。|Empower the next area attack and restore a fixed amount of health on hit, only once per attack.
+多重电击|Multi-Zap|在相同位置追加一次电击，重复伤害与眩晕。|Add another strike at the same position, repeating its damage and stun.

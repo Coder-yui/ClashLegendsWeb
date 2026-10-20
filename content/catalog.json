@@ -1,0 +1,5727 @@
+{
+  "sourceCommit": "f190774c85ef7f8207247d59a25c2496f41a5ec2",
+  "checkedAt": "2026-10-20",
+  "cards": [
+    {
+      "id": "aatrox",
+      "name": {
+        "zh": "剑魔",
+        "en": "Aatrox"
+      },
+      "description": {
+        "zh": "近战吸血战士，周期性的赐死剑气按目标最大生命追加伤害；大灭让他暂时升空。",
+        "en": "A melee drain fighter whose recurring Deathbringer strike adds max-health damage. World Ender temporarily takes him into the air."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "attack_lifesteal_ratios": [
+          0.0,
+          0.0,
+          0.0,
+          0.3
+        ],
+        "attack_passive_multipliers": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "cost": 5,
+        "damage": 88,
+        "form_lifetime": 5.0,
+        "form_speed_boost_duration": 1.0,
+        "form_speed_boost_multiplier": 1.3,
+        "hp": 1050,
+        "interval": 1.1,
+        "on_hit_max_health_ratio": 0.1,
+        "on_hit_tower_damage": 20,
+        "range": 64.0,
+        "speed": 52.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/aatrox.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "大灭",
+            "en": "World Ender"
+          },
+          "description": {
+            "zh": "增加生命并暂时升空，强化吸血和被动循环；击杀刷新形态时间与加速。结束时生命截回基础上限。",
+            "en": "Gain health and temporarily fly, with stronger life steal and passive strikes. Kills refresh the form and speed boost. Health above the base maximum is removed when it ends."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 0.0,
+            "cost": 3,
+            "impact_delay": 0.0,
+            "max_uses": 1
+          },
+          "icon": "/media/aatrox-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "aatrox"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/aatrox.gd",
+      "forms": [
+        {
+          "id": "aatrox-form",
+          "name": {
+            "zh": "大灭形态",
+            "en": "World Ender"
+          },
+          "values": {
+            "attack_lifesteal_ratios": [
+              0.5,
+              0.2,
+              0.2
+            ],
+            "attack_passive_multipliers": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "damage": 88,
+            "hp": 1350,
+            "interval": 1.1,
+            "on_hit_max_health_ratio": 0.1,
+            "on_hit_tower_damage": 20,
+            "radius": 21.0,
+            "range": 64.0,
+            "speed": 52.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "anivia",
+      "name": {
+        "zh": "艾尼维亚（冰晶凤凰）",
+        "en": "Anivia"
+      },
+      "description": {
+        "zh": "远程飞行法师。首次被击败化为蛋，存活后满血重生；冰雪风暴持续伤害并减速。",
+        "en": "A ranged flying mage. Her first defeat leaves an egg that revives her at full health if it survives. Glacial Storm deals lingering damage and slows."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 78,
+        "death_replacement_charges": 1,
+        "hp": 620,
+        "interval": 1.7,
+        "range": 190.0,
+        "speed": 36.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/anivia.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "冰雪风暴",
+            "en": "Glacial Storm"
+          },
+          "description": {
+            "zh": "在身前创造风暴，落地伤害后周期造成伤害与减速。施法锁定移动、攻击和朝向；已落地风暴独立存在。",
+            "en": "Create a storm ahead that deals impact damage followed by periodic damage and slows. Casting locks movement, attacks and facing; a landed storm persists independently."
+          },
+          "values": {
+            "cast_duration": 1.17,
+            "cooldown": 10.0,
+            "cost": 2,
+            "damage": 90,
+            "impact_delay": 0.72,
+            "max_uses": 1,
+            "radius": 86.0,
+            "slow_duration": 1.0,
+            "slow_multiplier": 0.65,
+            "stun_duration": 0.0,
+            "zone_damage": 42,
+            "zone_duration": 3.0,
+            "zone_slow_multiplier": 0.6,
+            "zone_tick_interval": 1.0
+          },
+          "icon": "/media/anivia-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "anivia_egg"
+      ],
+      "members": [
+        "anivia"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/anivia.gd",
+      "forms": []
+    },
+    {
+      "id": "anivia_egg",
+      "name": {
+        "zh": "冰晶凤凰蛋",
+        "en": "Anivia’s Egg"
+      },
+      "description": {
+        "zh": "冰鸟首次被击败后留下的地面形态。孵化成功后满血复生，不再生成新的蛋。",
+        "en": "The ground form left after Anivia’s first defeat. Surviving the hatch restores her to full health, without another rebirth."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "hp": 165,
+        "speed": 0.0,
+        "timed_revival_delay": 3.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/anivia_egg.webp",
+      "skills": [],
+      "related": [
+        "anivia"
+      ],
+      "members": [
+        "anivia_egg"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/anivia_egg.gd",
+      "forms": []
+    },
+    {
+      "id": "apex_turret",
+      "name": {
+        "zh": "H-28Q尖端炮台",
+        "en": "H-28Q Apex Turret"
+      },
+      "description": {
+        "zh": "地面防守炮台，炮弹造成小范围伤害，主动激光可以穿透敌人。",
+        "en": "A defensive turret with small-area shells against ground targets and an active piercing laser."
+      },
+      "selectable": true,
+      "type": "building",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 130,
+        "hp": 1450,
+        "interval": 1.5,
+        "lifespan": 45.0,
+        "range": 220.0,
+        "speed": 0.0,
+        "splash_radius": 32.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/apex_turret.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "海克斯穿透激光",
+            "en": "Hextech Piercing Laser"
+          },
+          "description": {
+            "zh": "沿朝向发射穿透激光，伤害路径上的地面敌人。",
+            "en": "Fire a piercing laser forward, damaging ground enemies along its path."
+          },
+          "values": {
+            "cast_duration": 1.67,
+            "cooldown": 2.0,
+            "cost": 1,
+            "damage": 240,
+            "impact_delay": 0.45,
+            "length": 270.0,
+            "max_uses": 2,
+            "projectile_count": 1
+          },
+          "icon": "/media/apex_turret-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "apex_turret"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/apex_turret.gd",
+      "forms": []
+    },
+    {
+      "id": "ashe",
+      "name": {
+        "zh": "艾希",
+        "en": "Ashe"
+      },
+      "description": {
+        "zh": "可对空的远程射手，以冰霜减速牵制敌人，扇形箭雨阻挡逼近的部队。",
+        "en": "A ranged anti-air archer who controls enemies with frost slows and a fan of arrows."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 50,
+        "hp": 340,
+        "interval": 1.0,
+        "range": 170.0,
+        "speed": 52.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/ashe.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "万箭齐发",
+            "en": "Volley"
+          },
+          "description": {
+            "zh": "向前方扇形发射箭矢，每箭在首个敌人处消失；同次施法对同一目标不重复伤害，并触发冰霜减速。",
+            "en": "Fire a fan of arrows that stop at the first enemy. A target takes damage only once per cast and receives the frost slow."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 10.0,
+            "cost": 2,
+            "damage": 70,
+            "impact_delay": 0.16,
+            "length": 210.0,
+            "max_uses": 1,
+            "projectile_count": 8
+          },
+          "icon": "/media/ashe-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "ashe"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/ashe.gd",
+      "forms": []
+    },
+    {
+      "id": "aurelionsol",
+      "name": {
+        "zh": "龙王",
+        "en": "Aurelion Sol"
+      },
+      "description": {
+        "zh": "飞行吐息单位，持续伤害锁定目标。击杀积累星辰，让星落升级为天瀑。",
+        "en": "A flying dragon whose breath continuously damages his locked target. Kills charge Falling Star into The Skies Descend."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 70,
+        "hp": 580,
+        "interval": 0.0,
+        "range": 130.0,
+        "skill_resource_max": 5.0,
+        "speed": 36.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/aurelionsol.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "星落/天瀑",
+            "en": "Falling Star / The Skies Descend"
+          },
+          "description": {
+            "zh": "击杀充能，向前方降星造成伤害与眩晕；满层强化伤害和眩晕，并产生全场扩散冲击波。",
+            "en": "Kills build charges. Drop a star ahead for damage and a stun; full charges empower both and add an arena-wide expanding shockwave."
+          },
+          "values": {
+            "cast_duration": 1.93,
+            "cooldown": 10.0,
+            "cost": 2,
+            "damage": 120,
+            "impact_delay": 1.65,
+            "max_uses": 1,
+            "radius": 92.0,
+            "resource_full_damage_multiplier": 1.5,
+            "resource_full_stun_multiplier": 1.5,
+            "shockwave_damage": 55,
+            "shockwave_duration": 2.8,
+            "stun_duration": 1.2
+          },
+          "icon": "/media/aurelionsol-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "aurelionsol"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/aurelionsol.gd",
+      "forms": []
+    },
+    {
+      "id": "azir",
+      "name": {
+        "zh": "沙漠皇帝",
+        "en": "Azir"
+      },
+      "description": {
+        "zh": "远程召唤法师。近期被他命中的敌军死亡时转化为黄沙士兵，建筑则转化为太阳圆盘。",
+        "en": "A ranged summoner. Recently struck enemies become Sand Soldiers on death; destroyed structures become Sun Discs."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 8,
+      "values": {
+        "cost": 8,
+        "damage": 130,
+        "deploy_time": 2.0,
+        "hp": 900,
+        "interval": 1.6,
+        "range": 240.0,
+        "speed": 52.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/azir.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "沙兵现身",
+            "en": "Arise!"
+          },
+          "description": {
+            "zh": "在自身四周召唤黄沙士兵。",
+            "en": "Summon Sand Soldiers around the caster."
+          },
+          "values": {
+            "cast_duration": 0.8,
+            "cooldown": 10.0,
+            "cost": 2,
+            "impact_delay": 0.25,
+            "max_uses": 1,
+            "spawn_count": 4
+          },
+          "icon": "/media/azir-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "sand_soldier",
+        "sun_disc"
+      ],
+      "members": [
+        "azir"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/azir.gd",
+      "forms": []
+    },
+    {
+      "id": "belveth",
+      "name": {
+        "zh": "虚空女皇",
+        "en": "Bel’Veth"
+      },
+      "description": {
+        "zh": "只攻击建筑的大型空中单位，死亡时释放一群可攻击空地的虚空鱼。",
+        "en": "A large flying siege unit that targets structures. On death, she releases Void Remora that attack ground and air targets."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 7,
+      "values": {
+        "cost": 7,
+        "damage": 90,
+        "death_spawn_count": 8,
+        "hp": 1500,
+        "interval": 1.65,
+        "range": 32.0,
+        "speed": 44.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/belveth.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空激流",
+            "en": "Void Surge"
+          },
+          "description": {
+            "zh": "向前突进，对路径上空地敌军及建筑造成一次伤害。",
+            "en": "Dash forward and damage each enemy ground unit, air unit or structure on the path once."
+          },
+          "values": {
+            "cast_duration": 0.4,
+            "cooldown": 3.0,
+            "cost": 1,
+            "damage": 100,
+            "impact_delay": 0.0,
+            "length": 120.0,
+            "max_uses": 3,
+            "width": 48.0
+          },
+          "icon": "/media/belveth-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "voidfish"
+      ],
+      "members": [
+        "belveth"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/belveth.gd",
+      "forms": []
+    },
+    {
+      "id": "corki",
+      "name": {
+        "zh": "库奇",
+        "en": "Corki"
+      },
+      "description": {
+        "zh": "可对空的飞行炮手，导弹碰撞后爆炸，最后一枚导弹威力更强。",
+        "en": "A flying anti-air gunner. His missiles explode on first contact, with an empowered final missile."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 80,
+        "hp": 360,
+        "interval": 1.2,
+        "range": 190.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/corki.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "火箭轰击",
+            "en": "Missile Barrage"
+          },
+          "description": {
+            "zh": "导弹碰到首个敌人后爆炸；最后一发为强化导弹。未命中则在射程尽头消失。",
+            "en": "The missile explodes on first enemy contact. The final missile is empowered; missed missiles vanish at maximum range."
+          },
+          "values": {
+            "cast_duration": 0.5,
+            "cooldown": 3.0,
+            "cost": 1,
+            "damage": 100,
+            "damage_by_use": [
+              100,
+              100,
+              180
+            ],
+            "impact_delay": 0.13,
+            "length": 300.0,
+            "max_uses": 3,
+            "projectile_count": 1,
+            "projectile_explosion_radius": 55.0
+          },
+          "icon": "/media/corki-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "corki"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/corki.gd",
+      "forms": []
+    },
+    {
+      "id": "corrosion",
+      "name": {
+        "zh": "腐蚀法术",
+        "en": "Corrosion"
+      },
+      "description": {
+        "zh": "持续伤害区域，同时威胁空地单位和建筑；敌人离开区域后停止受伤。",
+        "en": "A persistent damage zone affecting ground units, air units and structures. Leaving the zone stops its damage."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 4,
+      "values": {
+        "active_cost_bonus": 0,
+        "cost": 4,
+        "damage": 60,
+        "duration": 5.0,
+        "radius": 110.0,
+        "tower_damage_multiplier": 0.3,
+        "summon_tick": 0.5
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/corrosion.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "强化腐蚀",
+            "en": "Empowered Corrosion"
+          },
+          "description": {
+            "zh": "敌方进入腐蚀区域立即受到移动减速，离开后迅速消退。",
+            "en": "Enemies are slowed immediately on entering Corrosion; the slow fades quickly after leaving."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 0,
+            "max_uses": 1,
+            "slow_multiplier": 0.8
+          },
+          "icon": "/media/corrosion-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/corrosion.gd",
+      "forms": []
+    },
+    {
+      "id": "darius",
+      "name": {
+        "zh": "德莱厄斯",
+        "en": "Darius"
+      },
+      "description": {
+        "zh": "普攻叠加流血，叠满后进入血怒。断头台击杀可以获得免费追斩。",
+        "en": "Basic attacks stack bleeding and trigger Noxian Might at full stacks. A guillotine kill grants a free follow-up execution."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "bleed_damage_per_second": 15.0,
+        "bleed_duration": 3.0,
+        "bleed_max_stacks": 4,
+        "blood_rage_damage_multiplier": 2.0,
+        "blood_rage_duration": 4.0,
+        "cost": 5,
+        "damage": 110,
+        "hp": 1200,
+        "interval": 1.2,
+        "range": 35.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/darius.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "诺克萨斯断头台",
+            "en": "Noxian Guillotine"
+          },
+          "description": {
+            "zh": "强化下一击，按目标流血层数增伤；血怒进一步强化。技能不受致盲影响，击杀赠送免费追斩。",
+            "en": "Empower the next strike, scaling with the target’s bleed stacks and Noxian Might. Unaffected by blind; a kill grants a free follow-up."
+          },
+          "values": {
+            "cooldown": 16.0,
+            "cost": 2,
+            "damage": 180,
+            "execute_damage_per_stack": 0.25,
+            "max_uses": 2
+          },
+          "icon": "/media/darius-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "darius"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/darius.gd",
+      "forms": []
+    },
+    {
+      "id": "explosive_cask",
+      "name": {
+        "zh": "爆破酒桶",
+        "en": "Explosive Cask"
+      },
+      "description": {
+        "zh": "从己方水晶抛出酒桶，落地爆炸并向外击退敌军；建筑不会被击退。",
+        "en": "A cask thrown from your Nexus explodes on arrival and knocks enemies outward. Structures cannot be displaced."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 3,
+        "damage": 180,
+        "duration": 1.5,
+        "knockback": 40.0,
+        "radius": 105.0,
+        "tower_damage_multiplier": 0.3
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/explosive_cask.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "烈性火药",
+            "en": "Volatile Powder"
+          },
+          "description": {
+            "zh": "提高爆炸伤害，不改变范围或击退。",
+            "en": "Increase explosion damage without changing the area or knockback."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "damage": 270,
+            "max_uses": 1
+          },
+          "icon": "/media/explosive_cask-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/explosive_cask.gd",
+      "forms": []
+    },
+    {
+      "id": "freeze",
+      "name": {
+        "zh": "冰冻",
+        "en": "Freeze"
+      },
+      "description": {
+        "zh": "冻结落点附近的敌方单位、建筑卡与防御塔，水晶免疫。",
+        "en": "Freezes enemy units, deployed buildings and towers near the impact point. Nexuses are immune."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "duration": 3.0,
+        "radius": 110.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/freeze.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "强化冰冻",
+            "en": "Empowered Freeze"
+          },
+          "description": {
+            "zh": "施放时另建更大的减速区域，降低移动与攻击速度；减速区域比冻结持续更久，不扩大冻结本身。",
+            "en": "Create a larger slowing zone on cast, reducing movement and attack speed. It outlasts the freeze but does not expand the frozen area."
+          },
+          "values": {
+            "attack_speed_multiplier": 0.7,
+            "cooldown": 0.0,
+            "cost": 0,
+            "max_uses": 1,
+            "radius": 137.5,
+            "slow_multiplier": 0.7,
+            "zone_duration": 5.0
+          },
+          "icon": "/media/freeze-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/freeze.gd",
+      "forms": []
+    },
+    {
+      "id": "garen",
+      "name": {
+        "zh": "盖伦",
+        "en": "Garen"
+      },
+      "description": {
+        "zh": "专注建筑的前排战士。用高生命承受火力，以强化攻击或旋转切入战线。",
+        "en": "A durable frontline fighter focused on structures. Choose an empowered strike or a spinning attack to pressure the front."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 88,
+        "hp": 1050,
+        "interval": 1.1,
+        "range": 32.0,
+        "speed": 44.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/garen.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "致命打击",
+            "en": "Decisive Strike"
+          },
+          "description": {
+            "zh": "强化下一次普攻并刷新攻击前摇，尚未打出时加速移动。",
+            "en": "Empower the next basic attack and restart its wind-up, gaining movement speed until it is delivered."
+          },
+          "values": {
+            "cooldown": 6.0,
+            "cost": 1,
+            "empowered_damage_multiplier": 2.0,
+            "empowered_speed_multiplier": 1.3636,
+            "max_uses": 2
+          },
+          "icon": "/media/garen-skill-0.webp",
+          "unlimited": false
+        },
+        {
+          "name": {
+            "zh": "审判",
+            "en": "Judgment"
+          },
+          "description": {
+            "zh": "旋转并周期伤害周围地面敌人。期间不能普攻，但仍可移动和转向。",
+            "en": "Spin to periodically damage nearby ground enemies. Basic attacks are locked, but movement and turning remain possible."
+          },
+          "values": {
+            "cast_duration": 3.0,
+            "cooldown": 10.0,
+            "cost": 2,
+            "damage": 60,
+            "duration": 3.0,
+            "impact_delay": 0.0,
+            "max_uses": 1,
+            "radius": 90.0
+          },
+          "icon": "/media/garen-skill-1.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "garen"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/garen.gd",
+      "forms": []
+    },
+    {
+      "id": "gnar",
+      "name": {
+        "zh": "纳尔",
+        "en": "Gnar"
+      },
+      "description": {
+        "zh": "远程小纳尔与近战大纳尔循环变形，普攻命中推动形态切换。",
+        "en": "Cycles between ranged Mini Gnar and melee Mega Gnar. Basic-attack hits advance each transformation."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 50,
+        "hp": 430,
+        "interval": 0.85,
+        "range": 150.0,
+        "revert_after_hits": 4,
+        "speed": 76.0,
+        "transform_after_hits": 6,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/gnar.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "怒气爆发",
+            "en": "Rage Burst"
+          },
+          "description": {
+            "zh": "向前重击并眩晕地面敌人；小纳尔先变为大纳尔。",
+            "en": "Slam forward to damage and stun ground enemies. Mini Gnar transforms first."
+          },
+          "values": {
+            "cast_duration": 1.2,
+            "cooldown": 8.0,
+            "cost": 2,
+            "damage": 120,
+            "impact_delay": 0.8,
+            "length": 140.0,
+            "max_uses": 1,
+            "stun_duration": 1.0,
+            "width": 60.0
+          },
+          "icon": "/media/gnar-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "gnar"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/gnar.gd",
+      "forms": [
+        {
+          "id": "gnar-form",
+          "name": {
+            "zh": "大纳尔",
+            "en": "Mega Gnar"
+          },
+          "values": {
+            "damage": 85,
+            "hp": 820,
+            "interval": 1.15,
+            "radius": 24.0,
+            "range": 32.0,
+            "speed": 52.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "gwen",
+      "name": {
+        "zh": "格温",
+        "en": "Gwen"
+      },
+      "description": {
+        "zh": "近战剪刀手，普攻和剪切附带目标最大生命伤害。可选连续剪切或阻挡圈外敌人的圣霭。",
+        "en": "A melee skirmisher whose attacks and snips add max-health damage. Choose repeated snips or mist that blocks outside enemies."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 62,
+        "hp": 580,
+        "interval": 0.85,
+        "on_hit_max_health_ratio": 0.05,
+        "on_hit_tower_damage": 20,
+        "range": 32.0,
+        "skill_resource_max": 3.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/gwen.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "快刀乱剪",
+            "en": "Snip Snip!"
+          },
+          "description": {
+            "zh": "普攻命中积攒剪切次数。每剪附带被动，中央提高基础伤害；满层首次实际命中回血，空放不回血。",
+            "en": "Basic-attack hits add snips. Each snip applies the passive, with higher base damage in the center. At full charge, the first actual hit heals; a miss does not."
+          },
+          "values": {
+            "cast_duration": 1.5,
+            "center_damage_multiplier": 1.2,
+            "cooldown": 8.0,
+            "cost": 2,
+            "damage": 40,
+            "full_resource_first_hit_heal": 100,
+            "impact_delay": 0.09,
+            "length": 135.0,
+            "max_uses": 1,
+            "projectile_count": 0,
+            "resource_hit_damage_sequences": [
+              [
+                40,
+                60
+              ],
+              [
+                40,
+                20,
+                60
+              ],
+              [
+                40,
+                20,
+                20,
+                60
+              ],
+              [
+                40,
+                20,
+                20,
+                20,
+                60
+              ]
+            ]
+          },
+          "icon": "/media/gwen-skill-0.webp",
+          "unlimited": false
+        },
+        {
+          "name": {
+            "zh": "丝缕缠流",
+            "en": "Hallowed Mist"
+          },
+          "description": {
+            "zh": "创建固定圣霭，阻止圈外敌人选取格温或施加新效果；已有状态继续生效，格温离开则结界消失。",
+            "en": "Create fixed mist that prevents outside enemies from targeting Gwen or applying new effects. Existing effects continue; leaving the area removes the mist."
+          },
+          "values": {
+            "cast_duration": 0.8,
+            "cooldown": 8.0,
+            "cost": 1,
+            "duration": 4.0,
+            "impact_delay": 0.0,
+            "max_uses": 2,
+            "radius": 120.0
+          },
+          "icon": "/media/gwen-skill-1.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "gwen"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/gwen.gd",
+      "forms": []
+    },
+    {
+      "id": "heal",
+      "name": {
+        "zh": "治疗术",
+        "en": "Heal"
+      },
+      "description": {
+        "zh": "恢复范围内友方普通单位的生命，对建筑、防御塔与水晶无效。",
+        "en": "Restores allied non-structure units in an area. Buildings, towers and Nexuses cannot receive this healing."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 2,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 2,
+        "duration": 1.2,
+        "heal_amount": 200,
+        "radius": 110.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/heal.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "强化治疗",
+            "en": "Empowered Heal"
+          },
+          "description": {
+            "zh": "治疗全场友方普通单位，落点范围内治疗量进一步提高，不提供护盾。",
+            "en": "Heal allied non-structure units across the arena, with increased healing near the chosen point. Grants no shield."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "heal_multiplier": 1.5,
+            "max_uses": 1
+          },
+          "icon": "/media/heal-skill-0.webp",
+          "unlimited": false
+        },
+        {
+          "name": {
+            "zh": "过量治疗",
+            "en": "Overheal"
+          },
+          "description": {
+            "zh": "提高范围治疗量，部分溢出治疗转为限时护盾。",
+            "en": "Increase area healing and convert part of excess healing into a temporary shield."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "heal_multiplier": 1.5,
+            "max_uses": 1,
+            "overheal_shield_ratio": 0.5,
+            "shield_duration": 3.0
+          },
+          "icon": "/media/heal-skill-1.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/heal.gd",
+      "forms": []
+    },
+    {
+      "id": "heavy_minion_squad",
+      "name": {
+        "zh": "重装部队",
+        "en": "Heavy Division"
+      },
+      "description": {
+        "zh": "超级兵与炮车兵前后部署，以重装前排保护远程火力。",
+        "en": "Deploys a Super Minion ahead of a Siege Minion, shielding ranged firepower with a heavy frontline."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/heavy_minion_squad.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 7.0,
+            "cost": 2,
+            "damage_multiplier": 1.35,
+            "duration": 5.0,
+            "max_uses": 1,
+            "shield": 140.0,
+            "shield_duration": 5.0,
+            "speed_multiplier": 1.35
+          },
+          "icon": "/media/heavy_minion_squad-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "siege_minion",
+        "super_minion"
+      ],
+      "members": [
+        "super_minion",
+        "siege_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/heavy_minion_squad.gd",
+      "forms": []
+    },
+    {
+      "id": "imp",
+      "name": {
+        "zh": "雾行者",
+        "en": "Mist Walker"
+      },
+      "description": {
+        "zh": "墓碑及召唤技能生成的小型地面近战单位。",
+        "en": "A small ground melee unit created by Tombstone and its summoning ability."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "damage": 55,
+        "deploy_time": 0.0,
+        "hp": 55,
+        "interval": 0.7,
+        "range": 32.0,
+        "speed": 68.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/imp.webp",
+      "skills": [],
+      "related": [],
+      "members": [
+        "imp"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/imp.gd",
+      "forms": []
+    },
+    {
+      "id": "jax",
+      "name": {
+        "zh": "武器大师",
+        "en": "Jax"
+      },
+      "description": {
+        "zh": "近战范围战士，连续命中逐渐提高攻速，反击风暴能免疫普攻伤害。",
+        "en": "An area melee fighter who gains attack speed through repeated hits. Counter Strike makes him immune to basic-attack damage."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 125,
+        "deploy_time": 2.0,
+        "hit_haste_duration": 4.0,
+        "hit_haste_max_stacks": 5,
+        "hit_haste_per_stack": 0.1,
+        "hp": 1100,
+        "interval": 1.4,
+        "range": 32.0,
+        "speed": 60.0,
+        "splash_radius": 35.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/jax.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "反击风暴",
+            "en": "Counter Strike"
+          },
+          "description": {
+            "zh": "暂时免疫普攻伤害，仍可移动攻击；结束时伤害并眩晕周围地面敌人，闪避的攻击提高伤害。死亡取消，凝滞到期不补发。",
+            "en": "Temporarily ignore basic-attack damage while still moving and attacking. Then damage and stun nearby ground enemies, scaling with attacks avoided. Death cancels it; expiry in stasis does not defer the burst."
+          },
+          "values": {
+            "cooldown": 8.0,
+            "cost": 2,
+            "damage": 150,
+            "damage_per_dodge": 0.2,
+            "duration": 2.0,
+            "max_dodges": 5,
+            "max_uses": 2,
+            "radius": 159.38,
+            "stun_duration": 1.5
+          },
+          "icon": "/media/jax-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "jax"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/jax.gd",
+      "forms": []
+    },
+    {
+      "id": "jinx",
+      "name": {
+        "zh": "金克丝",
+        "en": "Jinx"
+      },
+      "description": {
+        "zh": "可切换火箭炮与机枪的后排射手。参与摧毁建筑后获得罪恶快感。",
+        "en": "A backline marksman who switches between rockets and a minigun. Taking part in a structure takedown triggers Get Excited."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 100,
+        "hp": 440,
+        "interval": 1.5,
+        "range": 220.0,
+        "speed": 60.0,
+        "splash_radius": 45.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/jinx.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "枪炮交响曲！",
+            "en": "Switcheroo!"
+          },
+          "description": {
+            "zh": "切换武器并重置旧普攻后摇，切换期间不能攻击；机枪命中叠攻速，换武器清空层数。",
+            "en": "Switch weapons and reset the old attack recovery. Attacks are locked during the switch. Minigun hits stack attack speed; switching clears those stacks."
+          },
+          "values": {
+            "cooldown": 4.0,
+            "cost": 0,
+            "max_uses": 5
+          },
+          "icon": "/media/jinx-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "jinx"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/jinx.gd",
+      "forms": [
+        {
+          "id": "jinx-form",
+          "name": {
+            "zh": "轻机枪形态",
+            "en": "Minigun"
+          },
+          "values": {
+            "damage": 100,
+            "hit_haste_duration": 3.0,
+            "hit_haste_max_stacks": 3,
+            "hit_haste_per_stack": 0.15,
+            "hp": 440,
+            "interval": 1.0,
+            "radius": 18.0,
+            "range": 170.0,
+            "speed": 60.0,
+            "splash_radius": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "kassadin",
+      "name": {
+        "zh": "虚空行者",
+        "en": "Kassadin"
+      },
+      "description": {
+        "zh": "浮空但仍属于地面单位，可以直接过河并穿过普通单位，仍受建筑阻挡。",
+        "en": "A hovering ground fighter who crosses the river and passes through ordinary units, but remains blocked by structures."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 90,
+        "hp": 620,
+        "interval": 1.2,
+        "range": 32.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": true,
+        "permanent_unit_phasing": true,
+        "can_attack": true
+      },
+      "image": "/media/kassadin.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空行走",
+            "en": "Riftwalk"
+          },
+          "description": {
+            "zh": "向前传送并伤害落点附近敌人。连续使用提高费用和伤害，达到上限后不再增加；建筑阻挡会调整落点。",
+            "en": "Blink forward and damage nearby enemies on arrival. Repeated casts increase cost and damage up to a cap. Structures force the landing point to adjust."
+          },
+          "values": {
+            "cast_duration": 0.35,
+            "cooldown": 2.0,
+            "cost": 0,
+            "cost_by_use": [
+              0,
+              1,
+              2
+            ],
+            "damage": 80,
+            "damage_by_use": [
+              80,
+              120,
+              160
+            ],
+            "impact_delay": 0.25,
+            "length": 160.0,
+            "max_uses": 3,
+            "radius": 70.0
+          },
+          "icon": "/media/kassadin-skill-0.webp",
+          "unlimited": true
+        }
+      ],
+      "related": [],
+      "members": [
+        "kassadin"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/kassadin.gd",
+      "forms": []
+    },
+    {
+      "id": "kayle",
+      "name": {
+        "zh": "正义天使",
+        "en": "Kayle"
+      },
+      "description": {
+        "zh": "根据部署时的金币自动选择近战或远程形态。两种形态都能飞行、攻击空地目标。",
+        "en": "Available gold selects her melee or ranged form on deployment. Both forms fly and attack ground and air targets."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 75,
+        "hit_haste_duration": 3.0,
+        "hit_haste_max_stacks": 4,
+        "hit_haste_per_stack": 0.1,
+        "hp": 520,
+        "interval": 1.5,
+        "range": 56.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/kayle.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "星界恩典",
+            "en": "Celestial Blessing"
+          },
+          "description": {
+            "zh": "回复自身生命并短暂加速。",
+            "en": "Restore health and briefly increase movement speed."
+          },
+          "values": {
+            "cast_duration": 0.6,
+            "cooldown": 6.0,
+            "cost": 0,
+            "duration": 1.0,
+            "heal_amount": 160,
+            "impact_delay": 0.0,
+            "max_uses": 2,
+            "speed_multiplier": 1.3
+          },
+          "icon": "/media/kayle-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "kayle_ranged"
+      ],
+      "members": [
+        "kayle"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/kayle.gd",
+      "forms": []
+    },
+    {
+      "id": "kayle_ranged",
+      "name": {
+        "zh": "正义天使（远程）",
+        "en": "Kayle · Ranged"
+      },
+      "description": {
+        "zh": "远程飞行形态，普攻同时发射追踪光剑和独立的穿透焰浪。",
+        "en": "A ranged flying form whose attacks launch both a homing light blade and an independent piercing flame wave."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 6,
+      "values": {
+        "attack_wave_damage": 55,
+        "cost": 6,
+        "damage": 105,
+        "hit_haste_duration": 3.0,
+        "hit_haste_max_stacks": 4,
+        "hit_haste_per_stack": 0.1,
+        "hp": 820,
+        "interval": 1.5,
+        "range": 190.0,
+        "speed": 60.0,
+        "splash_radius": 0.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/kayle_ranged.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "星界恩典",
+            "en": "Celestial Blessing"
+          },
+          "description": {
+            "zh": "回复自身生命并短暂加速。",
+            "en": "Restore health and briefly increase movement speed."
+          },
+          "values": {
+            "cast_duration": 0.6,
+            "cooldown": 6.0,
+            "cost": 0,
+            "duration": 1.0,
+            "heal_amount": 160,
+            "impact_delay": 0.0,
+            "max_uses": 2,
+            "speed_multiplier": 1.3
+          },
+          "icon": "/media/kayle_ranged-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "kayle_ranged"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/kayle_ranged.gd",
+      "forms": []
+    },
+    {
+      "id": "kayn",
+      "name": {
+        "zh": "凯隐",
+        "en": "Kayn"
+      },
+      "description": {
+        "zh": "穿越地形的成长战士。对远程或近战敌军的普攻任务决定后续部署的进阶形态。",
+        "en": "A terrain-crossing fighter. Basic-attack quests against ranged or melee enemies unlock a form for future deployments."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 80,
+        "growth_melee_hits": 6,
+        "growth_ranged_hits": 4,
+        "hp": 650,
+        "interval": 1.1,
+        "range": 32.0,
+        "speed": 68.0,
+        "terrain_entry_heal": 70,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/kayn.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "巨镰横扫",
+            "en": "Reaping Slash"
+          },
+          "description": {
+            "zh": "向前突进后旋转，分段伤害地面敌人。拉亚斯特附加最大生命伤害，并在每段命中时回复生命。",
+            "en": "Dash forward, then spin, damaging ground enemies in separate stages. Rhaast adds max-health damage and heals on a hit in each stage."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 6.0,
+            "cost": 2,
+            "damage": 90,
+            "impact_delay": 0.0,
+            "length": 120.0,
+            "max_uses": 2,
+            "radius": 65.0,
+            "width": 40.0
+          },
+          "icon": "/media/kayn-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "kayn_assassin",
+        "kayn_slayer"
+      ],
+      "members": [
+        "kayn"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/kayn.gd",
+      "forms": []
+    },
+    {
+      "id": "kayn_assassin",
+      "name": {
+        "zh": "影流刺客",
+        "en": "Shadow Assassin"
+      },
+      "description": {
+        "zh": "凯隐的高速进阶形态，进入地形回复生命并短暂加速。",
+        "en": "Kayn’s fast advanced form, healing and briefly accelerating when entering terrain."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 110,
+        "hp": 650,
+        "interval": 0.85,
+        "range": 32.0,
+        "speed": 88.0,
+        "terrain_entry_heal": 120,
+        "terrain_entry_speed_multiplier": 1.3,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/kayn_assassin.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "巨镰横扫",
+            "en": "Reaping Slash"
+          },
+          "description": {
+            "zh": "向前突进后旋转，分段伤害地面敌人。拉亚斯特附加最大生命伤害，并在每段命中时回复生命。",
+            "en": "Dash forward, then spin, damaging ground enemies in separate stages. Rhaast adds max-health damage and heals on a hit in each stage."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 6.0,
+            "cost": 1,
+            "damage": 90,
+            "impact_delay": 0.0,
+            "length": 120.0,
+            "max_uses": 2,
+            "radius": 65.0,
+            "width": 40.0
+          },
+          "icon": "/media/kayn_assassin-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "kayn_assassin"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/kayn_assassin.gd",
+      "forms": []
+    },
+    {
+      "id": "kayn_slayer",
+      "name": {
+        "zh": "拉亚斯特",
+        "en": "Rhaast"
+      },
+      "description": {
+        "zh": "凯隐的续航进阶形态，普攻与技能附带最大生命伤害，并通过命中回血。",
+        "en": "Kayn’s sustain form. Attacks and ability hits add max-health damage and restore health."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 80,
+        "heal_amount": 35,
+        "heal_every_hits": 1,
+        "hp": 950,
+        "interval": 1.1,
+        "on_hit_max_health_ratio": 0.03,
+        "on_hit_tower_damage": 35,
+        "range": 32.0,
+        "speed": 68.0,
+        "terrain_entry_heal": 70,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/kayn_slayer.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "巨镰横扫",
+            "en": "Reaping Slash"
+          },
+          "description": {
+            "zh": "向前突进后旋转，分段伤害地面敌人。拉亚斯特附加最大生命伤害，并在每段命中时回复生命。",
+            "en": "Dash forward, then spin, damaging ground enemies in separate stages. Rhaast adds max-health damage and heals on a hit in each stage."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 6.0,
+            "cost": 2,
+            "damage": 90,
+            "hit_heal": 50,
+            "impact_delay": 0.0,
+            "length": 120.0,
+            "max_uses": 2,
+            "on_hit_max_health_ratio": 0.03,
+            "on_hit_tower_damage": 35,
+            "radius": 65.0,
+            "width": 40.0
+          },
+          "icon": "/media/kayn_slayer-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "kayn_slayer"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/kayn_slayer.gd",
+      "forms": []
+    },
+    {
+      "id": "lightning",
+      "name": {
+        "zh": "大型电击法术",
+        "en": "Lightning"
+      },
+      "description": {
+        "zh": "连续选择区域内尚未受击、当前生命最高的目标，造成伤害和短暂眩晕。",
+        "en": "Repeatedly strikes the highest-current-health enemy in the area that this cast has not yet hit, dealing damage and a brief stun."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 6,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 6,
+        "damage": 460,
+        "duration": 0.6,
+        "radius": 120.0,
+        "strike_count": 3,
+        "strike_interval": 1.0,
+        "stun_duration": 0.2,
+        "tower_damage_multiplier": 0.3
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/lightning.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "递增电击",
+            "en": "Escalating Lightning"
+          },
+          "description": {
+            "zh": "逐段提高电击伤害；某段无目标不会改变后续段的伤害档位。",
+            "en": "Increase damage with each strike. A strike with no target does not change later damage tiers."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "max_uses": 1,
+            "strike_count": 3,
+            "strike_damage_multiplier": 1.2
+          },
+          "icon": "/media/lightning-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/lightning.gd",
+      "forms": []
+    },
+    {
+      "id": "lulu",
+      "name": {
+        "zh": "璐璐",
+        "en": "Lulu"
+      },
+      "description": {
+        "zh": "周期召唤皮克斯的远程法师，可永久强化一名尚未被增益的友军。",
+        "en": "A ranged mage who periodically summons Pix and can permanently empower an ally that has not already received Wild Growth."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 48,
+        "hp": 460,
+        "interval": 1.2,
+        "range": 180.0,
+        "spawn_count": 2,
+        "spawn_interval": 7.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/lulu.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "狂野生长",
+            "en": "Wild Growth"
+          },
+          "description": {
+            "zh": "选择范围内费用最高、同费最近的未增益友军，永久增加生命和体型并击退周围敌军。不能重复增益；无目标则退还消耗。",
+            "en": "Permanently increase health and size for the highest-cost eligible ally in range, preferring the nearest on ties, and knock back nearby enemies. Cannot stack; no valid target refunds the cast."
+          },
+          "values": {
+            "body_scale_multiplier": 1.3,
+            "cast_duration": 0.97,
+            "cooldown": 7.0,
+            "cost": 2,
+            "health_bonus_ratio": 0.3,
+            "impact_delay": 0.25,
+            "knockback": 40.0,
+            "knockback_radius": 80.0,
+            "max_uses": 2,
+            "radius": 180.0
+          },
+          "icon": "/media/lulu-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "pix"
+      ],
+      "members": [
+        "lulu"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/lulu.gd",
+      "forms": []
+    },
+    {
+      "id": "malphite",
+      "name": {
+        "zh": "熔岩巨兽",
+        "en": "Malphite"
+      },
+      "description": {
+        "zh": "慢速前排坦克，部署时获得花岗岩护盾。护盾存在时减伤，破碎后不再生。",
+        "en": "A slow frontline tank deployed with Granite Shield. It reduces incoming damage while intact and does not regenerate once broken."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 7,
+      "values": {
+        "cost": 7,
+        "damage": 120,
+        "deployment_shield": 400,
+        "deployment_shield_reduction": 0.5,
+        "hp": 1600,
+        "interval": 1.8,
+        "range": 32.0,
+        "speed": 44.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/malphite.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "大地震颤",
+            "en": "Ground Slam"
+          },
+          "description": {
+            "zh": "伤害周围地面敌人，同时降低移动和攻击速度。",
+            "en": "Damage nearby ground enemies and reduce their movement and attack speed."
+          },
+          "values": {
+            "attack_slow_multiplier": 0.3,
+            "cast_duration": 0.65,
+            "cooldown": 8.0,
+            "cost": 1,
+            "damage": 160,
+            "impact_delay": 0.25,
+            "max_uses": 2,
+            "radius": 160.0,
+            "slow_duration": 2.0,
+            "slow_multiplier": 0.7
+          },
+          "icon": "/media/malphite-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "malphite"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/malphite.gd",
+      "forms": []
+    },
+    {
+      "id": "malzahar",
+      "name": {
+        "zh": "虚空先知",
+        "en": "Malzahar"
+      },
+      "description": {
+        "zh": "空中后排召唤法师，周期召唤虚灵。可选压制引导或额外召唤。",
+        "en": "A flying backline mage who periodically summons Voidlings. Choose a disabling channel or an additional swarm."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 60,
+        "hp": 620,
+        "interval": 1.2,
+        "range": 190.0,
+        "spawn_count": 3,
+        "spawn_initial_delay": 2.0,
+        "spawn_interval": 8.0,
+        "spawn_sequence_interval": 0.5,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/malzahar.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "冥府之握",
+            "en": "Nether Grasp"
+          },
+          "description": {
+            "zh": "下一击命中后引导眩晕，自身不能移动或攻击。控制可打断引导，但已建立的持续伤害区域独立存在。",
+            "en": "The next hit begins a stunning channel that locks the caster’s movement and attacks. Control can interrupt the channel, but the established damage zone persists independently."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 3,
+            "duration": 2.5,
+            "max_uses": 1,
+            "radius": 90.0,
+            "zone_damage": 30,
+            "zone_duration": 5.0,
+            "zone_tick_interval": 0.5
+          },
+          "icon": "/media/malzahar-skill-0.webp",
+          "unlimited": false
+        },
+        {
+          "name": {
+            "zh": "虚空虫群",
+            "en": "Void Swarm"
+          },
+          "description": {
+            "zh": "施法期间停止普攻，开启裂隙依次召唤虚灵。",
+            "en": "Pause basic attacks while casting, opening a rift that summons Voidlings in sequence."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 6.0,
+            "cost": 1,
+            "impact_delay": 0.25,
+            "max_uses": 3,
+            "spawn_count": 3,
+            "spawn_sequence_interval": 0.5
+          },
+          "icon": "/media/malzahar-skill-1.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "voidling"
+      ],
+      "members": [
+        "malzahar"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/malzahar.gd",
+      "forms": []
+    },
+    {
+      "id": "masteryi",
+      "name": {
+        "zh": "剑圣",
+        "en": "Master Yi"
+      },
+      "description": {
+        "zh": "移动与攻击都很快的地面近战单位，适合迅速接近脆弱后排。",
+        "en": "A fast-moving ground melee fighter with rapid attacks, suited to closing on fragile backline units."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 52,
+        "hp": 480,
+        "interval": 0.7,
+        "range": 32.0,
+        "speed": 88.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/masteryi.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "高原血统",
+            "en": "Highlander"
+          },
+          "description": {
+            "zh": "提高移动与攻击速度，并免疫移速和攻速减速。",
+            "en": "Increase movement and attack speed while ignoring slows to either."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.4,
+            "cooldown": 6.0,
+            "cost": 1,
+            "damage_multiplier": 1.0,
+            "duration": 5.0,
+            "max_uses": 2,
+            "speed_multiplier": 1.5
+          },
+          "icon": "/media/masteryi-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "masteryi"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/masteryi.gd",
+      "forms": []
+    },
+    {
+      "id": "melee_minion",
+      "name": {
+        "zh": "近战兵",
+        "en": "Melee Minion"
+      },
+      "description": {
+        "zh": "低费用地面近战兵，可为后排承受伤害，也会出现在自然兵线中。",
+        "en": "A low-cost ground melee minion that protects the backline and also appears in lane waves."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 1,
+      "values": {
+        "cost": 1,
+        "damage": 42,
+        "hp": 210,
+        "interval": 1.0,
+        "range": 32.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/melee_minion.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 5.0,
+            "cost": 0,
+            "damage_multiplier": 1.25,
+            "duration": 4.0,
+            "max_uses": 2,
+            "speed_multiplier": 1.35
+          },
+          "icon": "/media/melee_minion-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "melee_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/melee_minion.gd",
+      "forms": []
+    },
+    {
+      "id": "melee_minion_squad",
+      "name": {
+        "zh": "近战兵小队",
+        "en": "Melee Squad"
+      },
+      "description": {
+        "zh": "方阵部署近战兵，主动技能强化本次部署中仍存活的成员。",
+        "en": "Deploys melee minions in a square. Its active empowers the surviving members of this deployment."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 2,
+      "values": {
+        "cost": 2
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/melee_minion_squad.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 5.0,
+            "cost": 1,
+            "damage_multiplier": 1.25,
+            "duration": 4.0,
+            "max_uses": 2,
+            "speed_multiplier": 1.35
+          },
+          "icon": "/media/melee_minion_squad-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "melee_minion"
+      ],
+      "members": [
+        "melee_minion",
+        "melee_minion",
+        "melee_minion",
+        "melee_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/melee_minion_squad.gd",
+      "forms": []
+    },
+    {
+      "id": "minion_squad",
+      "name": {
+        "zh": "小兵分队",
+        "en": "Minion Squad"
+      },
+      "description": {
+        "zh": "近战与远程兵组成混合编队，分别承担前排与持续输出。",
+        "en": "A mixed formation of melee and ranged minions, combining frontline protection with sustained fire."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/minion_squad.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.25,
+            "cooldown": 6.0,
+            "cost": 2,
+            "damage_multiplier": 1.25,
+            "duration": 5.0,
+            "max_uses": 1,
+            "speed_multiplier": 1.35
+          },
+          "icon": "/media/minion_squad-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "melee_minion",
+        "ranged_minion"
+      ],
+      "members": [
+        "melee_minion",
+        "melee_minion",
+        "ranged_minion",
+        "ranged_minion",
+        "ranged_minion",
+        "melee_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/minion_squad.gd",
+      "forms": []
+    },
+    {
+      "id": "mirror",
+      "name": {
+        "zh": "镜像法术",
+        "en": "Mirror"
+      },
+      "description": {
+        "zh": "复制上一张成功使用的非镜像卡，按实际部署形态支付基础费用。主动席的镜像可继承预选技能。",
+        "en": "Copies the last successfully played non-Mirror card at the base cost of its deployed form. In an active seat, Mirror can inherit the preselected ability."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": null,
+      "values": {
+        "cost": 0,
+        "duration": 0.0,
+        "radius": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/mirror.webp",
+      "skills": [],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/mirror.gd",
+      "forms": []
+    },
+    {
+      "id": "missfortune",
+      "name": {
+        "zh": "赏金猎人",
+        "en": "Miss Fortune"
+      },
+      "description": {
+        "zh": "可对空的双枪射手，对每个目标的首次攻击造成更高伤害。",
+        "en": "An anti-air marksman whose first attack against each target deals increased damage."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 62,
+        "first_strike_damage_multiplier": 1.5,
+        "hp": 380,
+        "interval": 0.95,
+        "range": 165.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/missfortune.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "大步流星",
+            "en": "Strut"
+          },
+          "description": {
+            "zh": "短暂提高移动速度与攻击速度。",
+            "en": "Temporarily increase movement and attack speed."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.3,
+            "cooldown": 5.0,
+            "cost": 0,
+            "damage_multiplier": 1.0,
+            "duration": 3.0,
+            "max_uses": 1,
+            "speed_multiplier": 1.5
+          },
+          "icon": "/media/missfortune-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "missfortune"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/missfortune.gd",
+      "forms": []
+    },
+    {
+      "id": "nocturne",
+      "name": {
+        "zh": "永恒梦魇",
+        "en": "Nocturne"
+      },
+      "description": {
+        "zh": "可攻击空地目标的飞行近战单位，可选抵挡敌方效果或强化下一次攻击。",
+        "en": "A flying melee unit that attacks ground and air targets. Choose to block an enemy effect or empower the next attack."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 95,
+        "hp": 560,
+        "interval": 1.4,
+        "range": 32.0,
+        "speed": 52.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/nocturne.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "黑暗庇护",
+            "en": "Shroud of Darkness"
+          },
+          "description": {
+            "zh": "抵挡一次完整敌方攻击、法术或技能及其附带效果，成功后加攻速。已有状态和友方效果不受影响。",
+            "en": "Block one complete enemy attack, spell or ability and its attached effects, then gain attack speed. Existing statuses and allied effects remain unaffected."
+          },
+          "values": {
+            "block_attack_speed_multiplier": 1.3,
+            "block_haste_duration": 2.0,
+            "cast_duration": 0.0,
+            "cooldown": 10.0,
+            "cost": 2,
+            "duration": 1.5,
+            "impact_delay": 0.0,
+            "max_uses": 1
+          },
+          "icon": "/media/nocturne-skill-0.webp",
+          "unlimited": false
+        },
+        {
+          "name": {
+            "zh": "暗影之刃",
+            "en": "Umbra Blades"
+          },
+          "description": {
+            "zh": "强化下一次普攻，追加周围范围伤害并按实际生命伤害回血；不能叠加储存。",
+            "en": "Empower the next basic attack with nearby area damage and healing based on actual health damage. Cannot store multiple charges."
+          },
+          "values": {
+            "cast_duration": 0.0,
+            "cleave_damage": 55,
+            "cleave_radius": 70.0,
+            "cooldown": 8.0,
+            "cost": 1,
+            "empowered_damage_multiplier": 1.0,
+            "heal_ratio": 0.3,
+            "impact_delay": 0.0,
+            "max_uses": 2
+          },
+          "icon": "/media/nocturne-skill-1.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "nocturne"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/nocturne.gd",
+      "forms": []
+    },
+    {
+      "id": "olaf",
+      "name": {
+        "zh": "狂战士",
+        "en": "Olaf"
+      },
+      "description": {
+        "zh": "并排部署的双斧战士，主动技能同时强化本批仍存活的狂战士。",
+        "en": "A pair of axe-wielding melee fighters. Their active empowers every surviving Olaf from this deployment."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 6,
+      "values": {
+        "cost": 6,
+        "damage": 115,
+        "hp": 780,
+        "interval": 1.2,
+        "range": 32.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/olaf.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "残暴打击",
+            "en": "Vicious Strikes"
+          },
+          "description": {
+            "zh": "本批存活狂战士获得限时护盾、攻速和普攻吸血。护盾耗尽不会提前结束其他增益。",
+            "en": "Grant surviving Olafs in the group a temporary shield, attack speed and basic-attack life steal. Losing the shield does not end the other buffs."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.3,
+            "cast_duration": 0.0,
+            "cooldown": 10.0,
+            "cost": 1,
+            "duration": 5.0,
+            "heal_ratio": 0.3,
+            "impact_delay": 0.0,
+            "max_uses": 1,
+            "shield": 180,
+            "shield_duration": 2.5
+          },
+          "icon": "/media/olaf-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "olaf",
+        "olaf"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/olaf.gd",
+      "forms": []
+    },
+    {
+      "id": "olaf_single",
+      "name": {
+        "zh": "狂战士（单只）",
+        "en": "Olaf · Single"
+      },
+      "description": {
+        "zh": "编队成员的单只参考条目，不能独立加入卡组。",
+        "en": "A reference entry for an individual formation member, unavailable as a separate deck card."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "damage": 115,
+        "hp": 780,
+        "interval": 1.2,
+        "range": 32.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/olaf_single.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "残暴打击",
+            "en": "Vicious Strikes"
+          },
+          "description": {
+            "zh": "本批存活狂战士获得限时护盾、攻速和普攻吸血。护盾耗尽不会提前结束其他增益。",
+            "en": "Grant surviving Olafs in the group a temporary shield, attack speed and basic-attack life steal. Losing the shield does not end the other buffs."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.3,
+            "cast_duration": 0.0,
+            "cooldown": 10.0,
+            "cost": 1,
+            "duration": 5.0,
+            "heal_ratio": 0.3,
+            "impact_delay": 0.0,
+            "max_uses": 1,
+            "shield": 180,
+            "shield_duration": 2.5
+          },
+          "icon": "/media/olaf_single-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "olaf_single"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/olaf_single.gd",
+      "forms": []
+    },
+    {
+      "id": "ornn",
+      "name": {
+        "zh": "奥恩",
+        "en": "Ornn"
+      },
+      "description": {
+        "zh": "只攻击建筑的慢速坦克，锻造飞锤永久强化友军普攻，冲锋撞障碍可触发眩晕。",
+        "en": "A slow siege tank whose forged hammer permanently buffs allied basic attacks. Charging into an obstacle triggers a stun."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 6,
+      "values": {
+        "cost": 6,
+        "damage": 104,
+        "hp": 1260,
+        "interval": 2.0,
+        "range": 32.0,
+        "speed": 44.0,
+        "team_attack_boost_first_delay": 4.0,
+        "team_attack_boost_interval": 6.0,
+        "team_attack_boost_multiplier": 1.2,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/ornn.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "熔铸冲锋",
+            "en": "Searing Charge"
+          },
+          "description": {
+            "zh": "蓄力后向前冲锋，路径伤害较低；撞上建筑、河流或边界才触发范围伤害与眩晕。",
+            "en": "Charge forward after a wind-up, dealing minor path damage. Only collision with a structure, river or arena edge triggers area damage and a stun."
+          },
+          "values": {
+            "cast_duration": 1.4,
+            "cooldown": 10.0,
+            "cost": 2,
+            "damage": 135,
+            "length": 140.0,
+            "max_uses": 2,
+            "radius": 82.0,
+            "stun_duration": 1.5,
+            "width": 42.0
+          },
+          "icon": "/media/ornn-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "ornn"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/ornn.gd",
+      "forms": []
+    },
+    {
+      "id": "pantheon",
+      "name": {
+        "zh": "潘森",
+        "en": "Pantheon"
+      },
+      "description": {
+        "zh": "可在河道外的全图合法地面部署，落地滑行造成伤害，普攻积攒红怒强化长枪。",
+        "en": "Deploys on legal ground outside the river across the arena. His landing sweep deals damage; attacks build Mortal Will for his spear."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 72,
+        "deploy_time": 1.0,
+        "hp": 640,
+        "interval": 0.9,
+        "pre_deploy_time": 1.3,
+        "range": 40.0,
+        "skill_resource_max": 4.0,
+        "speed": 68.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/pantheon.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "贯星长枪",
+            "en": "Comet Spear"
+          },
+          "description": {
+            "zh": "向前刺击地面敌人，满红怒时消耗全部层数提高伤害；未满时保留并增加红怒。",
+            "en": "Thrust into ground enemies ahead. Full Mortal Will is consumed for higher damage; otherwise retain and add a stack."
+          },
+          "values": {
+            "cast_duration": 0.4,
+            "cooldown": 4.0,
+            "cost": 1,
+            "damage": 120,
+            "impact_delay": 0.3,
+            "length": 120.0,
+            "max_uses": 3,
+            "resource_full_damage_multiplier": 2.0
+          },
+          "icon": "/media/pantheon-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "pantheon"
+      ],
+      "zone": "global",
+      "source": "scripts/data/cards/pantheon.gd",
+      "forms": []
+    },
+    {
+      "id": "pix",
+      "name": {
+        "zh": "皮克斯",
+        "en": "Pix"
+      },
+      "description": {
+        "zh": "成组部署的小型空中射手，近距离发射紫色光弹。",
+        "en": "A group of tiny flying shooters that fire purple bolts at close range."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 2,
+      "values": {
+        "cost": 2,
+        "damage": 55,
+        "hp": 55,
+        "interval": 1.0,
+        "range": 48.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/pix.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "仙灵汲取",
+            "en": "Faerie Siphon"
+          },
+          "description": {
+            "zh": "本批存活皮克斯的后续普攻按实际生命伤害回血，可暂时超过基础生命上限；护盾伤害与过量伤害不计入。",
+            "en": "Surviving Pix in this group heal from actual health damage dealt by subsequent basic attacks, up to an increased health cap. Shield damage and overkill do not count."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "heal_ratio": 0.25,
+            "max_health_ratio": 1.5,
+            "max_uses": 1
+          },
+          "icon": "/media/pix-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "pix",
+        "pix",
+        "pix",
+        "pix",
+        "pix"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/pix.gd",
+      "forms": []
+    },
+    {
+      "id": "pix_single",
+      "name": {
+        "zh": "皮克斯（单只）",
+        "en": "Pix · Single"
+      },
+      "description": {
+        "zh": "用于查看单只皮克斯的关联实体，不可独立选入卡组。",
+        "en": "An individual Pix reference entity, unavailable as a separate deck card."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "damage": 55,
+        "hp": 55,
+        "interval": 1.0,
+        "range": 48.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/pix_single.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "仙灵汲取",
+            "en": "Faerie Siphon"
+          },
+          "description": {
+            "zh": "本批存活皮克斯的后续普攻按实际生命伤害回血，可暂时超过基础生命上限；护盾伤害与过量伤害不计入。",
+            "en": "Surviving Pix in this group heal from actual health damage dealt by subsequent basic attacks, up to an increased health cap. Shield damage and overkill do not count."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "heal_ratio": 0.25,
+            "max_health_ratio": 1.5,
+            "max_uses": 1
+          },
+          "icon": "/media/pix_single-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "pix_single"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/pix_single.gd",
+      "forms": []
+    },
+    {
+      "id": "ranged_minion",
+      "name": {
+        "zh": "远程兵",
+        "en": "Caster Minion"
+      },
+      "description": {
+        "zh": "低费用后排兵种，可以攻击地面和空中目标。",
+        "en": "A low-cost backline minion that attacks both ground and air targets."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 1,
+      "values": {
+        "cost": 1,
+        "damage": 32,
+        "hp": 135,
+        "interval": 1.25,
+        "range": 150.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/ranged_minion.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.25,
+            "cooldown": 5.0,
+            "cost": 0,
+            "damage_multiplier": 1.25,
+            "duration": 5.0,
+            "max_uses": 2
+          },
+          "icon": "/media/ranged_minion-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "ranged_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/ranged_minion.gd",
+      "forms": []
+    },
+    {
+      "id": "ranged_minion_squad",
+      "name": {
+        "zh": "远程兵小队",
+        "en": "Caster Squad"
+      },
+      "description": {
+        "zh": "紧凑三角形部署远程兵，主动技能强化本批存活成员。",
+        "en": "Deploys caster minions in a compact triangle. The active empowers surviving members of this group."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 2,
+      "values": {
+        "cost": 2
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/ranged_minion_squad.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.25,
+            "cooldown": 5.0,
+            "cost": 1,
+            "damage_multiplier": 1.25,
+            "duration": 5.0,
+            "max_uses": 2
+          },
+          "icon": "/media/ranged_minion_squad-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "ranged_minion"
+      ],
+      "members": [
+        "ranged_minion",
+        "ranged_minion",
+        "ranged_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/ranged_minion_squad.gd",
+      "forms": []
+    },
+    {
+      "id": "rift_herald",
+      "name": {
+        "zh": "峡谷先锋",
+        "en": "Rift Herald"
+      },
+      "description": {
+        "zh": "只攻击建筑的重型推进单位。一生一次冲撞，撞击后释放虚空蠕虫并失去部分当前生命。",
+        "en": "A heavy siege unit with a once-per-life charge. Impact releases Voidmites and costs a portion of its current health."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 8,
+      "values": {
+        "cost": 8,
+        "damage": 120,
+        "deploy_time": 3.0,
+        "hp": 1800,
+        "interval": 2.0,
+        "range": 40.0,
+        "rush_building_damage": 500,
+        "rush_path_damage": 100,
+        "rush_self_health_ratio": 0.3,
+        "rush_spawn_count": 6,
+        "speed": 36.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/rift_herald.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "旋转重拳",
+            "en": "Sweeping Strike"
+          },
+          "description": {
+            "zh": "伤害前方半圆的地面敌军及建筑，冲撞的准备、冲刺与收势期间不可用。",
+            "en": "Damage ground enemies and structures in a forward semicircle. Unavailable during charge preparation, movement and recovery."
+          },
+          "values": {
+            "cast_duration": 3.0,
+            "cooldown": 6.0,
+            "cost": 1,
+            "damage": 210,
+            "impact_delay": 1.57,
+            "length": 100.0,
+            "max_uses": 2,
+            "projectile_count": 0
+          },
+          "icon": "/media/rift_herald-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "voidmite"
+      ],
+      "members": [
+        "rift_herald"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/rift_herald.gd",
+      "forms": []
+    },
+    {
+      "id": "sand_soldier",
+      "name": {
+        "zh": "黄沙士兵",
+        "en": "Sand Soldier"
+      },
+      "description": {
+        "zh": "黄沙长矛士兵，仅攻击地面，不继承沙漠皇帝的转化能力。",
+        "en": "A spear-wielding ground soldier that does not inherit Azir’s conversion passive."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "damage": 60,
+        "hp": 420,
+        "interval": 1.6,
+        "range": 72.0,
+        "speed": 44.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/sand_soldier.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "黄沙庇护",
+            "en": "Sand Aegis"
+          },
+          "description": {
+            "zh": "为本次部署成员提供护盾，到期时逐人判断，盾未破则回满生命。召唤士兵不自动获得主动资格。",
+            "en": "Shield deployment members; on expiry, each member with an intact shield heals to full. Summoned soldiers do not automatically gain active eligibility."
+          },
+          "values": {
+            "cooldown": 8.0,
+            "cost": 2,
+            "max_uses": 1,
+            "shield": 180,
+            "shield_duration": 2.0
+          },
+          "icon": "/media/sand_soldier-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "sand_soldier"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/sand_soldier.gd",
+      "forms": []
+    },
+    {
+      "id": "scuttle_crab",
+      "name": {
+        "zh": "峡谷迅捷蟹",
+        "en": "Rift Scuttler"
+      },
+      "description": {
+        "zh": "不造成普攻伤害的支援坦克，在建筑前跳舞回血，死亡后留下友方治疗区。",
+        "en": "A support tank without basic-attack damage. It dances and heals near structures, leaving an allied healing zone on death."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 2,
+      "values": {
+        "cost": 2,
+        "death_heal_duration": 6.0,
+        "death_heal_per_second": 25.0,
+        "death_heal_radius": 110.0,
+        "hp": 550,
+        "speed": 60.0,
+        "structure_mend_per_second": 30.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/scuttle_crab.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "谦卑",
+            "en": "Humility"
+          },
+          "description": {
+            "zh": "降低周围敌人的移动与攻击速度。",
+            "en": "Reduce nearby enemies’ movement and attack speed."
+          },
+          "values": {
+            "attack_slow_multiplier": 0.7,
+            "cast_duration": 0.0,
+            "cooldown": 8.0,
+            "cost": 1,
+            "damage": 0,
+            "max_uses": 2,
+            "radius": 130.0,
+            "slow_duration": 3.0,
+            "slow_multiplier": 0.6
+          },
+          "icon": "/media/scuttle_crab-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "scuttle_crab"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/scuttle_crab.gd",
+      "forms": []
+    },
+    {
+      "id": "sett",
+      "name": {
+        "zh": "腕豪",
+        "en": "Sett"
+      },
+      "description": {
+        "zh": "交替双拳攻击的近战前排，第二拳伤害更高，蓄意轰拳将豪意转为爆发和护盾。",
+        "en": "A frontline brawler with a stronger second punch. Haymaker turns Grit into burst damage and a shield."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 72,
+        "hp": 800,
+        "interval": 1.0,
+        "range": 40.0,
+        "skill_resource_max": 200.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/sett.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "蓄意轰拳",
+            "en": "Haymaker"
+          },
+          "description": {
+            "zh": "锁定行动后向前轰出梯形冲击波，豪意提高伤害，中心伤害更高；消耗的豪意同时提供衰减护盾。",
+            "en": "Lock actions to release a trapezoid blast. Grit increases damage, with extra damage in the center, and provides a decaying shield."
+          },
+          "values": {
+            "cast_duration": 1.4,
+            "center_damage_multiplier": 1.5,
+            "cooldown": 8.0,
+            "cost": 2,
+            "damage": 130,
+            "impact_delay": 0.8,
+            "length": 183.0,
+            "max_uses": 1,
+            "resource_damage_scale_max": 2.0,
+            "resource_shield_max": 300,
+            "shield_duration": 2.0
+          },
+          "icon": "/media/sett-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "sett"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/sett.gd",
+      "forms": []
+    },
+    {
+      "id": "shurima_guard",
+      "name": {
+        "zh": "恕瑞玛卫队",
+        "en": "Shurima Guard"
+      },
+      "description": {
+        "zh": "横排部署黄沙士兵。只有摧毁敌方两路防御塔后，才能部署到对方半场合法区域。",
+        "en": "Deploys a line of Sand Soldiers. Enemy-side deployment requires both opposing lane towers to be destroyed."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 7,
+      "values": {
+        "cost": 7,
+        "damage": 60,
+        "hp": 420,
+        "interval": 1.6,
+        "range": 72.0,
+        "speed": 44.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/shurima_guard.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "黄沙庇护",
+            "en": "Sand Aegis"
+          },
+          "description": {
+            "zh": "为本次部署成员提供护盾，到期时逐人判断，盾未破则回满生命。召唤士兵不自动获得主动资格。",
+            "en": "Shield deployment members; on expiry, each member with an intact shield heals to full. Summoned soldiers do not automatically gain active eligibility."
+          },
+          "values": {
+            "cooldown": 8.0,
+            "cost": 2,
+            "max_uses": 1,
+            "shield": 180,
+            "shield_duration": 2.0
+          },
+          "icon": "/media/shurima_guard-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "shurima_guard",
+        "shurima_guard",
+        "shurima_guard",
+        "shurima_guard",
+        "shurima_guard",
+        "shurima_guard"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/shurima_guard.gd",
+      "forms": []
+    },
+    {
+      "id": "siege_minion",
+      "name": {
+        "zh": "炮车兵",
+        "en": "Siege Minion"
+      },
+      "description": {
+        "zh": "远程炮击兵种，攻击较慢，但能从后方持续施压。",
+        "en": "A long-range artillery minion with slow attacks and sustained backline pressure."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 58,
+        "hp": 390,
+        "interval": 1.65,
+        "range": 170.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/siege_minion.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 8.0,
+            "cost": 1,
+            "damage_multiplier": 1.5,
+            "duration": 5.0,
+            "max_uses": 2
+          },
+          "icon": "/media/siege_minion-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "siege_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/siege_minion.gd",
+      "forms": []
+    },
+    {
+      "id": "siege_minion_squad",
+      "name": {
+        "zh": "炮车部队",
+        "en": "Siege Battery"
+      },
+      "description": {
+        "zh": "三角形部署炮车兵，以多门远程火炮压制战线。",
+        "en": "Deploys a triangle of Siege Minions to pressure the battlefield with multiple artillery units."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 7,
+      "values": {
+        "cost": 7
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/siege_minion_squad.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 8.0,
+            "cost": 3,
+            "damage_multiplier": 1.5,
+            "duration": 5.0,
+            "max_uses": 1
+          },
+          "icon": "/media/siege_minion_squad-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "siege_minion"
+      ],
+      "members": [
+        "siege_minion",
+        "siege_minion",
+        "siege_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/siege_minion_squad.gd",
+      "forms": []
+    },
+    {
+      "id": "sion",
+      "name": {
+        "zh": "赛恩",
+        "en": "Sion"
+      },
+      "description": {
+        "zh": "高生命攻城坦克，首次致死后短暂不可选中，再满血复生为持续流失生命的狂暴形态。",
+        "en": "A high-health siege tank. His first lethal hit starts an untargetable revival, then a full-health berserk form that steadily loses health."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 8,
+      "values": {
+        "cost": 8,
+        "damage": 180,
+        "death_form_decay_duration": 5.0,
+        "death_form_delay": 2.0,
+        "deploy_time": 2.0,
+        "hp": 2400,
+        "interval": 1.8,
+        "range": 40.0,
+        "speed": 44.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/sion.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "灵魂熔炉",
+            "en": "Soul Furnace"
+          },
+          "description": {
+            "zh": "获得护盾，计时结束时若护盾未破，移除剩余护盾并对周围空地单位及建筑造成伤害。",
+            "en": "Gain a shield. If it survives until expiry, remove it and damage nearby ground units, air units and structures."
+          },
+          "values": {
+            "cast_duration": 0.0,
+            "cooldown": 8.0,
+            "cost": 2,
+            "damage": 240,
+            "impact_delay": 0.0,
+            "max_uses": 2,
+            "radius": 200.0,
+            "shield": 600,
+            "shield_duration": 3.0
+          },
+          "icon": "/media/sion-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "sion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/sion.gd",
+      "forms": [
+        {
+          "id": "sion-form",
+          "name": {
+            "zh": "狂暴形态",
+            "en": "Berserk"
+          },
+          "values": {
+            "attack_lifesteal_ratios": [
+              0.5,
+              0.5
+            ],
+            "attack_passive_multipliers": [
+              0.0,
+              0.0
+            ],
+            "damage": 180,
+            "hp": 2400,
+            "interval": 0.6,
+            "radius": 27.0,
+            "range": 40.0,
+            "speed": 76.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "stasis",
+      "name": {
+        "zh": "凝滞法术",
+        "en": "Stasis"
+      },
+      "description": {
+        "zh": "星光抵达后同时凝滞双方单位。凝滞时无法行动、被选取或受伤，但保留碰撞；水晶免疫。",
+        "en": "Starlight places both sides in stasis on arrival. Affected units cannot act, be targeted or take damage, but retain collision. Nexuses are immune."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "active_cost_bonus": 0,
+        "cost": 3,
+        "duration": 3.0,
+        "radius": 110.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/stasis.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "友军优待",
+            "en": "Friendly Favor"
+          },
+          "description": {
+            "zh": "缩短友军凝滞时间，敌方时长不变。",
+            "en": "Shorten allied stasis without changing enemy duration."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 0,
+            "duration": 2.0,
+            "max_uses": 1
+          },
+          "icon": "/media/stasis-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/stasis.gd",
+      "forms": []
+    },
+    {
+      "id": "sun_disc",
+      "name": {
+        "zh": "太阳圆盘",
+        "en": "Sun Disc"
+      },
+      "description": {
+        "zh": "可对空的防守建筑，也能建立在已毁防御塔的精确塔墟上，免除持续生命衰减。",
+        "en": "An anti-air defensive building. Placing it precisely on a destroyed tower foundation removes its ongoing health decay."
+      },
+      "selectable": true,
+      "type": "building",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 105,
+        "hp": 1200,
+        "interval": 1.4,
+        "lifespan": 40.0,
+        "range": 220.0,
+        "speed": 0.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/sun_disc.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "日耀庇护",
+            "en": "Solar Aegis"
+          },
+          "description": {
+            "zh": "为攻击范围内所有存活友方单位和建筑提供限时护盾，包括防御塔和水晶。",
+            "en": "Grant a temporary shield to living allies within attack range, including buildings, towers and the Nexus."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "max_uses": 1,
+            "radius": 220.0,
+            "shield": 180,
+            "shield_duration": 6.0
+          },
+          "icon": "/media/sun_disc-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "sun_disc"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/sun_disc.gd",
+      "forms": []
+    },
+    {
+      "id": "super_minion",
+      "name": {
+        "zh": "超级兵",
+        "en": "Super Minion"
+      },
+      "description": {
+        "zh": "高生命、高伤害的重型近战兵，为一路推进提供坚实前排。",
+        "en": "A heavy melee minion with high health and damage, providing a strong frontline for a lane push."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 72,
+        "hp": 720,
+        "interval": 1.15,
+        "range": 32.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/super_minion.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 7.0,
+            "cost": 2,
+            "damage_multiplier": 1.35,
+            "duration": 5.0,
+            "max_uses": 1,
+            "shield": 140,
+            "shield_duration": 5.0,
+            "speed_multiplier": 1.35
+          },
+          "icon": "/media/super_minion-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "super_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/super_minion.gd",
+      "forms": []
+    },
+    {
+      "id": "super_minion_squad",
+      "name": {
+        "zh": "攻城部队",
+        "en": "Assault Division"
+      },
+      "description": {
+        "zh": "并排部署超级兵，以重型近战阵线推进。",
+        "en": "Deploys Super Minions side by side to form a heavy melee frontline."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 6,
+      "values": {
+        "cost": 6
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/super_minion_squad.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "男爵之力",
+            "en": "Hand of Baron"
+          },
+          "description": {
+            "zh": "强化本次部署的存活成员；不同兵种分别获得各自的伤害、速度或护盾加成。",
+            "en": "Empower surviving members of this deployment. Each minion type receives its own damage, speed or shield bonuses."
+          },
+          "values": {
+            "cooldown": 7.0,
+            "cost": 2,
+            "damage_multiplier": 1.35,
+            "duration": 5.0,
+            "max_uses": 1,
+            "shield": 140.0,
+            "shield_duration": 5.0,
+            "speed_multiplier": 1.35
+          },
+          "icon": "/media/super_minion_squad-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "super_minion"
+      ],
+      "members": [
+        "super_minion",
+        "super_minion"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/super_minion_squad.gd",
+      "forms": []
+    },
+    {
+      "id": "target_dummy",
+      "name": {
+        "zh": "训练木桩",
+        "en": "Target Dummy"
+      },
+      "description": {
+        "zh": "可选的防守建筑，用生命吸引火力，不能普攻；与练习用木桩不同。",
+        "en": "A selectable defensive building that absorbs fire but cannot attack. Distinct from the practice dummy."
+      },
+      "selectable": true,
+      "type": "building",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "hp": 750,
+        "lifespan": 15.0,
+        "speed": 0.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/target_dummy.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "余震",
+            "en": "Aftershock"
+          },
+          "description": {
+            "zh": "暂时减伤，到期后向周围爆炸；死亡取消，凝滞中到期不爆炸。",
+            "en": "Temporarily reduce damage, then explode nearby. Death cancels the explosion; expiry during stasis prevents it."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 2,
+            "damage": 80,
+            "damage_reduction": 0.6,
+            "duration": 2.5,
+            "max_uses": 1,
+            "radius": 110.0
+          },
+          "icon": "/media/target_dummy-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "target_dummy"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/target_dummy.gd",
+      "forms": []
+    },
+    {
+      "id": "teemo",
+      "name": {
+        "zh": "提莫",
+        "en": "Teemo"
+      },
+      "description": {
+        "zh": "灵活的远程射手，可用技能吹箭使敌人的后续普攻失效。",
+        "en": "A mobile ranged shooter whose ability dart makes subsequent enemy basic attacks deal no damage."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 2,
+      "values": {
+        "cost": 2,
+        "damage": 38,
+        "hp": 230,
+        "interval": 1.0,
+        "range": 160.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/teemo.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "致盲",
+            "en": "Blinding Dart"
+          },
+          "description": {
+            "zh": "下一次出手改为技能吹箭，使目标后续普攻无法造成伤害。该吹箭自身不受致盲影响，也不消耗致盲次数。",
+            "en": "Replace the next strike with an ability dart that prevents damage from subsequent basic attacks. The dart ignores blind and does not consume blind charges."
+          },
+          "values": {
+            "blind_charges": 2,
+            "cooldown": 4.0,
+            "cost": 0,
+            "empowered_damage_multiplier": 1.0,
+            "max_uses": 2
+          },
+          "icon": "/media/teemo-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "teemo"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/teemo.gd",
+      "forms": []
+    },
+    {
+      "id": "tombstone",
+      "name": {
+        "zh": "墓碑",
+        "en": "Tombstone"
+      },
+      "description": {
+        "zh": "有寿命的召唤建筑，周期生成雾行者，死亡时额外召唤。",
+        "en": "A temporary summoning building that periodically creates Mist Walkers and releases more on death."
+      },
+      "selectable": true,
+      "type": "building",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 0,
+        "death_spawn_count": 2,
+        "hp": 400,
+        "interval": 1.0,
+        "lifespan": 20.0,
+        "range": 0.0,
+        "spawn_count": 2,
+        "spawn_interval": 5.0,
+        "speed": 0.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/tombstone.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "亡者集结",
+            "en": "Gather the Fallen"
+          },
+          "description": {
+            "zh": "立即召唤额外的雾行者。",
+            "en": "Summon additional Mist Walkers."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 1,
+            "max_uses": 1,
+            "spawn_count": 4
+          },
+          "icon": "/media/tombstone-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "imp"
+      ],
+      "members": [
+        "tombstone"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/tombstone.gd",
+      "forms": []
+    },
+    {
+      "id": "tristana",
+      "name": {
+        "zh": "麦林炮手",
+        "en": "Tristana"
+      },
+      "description": {
+        "zh": "可对空的远程炮手，急速射击让她短时间内倾泻火力。",
+        "en": "An anti-air ranged gunner whose Rapid Fire delivers a short burst of faster attacks."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 76,
+        "hp": 440,
+        "interval": 1.0,
+        "range": 220.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/tristana.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "急速射击",
+            "en": "Rapid Fire"
+          },
+          "description": {
+            "zh": "暂时提高攻击速度，缩短攻击间隔。",
+            "en": "Temporarily increase attack speed and shorten the attack interval."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.6,
+            "cast_duration": 0.25,
+            "cooldown": 12.0,
+            "cost": 2,
+            "duration": 5.0,
+            "impact_delay": 0.0,
+            "max_uses": 2
+          },
+          "icon": "/media/tristana-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "tristana"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/tristana.gd",
+      "forms": []
+    },
+    {
+      "id": "tryndamere",
+      "name": {
+        "zh": "蛮族之王",
+        "en": "Tryndamere"
+      },
+      "description": {
+        "zh": "普攻积攒怒气，满怒攻击暴击。无尽怒火可在短时间内拒绝死亡。",
+        "en": "Basic attacks build Fury for a critical strike at full Fury. Undying Rage briefly prevents death."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 7,
+      "values": {
+        "cost": 7,
+        "damage": 180,
+        "hp": 1800,
+        "interval": 1.7,
+        "rage_crit_multiplier": 2.0,
+        "range": 64.0,
+        "skill_resource_max": 2.0,
+        "speed": 52.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/tryndamere.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "无尽怒火",
+            "en": "Undying Rage"
+          },
+          "description": {
+            "zh": "立即满怒并暂时拒绝死亡，暴击不消耗怒气。除凝滞外可在控制中使用，不解除控制，也不治疗。",
+            "en": "Fill Fury and temporarily prevent death; critical hits do not consume Fury. Usable under control except stasis, but does not cleanse control or heal."
+          },
+          "values": {
+            "cooldown": 15.0,
+            "cost": 3,
+            "duration": 4.0,
+            "max_uses": 1
+          },
+          "icon": "/media/tryndamere-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "tryndamere"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/tryndamere.gd",
+      "forms": []
+    },
+    {
+      "id": "twisted_fate",
+      "name": {
+        "zh": "卡牌大师",
+        "en": "Twisted Fate"
+      },
+      "description": {
+        "zh": "可对空的远程法师，能在河道外的全图合法地面部署。",
+        "en": "An anti-air ranged mage who can deploy on legal ground outside the river across the arena."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 62,
+        "deploy_time": 0.45,
+        "hp": 460,
+        "interval": 1.2,
+        "pre_deploy_time": 1.3,
+        "range": 190.0,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/twisted_fate.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "万能牌",
+            "en": "Wild Cards"
+          },
+          "description": {
+            "zh": "向前方发射穿透牌，命中空地敌军；同次施法对同一敌人只造成一次伤害。",
+            "en": "Fire piercing cards ahead at ground and air enemies. Each enemy takes damage only once per cast."
+          },
+          "values": {
+            "cast_duration": 0.97,
+            "cooldown": 8.0,
+            "cost": 1,
+            "damage": 100,
+            "impact_delay": 0.25,
+            "length": 300.0,
+            "max_uses": 2,
+            "projectile_count": 3
+          },
+          "icon": "/media/twisted_fate-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "twisted_fate"
+      ],
+      "zone": "global",
+      "source": "scripts/data/cards/twisted_fate.gd",
+      "forms": []
+    },
+    {
+      "id": "twitch",
+      "name": {
+        "zh": "图奇",
+        "en": "Twitch"
+      },
+      "description": {
+        "zh": "脱战后隐身的射手。攻击起手破隐，隐身不免疫范围伤害。",
+        "en": "A marksman who becomes invisible after leaving combat. Starting an attack reveals him; invisibility does not prevent area damage."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 68,
+        "hp": 420,
+        "interval": 1.0,
+        "range": 170.0,
+        "speed": 60.0,
+        "stealth_delay": 2.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/twitch.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "火力全开",
+            "en": "Spray and Pray"
+          },
+          "description": {
+            "zh": "提高攻速、弹速与射程，普攻改为固定方向的穿透弩箭，不再追踪移动目标。",
+            "en": "Increase attack speed, projectile speed and range. Attacks become straight piercing bolts that no longer track moving targets."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.5,
+            "cast_duration": 0.25,
+            "cooldown": 0.0,
+            "cost": 2,
+            "duration": 5.0,
+            "impact_delay": 0.0,
+            "max_uses": 1,
+            "piercing_distance": 300.0,
+            "range_bonus": 30.0
+          },
+          "icon": "/media/twitch-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "twitch"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/twitch.gd",
+      "forms": []
+    },
+    {
+      "id": "void_gate",
+      "name": {
+        "zh": "兹若特传送门",
+        "en": "Zz’Rot Portal"
+      },
+      "description": {
+        "zh": "有寿命的召唤建筑，持续生成虚空兽，也可主动摧毁以追加召唤。",
+        "en": "A temporary building that repeatedly creates Voidspawn. It can be sacrificed to summon additional units."
+      },
+      "selectable": true,
+      "type": "building",
+      "cost": 6,
+      "values": {
+        "cost": 6,
+        "deploy_time": 1.7,
+        "hp": 900,
+        "lifespan": 60.0,
+        "spawn_count": 1,
+        "spawn_interval": 6.0,
+        "speed": 0.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/void_gate.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空迸发",
+            "en": "Void Burst"
+          },
+          "description": {
+            "zh": "立即摧毁传送门并召唤虚空兽。",
+            "en": "Immediately destroy the portal and summon Voidspawn."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 1,
+            "max_uses": 1,
+            "spawn_count": 2
+          },
+          "icon": "/media/void_gate-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "void_spawn_single"
+      ],
+      "members": [
+        "void_gate"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/void_gate.gd",
+      "forms": []
+    },
+    {
+      "id": "void_scuttle_crab",
+      "name": {
+        "zh": "虚空迅捷蟹",
+        "en": "Void Scuttler"
+      },
+      "description": {
+        "zh": "高生命支援坦克，建筑前自疗，死亡留下治疗区；被击杀给对方金币，主动自尽免除赏金。",
+        "en": "A high-health support tank that heals near structures and leaves a healing zone on death. Being killed awards enemy gold; self-sacrifice avoids that bounty."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "death_enemy_elixir": 2.0,
+        "death_heal_duration": 6.0,
+        "death_heal_per_second": 25.0,
+        "death_heal_radius": 150.0,
+        "hp": 1260,
+        "speed": 60.0,
+        "structure_mend_per_second": 45.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/void_scuttle_crab.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "归于虚空",
+            "en": "Return to the Void"
+          },
+          "description": {
+            "zh": "立即死亡并留下治疗区，不给敌方金币赏金。",
+            "en": "Die immediately and leave the healing zone, without granting enemy bounty gold."
+          },
+          "values": {
+            "cast_duration": 0.0,
+            "cooldown": 10.0,
+            "cost": 1,
+            "max_uses": 1
+          },
+          "icon": "/media/void_scuttle_crab-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "void_scuttle_crab"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/void_scuttle_crab.gd",
+      "forms": []
+    },
+    {
+      "id": "void_spawn",
+      "name": {
+        "zh": "虚空兽",
+        "en": "Voidspawn"
+      },
+      "description": {
+        "zh": "成对部署的攻城生物，接近目标后牺牲自身，跃向固定落点并爆炸伤害锁定建筑。",
+        "en": "A pair of siege creatures that sacrifice themselves near a target, leap to a fixed point and explode against the locked structure."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "deploy_time": 1.0,
+        "hp": 166,
+        "sacrifice_damage": 240.0,
+        "sacrifice_delay": 0.8,
+        "speed": 76.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/void_spawn.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空强化",
+            "en": "Void Empowerment"
+          },
+          "description": {
+            "zh": "永久提高本批成员的伤害、生命、体型和移动速度。",
+            "en": "Permanently increase this group’s damage, health, size and movement speed."
+          },
+          "values": {
+            "body_scale_multiplier": 1.25,
+            "cooldown": 0.0,
+            "cost": 1,
+            "damage_multiplier": 1.5,
+            "health_bonus_ratio": 0.2,
+            "max_uses": 1,
+            "speed_multiplier": 1.2
+          },
+          "icon": "/media/void_spawn-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "void_spawn",
+        "void_spawn"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/void_spawn.gd",
+      "forms": []
+    },
+    {
+      "id": "void_spawn_single",
+      "name": {
+        "zh": "虚空兽（单只）",
+        "en": "Voidspawn · Single"
+      },
+      "description": {
+        "zh": "虚空兽的单只召唤实体，保留牺牲攻城能力，不可独立加入卡组。",
+        "en": "An individual summoned Voidspawn with the same sacrifice attack, unavailable as a separate deck card."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "deploy_time": 1.0,
+        "hp": 166,
+        "sacrifice_damage": 240.0,
+        "sacrifice_delay": 0.8,
+        "speed": 76.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/void_spawn_single.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空强化",
+            "en": "Void Empowerment"
+          },
+          "description": {
+            "zh": "永久提高本批成员的伤害、生命、体型和移动速度。",
+            "en": "Permanently increase this group’s damage, health, size and movement speed."
+          },
+          "values": {
+            "body_scale_multiplier": 1.25,
+            "cooldown": 0.0,
+            "cost": 1,
+            "damage_multiplier": 1.5,
+            "health_bonus_ratio": 0.2,
+            "max_uses": 1,
+            "speed_multiplier": 1.2
+          },
+          "icon": "/media/void_spawn_single-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "void_spawn_single"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/void_spawn_single.gd",
+      "forms": []
+    },
+    {
+      "id": "void_summoning",
+      "name": {
+        "zh": "虚空召唤",
+        "en": "Void Summoning"
+      },
+      "description": {
+        "zh": "在固定区域内持续召唤近战虚空鱼。强化后，区域内符合条件的真正死亡可转化为更多己方虚空鱼。",
+        "en": "Repeatedly summons melee Void Remora in a fixed area. When enhanced, eligible actual deaths inside the zone create additional allied remora."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 5,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 5,
+        "duration": 8.0,
+        "radius": 160.0,
+        "spawn_count": 10,
+        "spawn_initial_delay": 0.5,
+        "summon_tick": 0.8
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/void_summoning.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空献祭",
+            "en": "Void Sacrifice"
+          },
+          "description": {
+            "zh": "区域持续期间，双方符合条件的非建筑单位真正死亡时生成己方近战虚空鱼；近战虚空鱼不参与转化。",
+            "en": "During the zone’s lifetime, eligible non-structure units from either team create allied melee remora on actual death. Melee remora are excluded."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 1,
+            "max_uses": 1
+          },
+          "icon": "/media/void_summoning-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "voidfish"
+      ],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/void_summoning.gd",
+      "forms": []
+    },
+    {
+      "id": "voidfish",
+      "name": {
+        "zh": "虚空鱼",
+        "en": "Void Remora"
+      },
+      "description": {
+        "zh": "虚空女皇与虚空召唤生成的小型飞行近战单位，可攻击空地目标。",
+        "en": "A small flying melee unit created by Bel’Veth and Void Summoning, able to attack ground and air targets."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 1,
+      "values": {
+        "cost": 1,
+        "damage": 26,
+        "hp": 110,
+        "interval": 1.25,
+        "range": 32.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/voidfish.webp",
+      "skills": [],
+      "related": [],
+      "members": [
+        "voidfish"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/voidfish.gd",
+      "forms": []
+    },
+    {
+      "id": "voidfish_ranged",
+      "name": {
+        "zh": "远程虚空鱼",
+        "en": "Ranged Remora"
+      },
+      "description": {
+        "zh": "三角编队的远程空军，可用虚空再生为本批成员提供限时死亡替换。",
+        "en": "A triangle of ranged flying units. Void Regeneration gives the group a temporary replacement-on-death effect."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "cost": 3,
+        "damage": 26,
+        "deploy_time": 1.0,
+        "hp": 80,
+        "interval": 1.25,
+        "range": 140.0,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/voidfish_ranged.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空再生",
+            "en": "Void Regeneration"
+          },
+          "description": {
+            "zh": "限时标记本批存活成员，期间被击杀则原地生成新鱼；新鱼不继承再生或主动资格。",
+            "en": "Temporarily mark surviving members. A marked unit killed during the effect is replaced at its death position. Replacements inherit neither regeneration nor active eligibility."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 2,
+            "duration": 3.0,
+            "max_uses": 1
+          },
+          "icon": "/media/voidfish_ranged-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "voidfish_ranged_single"
+      ],
+      "members": [
+        "voidfish_ranged",
+        "voidfish_ranged",
+        "voidfish_ranged"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/voidfish_ranged.gd",
+      "forms": []
+    },
+    {
+      "id": "voidfish_ranged_army",
+      "name": {
+        "zh": "远程虚空鱼大军",
+        "en": "Ranged Remora Army"
+      },
+      "description": {
+        "zh": "更大的远程空军编队，六边形部署，共享本批成员的虚空再生。",
+        "en": "A larger hexagonal ranged air formation, sharing Void Regeneration across its deployed members."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 5,
+      "values": {
+        "cost": 5,
+        "damage": 26,
+        "deploy_time": 1.0,
+        "hp": 80,
+        "interval": 1.25,
+        "range": 140.0,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/voidfish_ranged_army.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空再生",
+            "en": "Void Regeneration"
+          },
+          "description": {
+            "zh": "限时标记本批存活成员，期间被击杀则原地生成新鱼；新鱼不继承再生或主动资格。",
+            "en": "Temporarily mark surviving members. A marked unit killed during the effect is replaced at its death position. Replacements inherit neither regeneration nor active eligibility."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 2,
+            "duration": 3.0,
+            "max_uses": 1
+          },
+          "icon": "/media/voidfish_ranged_army-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [
+        "voidfish_ranged_single"
+      ],
+      "members": [
+        "voidfish_ranged_army",
+        "voidfish_ranged_army",
+        "voidfish_ranged_army",
+        "voidfish_ranged_army",
+        "voidfish_ranged_army",
+        "voidfish_ranged_army"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/voidfish_ranged_army.gd",
+      "forms": []
+    },
+    {
+      "id": "voidfish_ranged_single",
+      "name": {
+        "zh": "虚空鱼（远程）",
+        "en": "Ranged Remora · Single"
+      },
+      "description": {
+        "zh": "虚空再生生成的单只远程鱼，不继承再生或主动技能资格。",
+        "en": "An individual ranged remora created by regeneration, without inherited regeneration or active-ability eligibility."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "damage": 26,
+        "deploy_time": 1.0,
+        "hp": 80,
+        "interval": 1.25,
+        "range": 140.0,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": true,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/voidfish_ranged_single.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "虚空再生",
+            "en": "Void Regeneration"
+          },
+          "description": {
+            "zh": "限时标记本批存活成员，期间被击杀则原地生成新鱼；新鱼不继承再生或主动资格。",
+            "en": "Temporarily mark surviving members. A marked unit killed during the effect is replaced at its death position. Replacements inherit neither regeneration nor active eligibility."
+          },
+          "values": {
+            "cooldown": 10.0,
+            "cost": 2,
+            "duration": 3.0,
+            "max_uses": 1
+          },
+          "icon": "/media/voidfish_ranged_single-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "voidfish_ranged_single"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/voidfish_ranged_single.gd",
+      "forms": []
+    },
+    {
+      "id": "voidling",
+      "name": {
+        "zh": "虚灵",
+        "en": "Voidling"
+      },
+      "description": {
+        "zh": "虚空先知召唤的小型地面近战单位。",
+        "en": "A small ground melee unit summoned by Malzahar."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 0,
+      "values": {
+        "cost": 0,
+        "damage": 38,
+        "deploy_time": 0.0,
+        "hp": 110,
+        "interval": 0.9,
+        "range": 32.0,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/voidling.webp",
+      "skills": [],
+      "related": [],
+      "members": [
+        "voidling"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/voidling.gd",
+      "forms": []
+    },
+    {
+      "id": "voidmite",
+      "name": {
+        "zh": "虚空蠕虫",
+        "en": "Voidmite"
+      },
+      "description": {
+        "zh": "峡谷先锋撞击建筑后生成的小型攻城召唤物，仅攻击建筑。",
+        "en": "A small summoned siege unit released by Rift Herald on structure impact. It targets structures only."
+      },
+      "selectable": false,
+      "type": "unit",
+      "cost": 1,
+      "values": {
+        "cost": 1,
+        "damage": 55,
+        "deploy_time": 1.0,
+        "hp": 135,
+        "interval": 1.33,
+        "range": 32.0,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": true,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/voidmite.webp",
+      "skills": [],
+      "related": [],
+      "members": [
+        "voidmite"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/voidmite.gd",
+      "forms": []
+    },
+    {
+      "id": "xin",
+      "name": {
+        "zh": "赵信",
+        "en": "Xin Zhao"
+      },
+      "description": {
+        "zh": "近战战士，部署时以新月护卫伤害并击退周围敌人，连续攻击恢复生命。",
+        "en": "A melee fighter whose deployment sweep damages and knocks back nearby enemies. Repeated attacks restore health."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 68,
+        "deploy_time": 1.0,
+        "heal_amount": 60,
+        "heal_every_hits": 3,
+        "hp": 620,
+        "interval": 0.9,
+        "range": 40.0,
+        "speed": 68.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/xin.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "新月护卫",
+            "en": "Crescent Guard"
+          },
+          "description": {
+            "zh": "挥舞长枪伤害并击退周围敌人，施放期间锁定移动、攻击和朝向。",
+            "en": "Sweep the spear to damage and knock back nearby enemies, locking movement, attacks and facing while casting."
+          },
+          "values": {
+            "cast_duration": 1.0,
+            "cooldown": 8.0,
+            "cost": 1,
+            "damage": 90,
+            "impact_delay": 0.0,
+            "knockback": 90.0,
+            "max_uses": 2,
+            "radius": 90.0
+          },
+          "icon": "/media/xin-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "xin"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/xin.gd",
+      "forms": []
+    },
+    {
+      "id": "yorick",
+      "name": {
+        "zh": "牧魂人",
+        "en": "Yorick"
+      },
+      "description": {
+        "zh": "重铲命中造成小范围伤害，临终仪式强化下一击，并在命中时回复生命。",
+        "en": "His shovel strikes deal small-area damage. Last Rites empowers the next hit and heals him on impact."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 110,
+        "hp": 820,
+        "interval": 1.5,
+        "range": 32.0,
+        "speed": 52.0,
+        "splash_radius": 35.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/yorick.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "临终仪式",
+            "en": "Last Rites"
+          },
+          "description": {
+            "zh": "强化下一次范围攻击，命中时固定回复生命，每次攻击只治疗一次。",
+            "en": "Empower the next area attack and restore a fixed amount of health on hit, only once per attack."
+          },
+          "values": {
+            "cooldown": 6.0,
+            "cost": 1,
+            "empowered_damage_multiplier": 2.0,
+            "hit_heal": 120,
+            "max_uses": 3
+          },
+          "icon": "/media/yorick-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "yorick"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/yorick.gd",
+      "forms": []
+    },
+    {
+      "id": "zap",
+      "name": {
+        "zh": "电击法术",
+        "en": "Zap"
+      },
+      "description": {
+        "zh": "小范围电击，可同时命中地面、空中和建筑目标，并附带短暂眩晕。",
+        "en": "A small-area lightning strike that hits ground units, air units and structures, with a brief stun."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 2,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 2,
+        "damage": 55,
+        "duration": 0.6,
+        "radius": 90.0,
+        "strike_count": 1,
+        "strike_interval": 1.0,
+        "stun_duration": 0.2,
+        "tower_damage_multiplier": 0.3
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/zap.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "多重电击",
+            "en": "Multi-Zap"
+          },
+          "description": {
+            "zh": "在相同位置追加一次电击，重复伤害与眩晕。",
+            "en": "Add another strike at the same position, repeating its damage and stun."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "max_uses": 1,
+            "strike_count": 2,
+            "strike_damage_multiplier": 1.0
+          },
+          "icon": "/media/zap-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/zap.gd",
+      "forms": []
+    }
+  ],
+  "fields": {
+    "hp": {
+      "zh": "生命",
+      "en": "Health",
+      "unit": "points"
+    },
+    "damage": {
+      "zh": "伤害",
+      "en": "Damage",
+      "unit": "points"
+    },
+    "range": {
+      "zh": "攻击距离",
+      "en": "Attack range",
+      "unit": "distance"
+    },
+    "interval": {
+      "zh": "攻击间隔",
+      "en": "Attack interval",
+      "unit": "seconds"
+    },
+    "speed": {
+      "zh": "移动速度",
+      "en": "Movement speed",
+      "unit": "speed"
+    },
+    "radius": {
+      "zh": "作用半径",
+      "en": "Effect radius",
+      "unit": "distance"
+    },
+    "duration": {
+      "zh": "持续时间",
+      "en": "Duration",
+      "unit": "seconds"
+    },
+    "deploy_time": {
+      "zh": "部署等待",
+      "en": "Deployment delay",
+      "unit": "seconds"
+    },
+    "pre_deploy_time": {
+      "zh": "额外部署等待",
+      "en": "Extra deployment delay",
+      "unit": "seconds"
+    },
+    "lifespan": {
+      "zh": "建筑寿命",
+      "en": "Building lifetime",
+      "unit": "seconds"
+    },
+    "heal_amount": {
+      "zh": "治疗量",
+      "en": "Healing",
+      "unit": "points"
+    },
+    "cost": {
+      "zh": "技能费用",
+      "en": "Ability cost",
+      "unit": "gold"
+    },
+    "cooldown": {
+      "zh": "冷却",
+      "en": "Cooldown",
+      "unit": "seconds"
+    },
+    "max_uses": {
+      "zh": "每次部署可用次数",
+      "en": "Uses per deployment",
+      "unit": "count"
+    },
+    "cast_duration": {
+      "zh": "施法时间",
+      "en": "Cast time",
+      "unit": "seconds"
+    },
+    "impact_delay": {
+      "zh": "效果执行延迟",
+      "en": "Effect delay",
+      "unit": "seconds"
+    },
+    "stun_duration": {
+      "zh": "眩晕时间",
+      "en": "Stun duration",
+      "unit": "seconds"
+    },
+    "slow_duration": {
+      "zh": "减速时间",
+      "en": "Slow duration",
+      "unit": "seconds"
+    },
+    "slow_multiplier": {
+      "zh": "减速后移动倍率",
+      "en": "Slowed movement multiplier",
+      "unit": "multiplier"
+    },
+    "attack_slow_multiplier": {
+      "zh": "减速后攻速倍率",
+      "en": "Slowed attack-speed multiplier",
+      "unit": "multiplier"
+    },
+    "zone_damage": {
+      "zh": "区域每次伤害",
+      "en": "Zone damage per tick",
+      "unit": "points"
+    },
+    "zone_duration": {
+      "zh": "区域持续",
+      "en": "Zone duration",
+      "unit": "seconds"
+    },
+    "zone_tick_interval": {
+      "zh": "区域伤害间隔",
+      "en": "Zone tick interval",
+      "unit": "seconds"
+    },
+    "zone_slow_multiplier": {
+      "zh": "区域移动倍率",
+      "en": "Zone movement multiplier",
+      "unit": "multiplier"
+    },
+    "length": {
+      "zh": "作用长度",
+      "en": "Effect length",
+      "unit": "distance"
+    },
+    "width": {
+      "zh": "作用宽度",
+      "en": "Effect width",
+      "unit": "distance"
+    },
+    "projectile_count": {
+      "zh": "弹体数量",
+      "en": "Projectile count",
+      "unit": "count"
+    },
+    "projectile_explosion_radius": {
+      "zh": "爆炸半径",
+      "en": "Explosion radius",
+      "unit": "distance"
+    },
+    "resource_full_damage_multiplier": {
+      "zh": "满层伤害倍率",
+      "en": "Full-charge damage multiplier",
+      "unit": "multiplier"
+    },
+    "resource_full_stun_multiplier": {
+      "zh": "满层眩晕倍率",
+      "en": "Full-charge stun multiplier",
+      "unit": "multiplier"
+    },
+    "shockwave_damage": {
+      "zh": "冲击波伤害",
+      "en": "Shockwave damage",
+      "unit": "points"
+    },
+    "shockwave_duration": {
+      "zh": "冲击波时间",
+      "en": "Shockwave duration",
+      "unit": "seconds"
+    },
+    "spawn_count": {
+      "zh": "召唤数量",
+      "en": "Summon count",
+      "unit": "count"
+    },
+    "spawn_interval": {
+      "zh": "召唤周期",
+      "en": "Summon interval",
+      "unit": "seconds"
+    },
+    "spawn_initial_delay": {
+      "zh": "首次召唤延迟",
+      "en": "First summon delay",
+      "unit": "seconds"
+    },
+    "spawn_sequence_interval": {
+      "zh": "逐只召唤间隔",
+      "en": "Time between summons",
+      "unit": "seconds"
+    },
+    "attack_speed_multiplier": {
+      "zh": "攻速倍率",
+      "en": "Attack-speed multiplier",
+      "unit": "multiplier"
+    },
+    "speed_multiplier": {
+      "zh": "移速倍率",
+      "en": "Movement-speed multiplier",
+      "unit": "multiplier"
+    },
+    "damage_multiplier": {
+      "zh": "伤害倍率",
+      "en": "Damage multiplier",
+      "unit": "multiplier"
+    },
+    "empowered_damage_multiplier": {
+      "zh": "强化伤害倍率",
+      "en": "Empowered damage multiplier",
+      "unit": "multiplier"
+    },
+    "empowered_speed_multiplier": {
+      "zh": "强化移速倍率",
+      "en": "Empowered movement multiplier",
+      "unit": "multiplier"
+    },
+    "shield": {
+      "zh": "护盾",
+      "en": "Shield",
+      "unit": "points"
+    },
+    "shield_duration": {
+      "zh": "护盾时间",
+      "en": "Shield duration",
+      "unit": "seconds"
+    },
+    "heal_ratio": {
+      "zh": "生命伤害吸血比例",
+      "en": "Health-damage life steal",
+      "unit": "percent"
+    },
+    "heal_multiplier": {
+      "zh": "治疗倍率",
+      "en": "Healing multiplier",
+      "unit": "multiplier"
+    },
+    "overheal_shield_ratio": {
+      "zh": "溢出治疗转盾比例",
+      "en": "Overheal shield conversion",
+      "unit": "percent"
+    },
+    "health_bonus_ratio": {
+      "zh": "额外生命比例",
+      "en": "Bonus health",
+      "unit": "percent"
+    },
+    "body_scale_multiplier": {
+      "zh": "体型倍率",
+      "en": "Body-size multiplier",
+      "unit": "multiplier"
+    },
+    "max_health_ratio": {
+      "zh": "可达到的生命上限倍率",
+      "en": "Maximum health cap multiplier",
+      "unit": "multiplier"
+    },
+    "blind_charges": {
+      "zh": "致盲攻击次数",
+      "en": "Blinded attacks",
+      "unit": "count"
+    },
+    "knockback": {
+      "zh": "击退距离",
+      "en": "Knockback distance",
+      "unit": "distance"
+    },
+    "knockback_radius": {
+      "zh": "击退半径",
+      "en": "Knockback radius",
+      "unit": "distance"
+    },
+    "cleave_damage": {
+      "zh": "追加范围伤害",
+      "en": "Bonus cleave damage",
+      "unit": "points"
+    },
+    "cleave_radius": {
+      "zh": "追加范围半径",
+      "en": "Cleave radius",
+      "unit": "distance"
+    },
+    "hit_heal": {
+      "zh": "命中治疗",
+      "en": "Healing on hit",
+      "unit": "points"
+    },
+    "on_hit_max_health_ratio": {
+      "zh": "目标最大生命附伤",
+      "en": "Target max-health bonus damage",
+      "unit": "percent"
+    },
+    "on_hit_tower_damage": {
+      "zh": "塔与水晶固定附伤",
+      "en": "Flat tower and Nexus bonus damage",
+      "unit": "points"
+    },
+    "strike_count": {
+      "zh": "电击次数",
+      "en": "Strike count",
+      "unit": "count"
+    },
+    "strike_interval": {
+      "zh": "电击间隔",
+      "en": "Strike interval",
+      "unit": "seconds"
+    },
+    "strike_damage_multiplier": {
+      "zh": "电击伤害倍率",
+      "en": "Strike damage multiplier",
+      "unit": "multiplier"
+    },
+    "tower_damage_multiplier": {
+      "zh": "塔与水晶伤害倍率",
+      "en": "Tower and Nexus damage multiplier",
+      "unit": "multiplier"
+    },
+    "active_cost_bonus": {
+      "zh": "主动席额外费用",
+      "en": "Active-seat extra cost",
+      "unit": "gold"
+    },
+    "timed_revival_delay": {
+      "zh": "孵化时间",
+      "en": "Hatch time",
+      "unit": "seconds"
+    },
+    "death_replacement_charges": {
+      "zh": "化蛋次数",
+      "en": "Rebirth charges",
+      "unit": "count"
+    },
+    "transform_after_hits": {
+      "zh": "变大所需命中",
+      "en": "Hits to transform",
+      "unit": "count"
+    },
+    "revert_after_hits": {
+      "zh": "变小所需命中",
+      "en": "Hits to revert",
+      "unit": "count"
+    },
+    "splash_radius": {
+      "zh": "溅射半径",
+      "en": "Splash radius",
+      "unit": "distance"
+    },
+    "bleed_damage_per_second": {
+      "zh": "每层流血伤害",
+      "en": "Bleed damage per stack",
+      "unit": "perSecond"
+    },
+    "bleed_duration": {
+      "zh": "流血持续",
+      "en": "Bleed duration",
+      "unit": "seconds"
+    },
+    "bleed_max_stacks": {
+      "zh": "流血上限",
+      "en": "Maximum bleed stacks",
+      "unit": "count"
+    },
+    "blood_rage_damage_multiplier": {
+      "zh": "血怒伤害倍率",
+      "en": "Noxian Might damage multiplier",
+      "unit": "multiplier"
+    },
+    "blood_rage_duration": {
+      "zh": "血怒持续",
+      "en": "Noxian Might duration",
+      "unit": "seconds"
+    },
+    "hit_haste_per_stack": {
+      "zh": "每层额外攻速",
+      "en": "Attack speed per stack",
+      "unit": "percent"
+    },
+    "hit_haste_max_stacks": {
+      "zh": "攻速层数上限",
+      "en": "Maximum haste stacks",
+      "unit": "count"
+    },
+    "hit_haste_duration": {
+      "zh": "攻速层数持续",
+      "en": "Haste-stack duration",
+      "unit": "seconds"
+    },
+    "deployment_shield": {
+      "zh": "部署护盾",
+      "en": "Deployment shield",
+      "unit": "points"
+    },
+    "deployment_shield_reduction": {
+      "zh": "部署护盾减伤",
+      "en": "Deployment shield damage reduction",
+      "unit": "percent"
+    },
+    "death_spawn_count": {
+      "zh": "死亡召唤数量",
+      "en": "Summons on death",
+      "unit": "count"
+    },
+    "death_form_delay": {
+      "zh": "复生等待",
+      "en": "Revival delay",
+      "unit": "seconds"
+    },
+    "death_form_decay_duration": {
+      "zh": "狂暴生命耗尽时间",
+      "en": "Berserk health-decay duration",
+      "unit": "seconds"
+    },
+    "form_lifetime": {
+      "zh": "强化形态持续",
+      "en": "Empowered form duration",
+      "unit": "seconds"
+    },
+    "form_speed_boost_duration": {
+      "zh": "形态加速时间",
+      "en": "Form speed-boost duration",
+      "unit": "seconds"
+    },
+    "form_speed_boost_multiplier": {
+      "zh": "形态移速倍率",
+      "en": "Form movement multiplier",
+      "unit": "multiplier"
+    },
+    "growth_melee_hits": {
+      "zh": "近战任务命中数",
+      "en": "Melee quest hits",
+      "unit": "count"
+    },
+    "growth_ranged_hits": {
+      "zh": "远程任务命中数",
+      "en": "Ranged quest hits",
+      "unit": "count"
+    },
+    "terrain_entry_heal": {
+      "zh": "进入地形治疗",
+      "en": "Terrain-entry healing",
+      "unit": "points"
+    },
+    "terrain_entry_speed_multiplier": {
+      "zh": "进入地形移速倍率",
+      "en": "Terrain-entry movement multiplier",
+      "unit": "multiplier"
+    },
+    "attack_wave_damage": {
+      "zh": "焰浪伤害",
+      "en": "Flame-wave damage",
+      "unit": "points"
+    },
+    "first_strike_damage_multiplier": {
+      "zh": "首次攻击伤害倍率",
+      "en": "First-strike damage multiplier",
+      "unit": "multiplier"
+    },
+    "heal_every_hits": {
+      "zh": "治疗命中周期",
+      "en": "Hits per healing trigger",
+      "unit": "count"
+    },
+    "skill_resource_max": {
+      "zh": "资源层数上限",
+      "en": "Maximum resource stacks",
+      "unit": "count"
+    },
+    "team_attack_boost_first_delay": {
+      "zh": "首次锻造准备",
+      "en": "Initial forge preparation",
+      "unit": "seconds"
+    },
+    "team_attack_boost_interval": {
+      "zh": "锻造冷却",
+      "en": "Forge cooldown",
+      "unit": "seconds"
+    },
+    "team_attack_boost_multiplier": {
+      "zh": "锻造普攻倍率",
+      "en": "Forged attack multiplier",
+      "unit": "multiplier"
+    },
+    "rush_building_damage": {
+      "zh": "冲撞建筑伤害",
+      "en": "Charge structure damage",
+      "unit": "points"
+    },
+    "rush_path_damage": {
+      "zh": "冲撞路径伤害",
+      "en": "Charge path damage",
+      "unit": "points"
+    },
+    "rush_self_health_ratio": {
+      "zh": "冲撞消耗当前生命",
+      "en": "Current health spent on charge",
+      "unit": "percent"
+    },
+    "rush_spawn_count": {
+      "zh": "冲撞召唤数量",
+      "en": "Summons on charge",
+      "unit": "count"
+    },
+    "structure_mend_per_second": {
+      "zh": "建筑前自疗",
+      "en": "Healing near structures",
+      "unit": "perSecond"
+    },
+    "death_heal_duration": {
+      "zh": "死亡治疗区持续",
+      "en": "Death healing-zone duration",
+      "unit": "seconds"
+    },
+    "death_heal_radius": {
+      "zh": "死亡治疗区半径",
+      "en": "Death healing-zone radius",
+      "unit": "distance"
+    },
+    "death_heal_per_second": {
+      "zh": "治疗区每秒治疗",
+      "en": "Zone healing per second",
+      "unit": "perSecond"
+    },
+    "death_enemy_elixir": {
+      "zh": "敌方击杀赏金",
+      "en": "Enemy kill bounty",
+      "unit": "gold"
+    },
+    "sacrifice_damage": {
+      "zh": "牺牲爆炸伤害",
+      "en": "Sacrifice damage",
+      "unit": "points"
+    },
+    "sacrifice_delay": {
+      "zh": "牺牲爆炸延迟",
+      "en": "Sacrifice delay",
+      "unit": "seconds"
+    },
+    "stealth_delay": {
+      "zh": "脱战隐身等待",
+      "en": "Out-of-combat stealth delay",
+      "unit": "seconds"
+    },
+    "rage_crit_multiplier": {
+      "zh": "怒气暴击倍率",
+      "en": "Fury critical multiplier",
+      "unit": "multiplier"
+    },
+    "resource_shield_max": {
+      "zh": "满豪意护盾",
+      "en": "Full-Grit shield",
+      "unit": "points"
+    },
+    "resource_damage_scale_max": {
+      "zh": "资源增伤上限倍率",
+      "en": "Maximum resource damage multiplier",
+      "unit": "multiplier"
+    },
+    "center_damage_multiplier": {
+      "zh": "中心伤害倍率",
+      "en": "Center damage multiplier",
+      "unit": "multiplier"
+    },
+    "full_resource_first_hit_heal": {
+      "zh": "满层首次命中治疗",
+      "en": "Full-charge first-hit healing",
+      "unit": "points"
+    },
+    "damage_reduction": {
+      "zh": "减伤比例",
+      "en": "Damage reduction",
+      "unit": "percent"
+    },
+    "damage_per_dodge": {
+      "zh": "每次闪避额外伤害比例",
+      "en": "Bonus damage per dodge",
+      "unit": "percent"
+    },
+    "max_dodges": {
+      "zh": "增伤闪避次数上限",
+      "en": "Maximum damage-scaling dodges",
+      "unit": "count"
+    },
+    "block_attack_speed_multiplier": {
+      "zh": "格挡后攻速倍率",
+      "en": "Post-block attack-speed multiplier",
+      "unit": "multiplier"
+    },
+    "block_haste_duration": {
+      "zh": "格挡后攻速持续",
+      "en": "Post-block haste duration",
+      "unit": "seconds"
+    },
+    "piercing_distance": {
+      "zh": "穿透飞行距离",
+      "en": "Piercing travel distance",
+      "unit": "distance"
+    },
+    "range_bonus": {
+      "zh": "额外攻击距离",
+      "en": "Bonus attack range",
+      "unit": "distance"
+    },
+    "execute_damage_per_stack": {
+      "zh": "每层流血增伤",
+      "en": "Damage bonus per bleed stack",
+      "unit": "percent"
+    },
+    "cost_by_use": {
+      "zh": "逐次施放费用（末档封顶）",
+      "en": "Cost per cast (capped at last tier)",
+      "unit": "gold"
+    },
+    "damage_by_use": {
+      "zh": "逐次施放伤害",
+      "en": "Damage per cast",
+      "unit": "points"
+    },
+    "attack_lifesteal_ratios": {
+      "zh": "普攻循环吸血比例",
+      "en": "Life steal through attack cycle",
+      "unit": "percent"
+    },
+    "attack_passive_multipliers": {
+      "zh": "普攻循环被动倍率",
+      "en": "Passive multiplier through attack cycle",
+      "unit": "multiplier"
+    },
+    "resource_hit_damage_sequences": {
+      "zh": "充能剪切伤害序列",
+      "en": "Snip damage by charge",
+      "unit": "points"
+    },
+    "summon_tick": {
+      "zh": "召唤间隔",
+      "en": "Summon interval",
+      "unit": "seconds"
+    }
+  }
+}

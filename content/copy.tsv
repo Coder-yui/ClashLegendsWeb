@@ -1,0 +1,79 @@
+aatrox|Aatrox|近战吸血战士，周期性的赐死剑气按目标最大生命追加伤害；大灭让他暂时升空。|A melee drain fighter whose recurring Deathbringer strike adds max-health damage. World Ender temporarily takes him into the air.
+anivia|Anivia|远程飞行法师。首次被击败化为蛋，存活后满血重生；冰雪风暴持续伤害并减速。|A ranged flying mage. Her first defeat leaves an egg that revives her at full health if it survives. Glacial Storm deals lingering damage and slows.
+anivia_egg|Anivia’s Egg|冰鸟首次被击败后留下的地面形态。孵化成功后满血复生，不再生成新的蛋。|The ground form left after Anivia’s first defeat. Surviving the hatch restores her to full health, without another rebirth.
+apex_turret|H-28Q Apex Turret|地面防守炮台，炮弹造成小范围伤害，主动激光可以穿透敌人。|A defensive turret with small-area shells against ground targets and an active piercing laser.
+ashe|Ashe|可对空的远程射手，以冰霜减速牵制敌人，扇形箭雨阻挡逼近的部队。|A ranged anti-air archer who controls enemies with frost slows and a fan of arrows.
+aurelionsol|Aurelion Sol|飞行吐息单位，持续伤害锁定目标。击杀积累星辰，让星落升级为天瀑。|A flying dragon whose breath continuously damages his locked target. Kills charge Falling Star into The Skies Descend.
+azir|Azir|远程召唤法师。近期被他命中的敌军死亡时转化为黄沙士兵，建筑则转化为太阳圆盘。|A ranged summoner. Recently struck enemies become Sand Soldiers on death; destroyed structures become Sun Discs.
+belveth|Bel’Veth|只攻击建筑的大型空中单位，死亡时释放一群可攻击空地的虚空鱼。|A large flying siege unit that targets structures. On death, she releases Void Remora that attack ground and air targets.
+corki|Corki|可对空的飞行炮手，导弹碰撞后爆炸，最后一枚导弹威力更强。|A flying anti-air gunner. His missiles explode on first contact, with an empowered final missile.
+corrosion|Corrosion|持续伤害区域，同时威胁空地单位和建筑；敌人离开区域后停止受伤。|A persistent damage zone affecting ground units, air units and structures. Leaving the zone stops its damage.
+darius|Darius|普攻叠加流血，叠满后进入血怒。断头台击杀可以获得免费追斩。|Basic attacks stack bleeding and trigger Noxian Might at full stacks. A guillotine kill grants a free follow-up execution.
+explosive_cask|Explosive Cask|从己方水晶抛出酒桶，落地爆炸并向外击退敌军；建筑不会被击退。|A cask thrown from your Nexus explodes on arrival and knocks enemies outward. Structures cannot be displaced.
+freeze|Freeze|冻结落点附近的敌方单位、建筑卡与防御塔，水晶免疫。|Freezes enemy units, deployed buildings and towers near the impact point. Nexuses are immune.
+garen|Garen|专注建筑的前排战士。用高生命承受火力，以强化攻击或旋转切入战线。|A durable frontline fighter focused on structures. Choose an empowered strike or a spinning attack to pressure the front.
+gnar|Gnar|远程小纳尔与近战大纳尔循环变形，普攻命中推动形态切换。|Cycles between ranged Mini Gnar and melee Mega Gnar. Basic-attack hits advance each transformation.
+gwen|Gwen|近战剪刀手，普攻和剪切附带目标最大生命伤害。可选连续剪切或阻挡圈外敌人的圣霭。|A melee skirmisher whose attacks and snips add max-health damage. Choose repeated snips or mist that blocks outside enemies.
+heal|Heal|恢复范围内友方普通单位的生命，对建筑、防御塔与水晶无效。|Restores allied non-structure units in an area. Buildings, towers and Nexuses cannot receive this healing.
+heavy_minion_squad|Heavy Division|超级兵与炮车兵前后部署，以重装前排保护远程火力。|Deploys a Super Minion ahead of a Siege Minion, shielding ranged firepower with a heavy frontline.
+imp|Mist Walker|墓碑及召唤技能生成的小型地面近战单位。|A small ground melee unit created by Tombstone and its summoning ability.
+jax|Jax|近战范围战士，连续命中逐渐提高攻速，反击风暴能免疫普攻伤害。|An area melee fighter who gains attack speed through repeated hits. Counter Strike makes him immune to basic-attack damage.
+jinx|Jinx|可切换火箭炮与机枪的后排射手。参与摧毁建筑后获得罪恶快感。|A backline marksman who switches between rockets and a minigun. Taking part in a structure takedown triggers Get Excited.
+kassadin|Kassadin|浮空但仍属于地面单位，可以直接过河并穿过普通单位，仍受建筑阻挡。|A hovering ground fighter who crosses the river and passes through ordinary units, but remains blocked by structures.
+kayle|Kayle|根据部署时的金币自动选择近战或远程形态。两种形态都能飞行、攻击空地目标。|Available gold selects her melee or ranged form on deployment. Both forms fly and attack ground and air targets.
+kayle_ranged|Kayle · Ranged|远程飞行形态，普攻同时发射追踪光剑和独立的穿透焰浪。|A ranged flying form whose attacks launch both a homing light blade and an independent piercing flame wave.
+kayn|Kayn|穿越地形的成长战士。对远程或近战敌军的普攻任务决定后续部署的进阶形态。|A terrain-crossing fighter. Basic-attack quests against ranged or melee enemies unlock a form for future deployments.
+kayn_assassin|Shadow Assassin|凯隐的高速进阶形态，进入地形回复生命并短暂加速。|Kayn’s fast advanced form, healing and briefly accelerating when entering terrain.
+kayn_slayer|Rhaast|凯隐的续航进阶形态，普攻与技能附带最大生命伤害，并通过命中回血。|Kayn’s sustain form. Attacks and ability hits add max-health damage and restore health.
+lightning|Lightning|连续选择区域内尚未受击、当前生命最高的目标，造成伤害和短暂眩晕。|Repeatedly strikes the highest-current-health enemy in the area that this cast has not yet hit, dealing damage and a brief stun.
+lulu|Lulu|周期召唤皮克斯的远程法师，可永久强化一名尚未被增益的友军。|A ranged mage who periodically summons Pix and can permanently empower an ally that has not already received Wild Growth.
+malphite|Malphite|慢速前排坦克，部署时获得花岗岩护盾。护盾存在时减伤，破碎后不再生。|A slow frontline tank deployed with Granite Shield. It reduces incoming damage while intact and does not regenerate once broken.
+malzahar|Malzahar|空中后排召唤法师，周期召唤虚灵。可选压制引导或额外召唤。|A flying backline mage who periodically summons Voidlings. Choose a disabling channel or an additional swarm.
+masteryi|Master Yi|移动与攻击都很快的地面近战单位，适合迅速接近脆弱后排。|A fast-moving ground melee fighter with rapid attacks, suited to closing on fragile backline units.
+melee_minion|Melee Minion|低费用地面近战兵，可为后排承受伤害，也会出现在自然兵线中。|A low-cost ground melee minion that protects the backline and also appears in lane waves.
+melee_minion_squad|Melee Squad|方阵部署近战兵，主动技能强化本次部署中仍存活的成员。|Deploys melee minions in a square. Its active empowers the surviving members of this deployment.
+minion_squad|Minion Squad|近战与远程兵组成混合编队，分别承担前排与持续输出。|A mixed formation of melee and ranged minions, combining frontline protection with sustained fire.
+mirror|Mirror|复制上一张成功使用的非镜像卡，按实际部署形态支付基础费用。主动席的镜像可继承预选技能。|Copies the last successfully played non-Mirror card at the base cost of its deployed form. In an active seat, Mirror can inherit the preselected ability.
+missfortune|Miss Fortune|可对空的双枪射手，对每个目标的首次攻击造成更高伤害。|An anti-air marksman whose first attack against each target deals increased damage.
+nocturne|Nocturne|可攻击空地目标的飞行近战单位，可选抵挡敌方效果或强化下一次攻击。|A flying melee unit that attacks ground and air targets. Choose to block an enemy effect or empower the next attack.
+olaf|Olaf|并排部署的双斧战士，主动技能同时强化本批仍存活的狂战士。|A pair of axe-wielding melee fighters. Their active empowers every surviving Olaf from this deployment.
+olaf_single|Olaf · Single|编队成员的单只参考条目，不能独立加入卡组。|A reference entry for an individual formation member, unavailable as a separate deck card.
+ornn|Ornn|只攻击建筑的慢速坦克，锻造飞锤永久强化友军普攻，冲锋撞障碍可触发眩晕。|A slow siege tank whose forged hammer permanently buffs allied basic attacks. Charging into an obstacle triggers a stun.
+pantheon|Pantheon|可在河道外的全图合法地面部署，落地滑行造成伤害，普攻积攒红怒强化长枪。|Deploys on legal ground outside the river across the arena. His landing sweep deals damage; attacks build Mortal Will for his spear.
+pix|Pix|成组部署的小型空中射手，近距离发射紫色光弹。|A group of tiny flying shooters that fire purple bolts at close range.
+pix_single|Pix · Single|用于查看单只皮克斯的关联实体，不可独立选入卡组。|An individual Pix reference entity, unavailable as a separate deck card.
+ranged_minion|Caster Minion|低费用后排兵种，可以攻击地面和空中目标。|A low-cost backline minion that attacks both ground and air targets.
+ranged_minion_squad|Caster Squad|紧凑三角形部署远程兵，主动技能强化本批存活成员。|Deploys caster minions in a compact triangle. The active empowers surviving members of this group.
+rift_herald|Rift Herald|只攻击建筑的重型推进单位。一生一次冲撞，撞击后释放虚空蠕虫并失去部分当前生命。|A heavy siege unit with a once-per-life charge. Impact releases Voidmites and costs a portion of its current health.
+sand_soldier|Sand Soldier|黄沙长矛士兵，仅攻击地面，不继承沙漠皇帝的转化能力。|A spear-wielding ground soldier that does not inherit Azir’s conversion passive.
+scuttle_crab|Rift Scuttler|不造成普攻伤害的支援坦克，在建筑前跳舞回血，死亡后留下友方治疗区。|A support tank without basic-attack damage. It dances and heals near structures, leaving an allied healing zone on death.
+sett|Sett|交替双拳攻击的近战前排，第二拳伤害更高，蓄意轰拳将豪意转为爆发和护盾。|A frontline brawler with a stronger second punch. Haymaker turns Grit into burst damage and a shield.
+shurima_guard|Shurima Guard|横排部署黄沙士兵。只有摧毁敌方两路防御塔后，才能部署到对方半场合法区域。|Deploys a line of Sand Soldiers. Enemy-side deployment requires both opposing lane towers to be destroyed.
+siege_minion|Siege Minion|远程炮击兵种，攻击较慢，但能从后方持续施压。|A long-range artillery minion with slow attacks and sustained backline pressure.
+siege_minion_squad|Siege Battery|三角形部署炮车兵，以多门远程火炮压制战线。|Deploys a triangle of Siege Minions to pressure the battlefield with multiple artillery units.
+sion|Sion|高生命攻城坦克，首次致死后短暂不可选中，再满血复生为持续流失生命的狂暴形态。|A high-health siege tank. His first lethal hit starts an untargetable revival, then a full-health berserk form that steadily loses health.
+stasis|Stasis|星光抵达后同时凝滞双方单位。凝滞时无法行动、被选取或受伤，但保留碰撞；水晶免疫。|Starlight places both sides in stasis on arrival. Affected units cannot act, be targeted or take damage, but retain collision. Nexuses are immune.
+sun_disc|Sun Disc|可对空的防守建筑，也能建立在已毁防御塔的精确塔墟上，免除持续生命衰减。|An anti-air defensive building. Placing it precisely on a destroyed tower foundation removes its ongoing health decay.
+super_minion|Super Minion|高生命、高伤害的重型近战兵，为一路推进提供坚实前排。|A heavy melee minion with high health and damage, providing a strong frontline for a lane push.
+super_minion_squad|Assault Division|并排部署超级兵，以重型近战阵线推进。|Deploys Super Minions side by side to form a heavy melee frontline.
+target_dummy|Target Dummy|可选的防守建筑，用生命吸引火力，不能普攻；与练习用木桩不同。|A selectable defensive building that absorbs fire but cannot attack. Distinct from the practice dummy.
+teemo|Teemo|灵活的远程射手，可用技能吹箭使敌人的后续普攻失效。|A mobile ranged shooter whose ability dart makes subsequent enemy basic attacks deal no damage.
+tombstone|Tombstone|有寿命的召唤建筑，周期生成雾行者，死亡时额外召唤。|A temporary summoning building that periodically creates Mist Walkers and releases more on death.
+tristana|Tristana|可对空的远程炮手，急速射击让她短时间内倾泻火力。|An anti-air ranged gunner whose Rapid Fire delivers a short burst of faster attacks.
+tryndamere|Tryndamere|普攻积攒怒气，满怒攻击暴击。无尽怒火可在短时间内拒绝死亡。|Basic attacks build Fury for a critical strike at full Fury. Undying Rage briefly prevents death.
+twisted_fate|Twisted Fate|可对空的远程法师，能在河道外的全图合法地面部署。|An anti-air ranged mage who can deploy on legal ground outside the river across the arena.
+twitch|Twitch|脱战后隐身的射手。攻击起手破隐，隐身不免疫范围伤害。|A marksman who becomes invisible after leaving combat. Starting an attack reveals him; invisibility does not prevent area damage.
+void_gate|Zz’Rot Portal|有寿命的召唤建筑，持续生成虚空兽，也可主动摧毁以追加召唤。|A temporary building that repeatedly creates Voidspawn. It can be sacrificed to summon additional units.
+void_scuttle_crab|Void Scuttler|高生命支援坦克，建筑前自疗，死亡留下治疗区；被击杀给对方金币，主动自尽免除赏金。|A high-health support tank that heals near structures and leaves a healing zone on death. Being killed awards enemy gold; self-sacrifice avoids that bounty.
+void_spawn|Voidspawn|成对部署的攻城生物，接近目标后牺牲自身，跃向固定落点并爆炸伤害锁定建筑。|A pair of siege creatures that sacrifice themselves near a target, leap to a fixed point and explode against the locked structure.
+void_spawn_single|Voidspawn · Single|虚空兽的单只召唤实体，保留牺牲攻城能力，不可独立加入卡组。|An individual summoned Voidspawn with the same sacrifice attack, unavailable as a separate deck card.
+void_summoning|Void Summoning|在固定区域内持续召唤近战虚空鱼。强化后，区域内符合条件的真正死亡可转化为更多己方虚空鱼。|Repeatedly summons melee Void Remora in a fixed area. When enhanced, eligible actual deaths inside the zone create additional allied remora.
+voidfish|Void Remora|虚空女皇与虚空召唤生成的小型飞行近战单位，可攻击空地目标。|A small flying melee unit created by Bel’Veth and Void Summoning, able to attack ground and air targets.
+voidfish_ranged|Ranged Remora|三角编队的远程空军，可用虚空再生为本批成员提供限时死亡替换。|A triangle of ranged flying units. Void Regeneration gives the group a temporary replacement-on-death effect.
+voidfish_ranged_army|Ranged Remora Army|更大的远程空军编队，六边形部署，共享本批成员的虚空再生。|A larger hexagonal ranged air formation, sharing Void Regeneration across its deployed members.
+voidfish_ranged_single|Ranged Remora · Single|虚空再生生成的单只远程鱼，不继承再生或主动技能资格。|An individual ranged remora created by regeneration, without inherited regeneration or active-ability eligibility.
+voidling|Voidling|虚空先知召唤的小型地面近战单位。|A small ground melee unit summoned by Malzahar.
+voidmite|Voidmite|峡谷先锋撞击建筑后生成的小型攻城召唤物，仅攻击建筑。|A small summoned siege unit released by Rift Herald on structure impact. It targets structures only.
+xin|Xin Zhao|近战战士，部署时以新月护卫伤害并击退周围敌人，连续攻击恢复生命。|A melee fighter whose deployment sweep damages and knocks back nearby enemies. Repeated attacks restore health.
+yorick|Yorick|重铲命中造成小范围伤害，临终仪式强化下一击，并在命中时回复生命。|His shovel strikes deal small-area damage. Last Rites empowers the next hit and heals him on impact.
+zap|Zap|小范围电击，可同时命中地面、空中和建筑目标，并附带短暂眩晕。|A small-area lightning strike that hits ground units, air units and structures, with a brief stun.

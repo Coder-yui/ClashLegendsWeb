@@ -1,0 +1,1353 @@
+{
+  "sourceCommit": "f190774c85ef7f8207247d59a25c2496f41a5ec2",
+  "checkedAt": "2026-10-20",
+  "selectionEvidence": "scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd",
+  "entities": [
+    {
+      "id": "aatrox",
+      "file": "scripts/data/cards/aatrox.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/aatrox.webp"
+    },
+    {
+      "id": "anivia",
+      "file": "scripts/data/cards/anivia.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/anivia.webp"
+    },
+    {
+      "id": "anivia_egg",
+      "file": "scripts/data/cards/anivia_egg.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/anivia_egg.webp"
+    },
+    {
+      "id": "apex_turret",
+      "file": "scripts/data/cards/apex_turret.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/apex_turret.webp"
+    },
+    {
+      "id": "ashe",
+      "file": "scripts/data/cards/ashe.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/ashe.webp"
+    },
+    {
+      "id": "aurelionsol",
+      "file": "scripts/data/cards/aurelionsol.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/aurelionsol.webp"
+    },
+    {
+      "id": "azir",
+      "file": "scripts/data/cards/azir.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/azir.webp"
+    },
+    {
+      "id": "belveth",
+      "file": "scripts/data/cards/belveth.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/belveth.webp"
+    },
+    {
+      "id": "corki",
+      "file": "scripts/data/cards/corki.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/corki.webp"
+    },
+    {
+      "id": "corrosion",
+      "file": "scripts/data/cards/corrosion.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/corrosion.webp"
+    },
+    {
+      "id": "darius",
+      "file": "scripts/data/cards/darius.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/darius.webp"
+    },
+    {
+      "id": "explosive_cask",
+      "file": "scripts/data/cards/explosive_cask.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/explosive_cask.webp"
+    },
+    {
+      "id": "freeze",
+      "file": "scripts/data/cards/freeze.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/freeze.webp"
+    },
+    {
+      "id": "garen",
+      "file": "scripts/data/cards/garen.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/garen.webp"
+    },
+    {
+      "id": "gnar",
+      "file": "scripts/data/cards/gnar.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/gnar.webp"
+    },
+    {
+      "id": "gwen",
+      "file": "scripts/data/cards/gwen.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/gwen.webp"
+    },
+    {
+      "id": "heal",
+      "file": "scripts/data/cards/heal.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/heal.webp"
+    },
+    {
+      "id": "heavy_minion_squad",
+      "file": "scripts/data/cards/heavy_minion_squad.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/heavy_minion_squad.webp"
+    },
+    {
+      "id": "imp",
+      "file": "scripts/data/cards/imp.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/imp.webp"
+    },
+    {
+      "id": "jax",
+      "file": "scripts/data/cards/jax.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/jax.webp"
+    },
+    {
+      "id": "jinx",
+      "file": "scripts/data/cards/jinx.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/jinx.webp"
+    },
+    {
+      "id": "kassadin",
+      "file": "scripts/data/cards/kassadin.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/kassadin.webp"
+    },
+    {
+      "id": "kayle",
+      "file": "scripts/data/cards/kayle.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/kayle.webp"
+    },
+    {
+      "id": "kayle_ranged",
+      "file": "scripts/data/cards/kayle_ranged.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/kayle_ranged.webp"
+    },
+    {
+      "id": "kayn",
+      "file": "scripts/data/cards/kayn.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/kayn.webp"
+    },
+    {
+      "id": "kayn_assassin",
+      "file": "scripts/data/cards/kayn_assassin.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/kayn_assassin.webp"
+    },
+    {
+      "id": "kayn_slayer",
+      "file": "scripts/data/cards/kayn_slayer.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/kayn_slayer.webp"
+    },
+    {
+      "id": "lightning",
+      "file": "scripts/data/cards/lightning.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/lightning.webp"
+    },
+    {
+      "id": "lulu",
+      "file": "scripts/data/cards/lulu.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/lulu.webp"
+    },
+    {
+      "id": "malphite",
+      "file": "scripts/data/cards/malphite.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/malphite.webp"
+    },
+    {
+      "id": "malzahar",
+      "file": "scripts/data/cards/malzahar.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/malzahar.webp"
+    },
+    {
+      "id": "masteryi",
+      "file": "scripts/data/cards/masteryi.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/masteryi.webp"
+    },
+    {
+      "id": "melee_minion",
+      "file": "scripts/data/cards/melee_minion.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/melee_minion.webp"
+    },
+    {
+      "id": "melee_minion_squad",
+      "file": "scripts/data/cards/melee_minion_squad.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/melee_minion_squad.webp"
+    },
+    {
+      "id": "minion_squad",
+      "file": "scripts/data/cards/minion_squad.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/minion_squad.webp"
+    },
+    {
+      "id": "mirror",
+      "file": "scripts/data/cards/mirror.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/mirror.webp"
+    },
+    {
+      "id": "missfortune",
+      "file": "scripts/data/cards/missfortune.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/missfortune.webp"
+    },
+    {
+      "id": "nocturne",
+      "file": "scripts/data/cards/nocturne.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/nocturne.webp"
+    },
+    {
+      "id": "olaf",
+      "file": "scripts/data/cards/olaf.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/olaf.webp"
+    },
+    {
+      "id": "olaf_single",
+      "file": "scripts/data/cards/olaf_single.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/olaf_single.webp"
+    },
+    {
+      "id": "ornn",
+      "file": "scripts/data/cards/ornn.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/ornn.webp"
+    },
+    {
+      "id": "pantheon",
+      "file": "scripts/data/cards/pantheon.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/pantheon.webp"
+    },
+    {
+      "id": "pix",
+      "file": "scripts/data/cards/pix.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/pix.webp"
+    },
+    {
+      "id": "pix_single",
+      "file": "scripts/data/cards/pix_single.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/pix_single.webp"
+    },
+    {
+      "id": "ranged_minion",
+      "file": "scripts/data/cards/ranged_minion.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/ranged_minion.webp"
+    },
+    {
+      "id": "ranged_minion_squad",
+      "file": "scripts/data/cards/ranged_minion_squad.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/ranged_minion_squad.webp"
+    },
+    {
+      "id": "rift_herald",
+      "file": "scripts/data/cards/rift_herald.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/rift_herald.webp"
+    },
+    {
+      "id": "sand_soldier",
+      "file": "scripts/data/cards/sand_soldier.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/sand_soldier.webp"
+    },
+    {
+      "id": "scuttle_crab",
+      "file": "scripts/data/cards/scuttle_crab.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/scuttle_crab.webp"
+    },
+    {
+      "id": "sett",
+      "file": "scripts/data/cards/sett.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/sett.webp"
+    },
+    {
+      "id": "shurima_guard",
+      "file": "scripts/data/cards/shurima_guard.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/shurima_guard.webp"
+    },
+    {
+      "id": "siege_minion",
+      "file": "scripts/data/cards/siege_minion.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/siege_minion.webp"
+    },
+    {
+      "id": "siege_minion_squad",
+      "file": "scripts/data/cards/siege_minion_squad.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/siege_minion_squad.webp"
+    },
+    {
+      "id": "sion",
+      "file": "scripts/data/cards/sion.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/sion.webp"
+    },
+    {
+      "id": "stasis",
+      "file": "scripts/data/cards/stasis.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/stasis.webp"
+    },
+    {
+      "id": "sun_disc",
+      "file": "scripts/data/cards/sun_disc.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/sun_disc.webp"
+    },
+    {
+      "id": "super_minion",
+      "file": "scripts/data/cards/super_minion.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/super_minion.webp"
+    },
+    {
+      "id": "super_minion_squad",
+      "file": "scripts/data/cards/super_minion_squad.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/super_minion_squad.webp"
+    },
+    {
+      "id": "target_dummy",
+      "file": "scripts/data/cards/target_dummy.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/target_dummy.webp"
+    },
+    {
+      "id": "teemo",
+      "file": "scripts/data/cards/teemo.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/teemo.webp"
+    },
+    {
+      "id": "tombstone",
+      "file": "scripts/data/cards/tombstone.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/tombstone.webp"
+    },
+    {
+      "id": "tristana",
+      "file": "scripts/data/cards/tristana.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/tristana.webp"
+    },
+    {
+      "id": "tryndamere",
+      "file": "scripts/data/cards/tryndamere.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/tryndamere.webp"
+    },
+    {
+      "id": "twisted_fate",
+      "file": "scripts/data/cards/twisted_fate.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/twisted_fate.webp"
+    },
+    {
+      "id": "twitch",
+      "file": "scripts/data/cards/twitch.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/twitch.webp"
+    },
+    {
+      "id": "void_gate",
+      "file": "scripts/data/cards/void_gate.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/void_gate.webp"
+    },
+    {
+      "id": "void_scuttle_crab",
+      "file": "scripts/data/cards/void_scuttle_crab.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/void_scuttle_crab.webp"
+    },
+    {
+      "id": "void_spawn",
+      "file": "scripts/data/cards/void_spawn.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/void_spawn.webp"
+    },
+    {
+      "id": "void_spawn_single",
+      "file": "scripts/data/cards/void_spawn_single.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/void_spawn_single.webp"
+    },
+    {
+      "id": "void_summoning",
+      "file": "scripts/data/cards/void_summoning.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/void_summoning.webp"
+    },
+    {
+      "id": "voidfish",
+      "file": "scripts/data/cards/voidfish.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/voidfish.webp"
+    },
+    {
+      "id": "voidfish_ranged",
+      "file": "scripts/data/cards/voidfish_ranged.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/voidfish_ranged.webp"
+    },
+    {
+      "id": "voidfish_ranged_army",
+      "file": "scripts/data/cards/voidfish_ranged_army.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/voidfish_ranged_army.webp"
+    },
+    {
+      "id": "voidfish_ranged_single",
+      "file": "scripts/data/cards/voidfish_ranged_single.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/voidfish_ranged_single.webp"
+    },
+    {
+      "id": "voidling",
+      "file": "scripts/data/cards/voidling.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/voidling.webp"
+    },
+    {
+      "id": "voidmite",
+      "file": "scripts/data/cards/voidmite.gd",
+      "selectable": false,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/voidmite.webp"
+    },
+    {
+      "id": "xin",
+      "file": "scripts/data/cards/xin.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/xin.webp"
+    },
+    {
+      "id": "yorick",
+      "file": "scripts/data/cards/yorick.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/yorick.webp"
+    },
+    {
+      "id": "zap",
+      "file": "scripts/data/cards/zap.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/zap.webp"
+    }
+  ],
+  "media": [
+    {
+      "path": "/media/aatrox-skill-0.webp",
+      "source": "assets/skills/aatrox_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/aatrox.webp",
+      "source": "assets/cards/aatrox_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/anivia-skill-0.webp",
+      "source": "assets/skills/anivia_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/anivia.webp",
+      "source": "assets/cards/anivia_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/anivia_egg.webp",
+      "source": "assets/cards/anivia_egg_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/apex_turret-skill-0.webp",
+      "source": "assets/skills/apex_turret_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/apex_turret.webp",
+      "source": "assets/cards/apex_turret_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ashe-skill-0.webp",
+      "source": "assets/skills/ashe_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ashe.webp",
+      "source": "assets/cards/ashe_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/aurelionsol-skill-0.webp",
+      "source": "assets/skills/aurelionsol_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/aurelionsol.webp",
+      "source": "assets/cards/aurelionsol_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/azir-skill-0.webp",
+      "source": "assets/skills/azir_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/azir.webp",
+      "source": "assets/cards/azir_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/belveth-skill-0.webp",
+      "source": "assets/skills/belveth_q.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/belveth.webp",
+      "source": "assets/cards/belveth_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/corki-skill-0.webp",
+      "source": "assets/skills/corki_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/corki.webp",
+      "source": "assets/cards/corki_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/corrosion-skill-0.webp",
+      "source": "assets/skills/corrosion_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/corrosion.webp",
+      "source": "assets/cards/corrosion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/darius-skill-0.webp",
+      "source": "assets/skills/darius_r.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/darius.webp",
+      "source": "assets/cards/darius_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/explosive_cask-skill-0.webp",
+      "source": "assets/skills/explosive_cask_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/explosive_cask.webp",
+      "source": "assets/cards/explosive_cask_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/freeze-skill-0.webp",
+      "source": "assets/skills/freeze_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/freeze.webp",
+      "source": "assets/cards/freeze_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/garen-skill-0.webp",
+      "source": "assets/skills/garen_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/garen-skill-1.webp",
+      "source": "assets/skills/garen_1.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/garen.webp",
+      "source": "assets/cards/garen_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/gnar-skill-0.webp",
+      "source": "assets/skills/gnar_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/gnar.webp",
+      "source": "assets/cards/gnar_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/gwen-skill-0.webp",
+      "source": "assets/skills/gwen_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/gwen-skill-1.webp",
+      "source": "assets/skills/gwen_1.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/gwen.webp",
+      "source": "assets/cards/gwen_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/heal-skill-0.webp",
+      "source": "assets/skills/heal_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/heal-skill-1.webp",
+      "source": "assets/skills/heal_1.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/heal.webp",
+      "source": "assets/cards/heal_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/heavy_minion_squad-skill-0.webp",
+      "source": "assets/skills/heavy_minion_squad_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/heavy_minion_squad.webp",
+      "source": "assets/cards/heavy_minion_squad_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/imp.webp",
+      "source": "assets/cards/imp_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/jax-skill-0.webp",
+      "source": "assets/skills/jax_e.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/jax.webp",
+      "source": "assets/cards/jax_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/jinx-skill-0.webp",
+      "source": "assets/skills/jinx_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/jinx.webp",
+      "source": "assets/cards/jinx_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kassadin-skill-0.webp",
+      "source": "assets/skills/kassadin_r.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kassadin.webp",
+      "source": "assets/cards/kassadin_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayle-skill-0.webp",
+      "source": "assets/skills/kayle_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayle.webp",
+      "source": "assets/cards/kayle_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayle_ranged-skill-0.webp",
+      "source": "assets/skills/kayle_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayle_ranged.webp",
+      "source": "assets/cards/kayle_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayn-skill-0.webp",
+      "source": "assets/skills/kayn_q_primary.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayn.webp",
+      "source": "assets/cards/kayn_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayn_assassin-skill-0.webp",
+      "source": "assets/skills/kayn_q_ass.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayn_assassin.webp",
+      "source": "assets/cards/kayn_assassin_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayn_slayer-skill-0.webp",
+      "source": "assets/skills/kayn_q_slay.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/kayn_slayer.webp",
+      "source": "assets/cards/kayn_slayer_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/lightning-skill-0.webp",
+      "source": "assets/skills/zap_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/lightning.webp",
+      "source": "assets/cards/lightning_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/lulu-skill-0.webp",
+      "source": "assets/skills/lulu_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/lulu.webp",
+      "source": "assets/cards/lulu_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/malphite-skill-0.webp",
+      "source": "assets/skills/malphite_e.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/malphite.webp",
+      "source": "assets/cards/malphite_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/malzahar-skill-0.webp",
+      "source": "assets/skills/malzahar_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/malzahar-skill-1.webp",
+      "source": "assets/skills/malzahar_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/malzahar.webp",
+      "source": "assets/cards/malzahar_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/masteryi-skill-0.webp",
+      "source": "assets/skills/masteryi_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/masteryi.webp",
+      "source": "assets/cards/masteryi_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/melee_minion-skill-0.webp",
+      "source": "assets/skills/melee_minion_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/melee_minion.webp",
+      "source": "assets/cards/melee_minion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/melee_minion_squad-skill-0.webp",
+      "source": "assets/skills/melee_minion_squad_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/melee_minion_squad.webp",
+      "source": "assets/cards/melee_minion_squad_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/minion_squad-skill-0.webp",
+      "source": "assets/skills/minion_squad_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/minion_squad.webp",
+      "source": "assets/cards/minion_squad_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/mirror.webp",
+      "source": "assets/cards/mirror_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/missfortune-skill-0.webp",
+      "source": "assets/skills/missfortune_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/missfortune.webp",
+      "source": "assets/cards/missfortune_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/nocturne-skill-0.webp",
+      "source": "assets/skills/nocturne_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/nocturne-skill-1.webp",
+      "source": "assets/skills/nocturne_p.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/nocturne.webp",
+      "source": "assets/cards/nocturne_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/olaf-skill-0.webp",
+      "source": "assets/skills/olaf_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/olaf.webp",
+      "source": "assets/cards/olaf_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/olaf_single-skill-0.webp",
+      "source": "assets/skills/olaf_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/olaf_single.webp",
+      "source": "assets/cards/olaf_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ornn-skill-0.webp",
+      "source": "assets/skills/ornn_e.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ornn.webp",
+      "source": "assets/cards/ornn_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pantheon-skill-0.webp",
+      "source": "assets/skills/pantheon_q.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pantheon.webp",
+      "source": "assets/cards/pantheon_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pix-skill-0.webp",
+      "source": "assets/skills/pix_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pix.webp",
+      "source": "assets/cards/pix_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pix_single-skill-0.webp",
+      "source": "assets/skills/pix_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pix_single.webp",
+      "source": "assets/cards/pix_single_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ranged_minion-skill-0.webp",
+      "source": "assets/skills/ranged_minion_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ranged_minion.webp",
+      "source": "assets/cards/ranged_minion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ranged_minion_squad-skill-0.webp",
+      "source": "assets/skills/ranged_minion_squad_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ranged_minion_squad.webp",
+      "source": "assets/cards/ranged_minion_squad_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/rift_herald-skill-0.webp",
+      "source": "assets/skills/rift_herald_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/rift_herald.webp",
+      "source": "assets/cards/rift_herald_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sand_soldier-skill-0.webp",
+      "source": "assets/skills/shurima_guard_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sand_soldier.webp",
+      "source": "assets/cards/sand_soldier_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/scuttle_crab-skill-0.webp",
+      "source": "assets/skills/scuttle_crab_randuin.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/scuttle_crab.webp",
+      "source": "assets/cards/scuttle_crab_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sett-skill-0.webp",
+      "source": "assets/skills/sett_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sett.webp",
+      "source": "assets/cards/sett_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/shurima_guard-skill-0.webp",
+      "source": "assets/skills/shurima_guard_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/shurima_guard.webp",
+      "source": "assets/cards/shurima_guard_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/siege_minion-skill-0.webp",
+      "source": "assets/skills/siege_minion_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/siege_minion.webp",
+      "source": "assets/cards/siege_minion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/siege_minion_squad-skill-0.webp",
+      "source": "assets/skills/siege_minion_squad_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/siege_minion_squad.webp",
+      "source": "assets/cards/siege_minion_squad_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sion-skill-0.webp",
+      "source": "assets/skills/sion_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sion.webp",
+      "source": "assets/cards/sion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/stasis-skill-0.webp",
+      "source": "assets/skills/stasis_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/stasis.webp",
+      "source": "assets/cards/stasis_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sun_disc-skill-0.webp",
+      "source": "assets/skills/sun_disc_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/sun_disc.webp",
+      "source": "assets/cards/sun_disc_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/super_minion-skill-0.webp",
+      "source": "assets/skills/super_minion_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/super_minion.webp",
+      "source": "assets/cards/super_minion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/super_minion_squad-skill-0.webp",
+      "source": "assets/skills/super_minion_squad_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/super_minion_squad.webp",
+      "source": "assets/cards/super_minion_squad_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/target_dummy-skill-0.webp",
+      "source": "assets/skills/target_dummy_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/target_dummy.webp",
+      "source": "assets/cards/target_dummy_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/teemo-skill-0.webp",
+      "source": "assets/skills/teemo_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/teemo.webp",
+      "source": "assets/cards/teemo_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tombstone-skill-0.webp",
+      "source": "assets/skills/tombstone_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tombstone.webp",
+      "source": "assets/cards/tombstone_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tristana-skill-0.webp",
+      "source": "assets/skills/tristana_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tristana.webp",
+      "source": "assets/cards/tristana_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tryndamere-skill-0.webp",
+      "source": "assets/skills/tryndamere_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tryndamere.webp",
+      "source": "assets/cards/tryndamere_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/twisted_fate-skill-0.webp",
+      "source": "assets/skills/twisted_fate_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/twisted_fate.webp",
+      "source": "assets/cards/twisted_fate_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/twitch-skill-0.webp",
+      "source": "assets/skills/twitch_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/twitch.webp",
+      "source": "assets/cards/twitch_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_gate-skill-0.webp",
+      "source": "assets/skills/void_gate_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_gate.webp",
+      "source": "assets/cards/void_gate_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_scuttle_crab-skill-0.webp",
+      "source": "assets/skills/void_scuttle_crab_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_scuttle_crab.webp",
+      "source": "assets/cards/scuttle_crab_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_spawn-skill-0.webp",
+      "source": "assets/skills/void_spawn_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_spawn.webp",
+      "source": "assets/cards/void_spawn_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_spawn_single-skill-0.webp",
+      "source": "assets/skills/void_spawn_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_spawn_single.webp",
+      "source": "assets/cards/void_spawn_single_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_summoning-skill-0.webp",
+      "source": "assets/skills/void_summoning_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/void_summoning.webp",
+      "source": "assets/cards/void_summoning_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish.webp",
+      "source": "assets/cards/voidfish_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish_ranged-skill-0.webp",
+      "source": "assets/skills/voidfish_ranged_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish_ranged.webp",
+      "source": "assets/cards/voidfish_ranged_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish_ranged_army-skill-0.webp",
+      "source": "assets/skills/voidfish_ranged_army_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish_ranged_army.webp",
+      "source": "assets/cards/voidfish_ranged_army_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish_ranged_single-skill-0.webp",
+      "source": "assets/skills/voidfish_ranged_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidfish_ranged_single.webp",
+      "source": "assets/cards/voidfish_ranged_single_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidling.webp",
+      "source": "assets/cards/voidling_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/voidmite.webp",
+      "source": "assets/cards/voidmite_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/xin-skill-0.webp",
+      "source": "assets/skills/xin_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/xin.webp",
+      "source": "assets/cards/xin_loading.jpg",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/yorick-skill-0.webp",
+      "source": "assets/skills/yorick_q.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/yorick.webp",
+      "source": "assets/cards/yorick_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/zap-skill-0.webp",
+      "source": "assets/skills/lightning_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/zap.webp",
+      "source": "assets/cards/zap_loading.png",
+      "publicRights": "review-before-publication"
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "mirror",
+      "issue": "Configuration description omits active-seat inheritance. Follow current docs/units/mirror.md and match_runtime.gd instead."
+    }
+  ]
+}
