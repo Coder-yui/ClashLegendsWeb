@@ -3,7 +3,7 @@ from pathlib import Path
 import json, re, subprocess, sys
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path('/Users/czh/Projects/Clash Legends')
+SOURCE=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else (ROOT.parent / 'ClashLegends')
 raw=json.loads((ROOT/'.work/export/facts.json').read_text())
 sha=subprocess.check_output(['git','-C',str(SOURCE),'rev-parse','HEAD'],text=True).strip()
 def read_tsv(name):

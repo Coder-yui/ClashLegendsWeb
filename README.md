@@ -27,12 +27,14 @@ npm run dev
 
 ## 游戏来源
 
+本机三个板块在同一 `Projects/` 下：游戏为 `ClashLegends/`，宣传素材为 `ClashLegends-promo-materials/`，网站为本目录。内容准备脚本默认读取同级游戏工程；网站日常构建使用自己的快照与 `public/media/`，不从宣传目录动态加载素材，因此宣传目录整理不改变站内路由。
+
 采用 `f190774c85ef7f8207247d59a25c2496f41a5ec2`，核对日期 2026-10-20；本地源仓库与远程 main 当时一致。源游戏只读，未复制整个资产库。选卡数量来自 `CardDB.selectable_ids()` 的语义及编译后 `selectable` 字段，而非文档条目数量。
 
 网站的日常构建不需要原游戏。要主动更新快照，先确认干净的游戏源码，再运行：
 
 ```sh
-python3 tools/import_snapshot.py "/path/to/Clash Legends" --godot "/path/to/Godot"
+python3 tools/import_snapshot.py "/path/to/ClashLegends" --godot "/path/to/Godot"
 npm run build
 npm run check
 ```
