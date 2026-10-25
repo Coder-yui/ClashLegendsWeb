@@ -1,9 +1,9 @@
 # 内容来源与边界
 
-- 源提交：`f190774c85ef7f8207247d59a25c2496f41a5ec2`。
-- 2026-10-20 通过本地 `git rev-parse HEAD` 和远程 `git ls-remote ... refs/heads/main` 核实一致；源工作区干净。
+- 源提交：`b33fac18c20bd477918ead43ce9e903ce97e21d2`。
+- 2026-10-25 核对本地游戏 HEAD；源工作区干净，隔离编译导出 86 个定义。
 - 已读入口：`README.md`、`docs/README.md`、`docs/units/README.md`。
-- 选择依据：`scripts/data/card_db.gd` 注册 79 个定义，`selectable_ids()` 对编译结果采用 `selectable` 默认 true；`scripts/ui/deck_builder.gd` 使用此入口。结果为 66 个可选、13 个不可选。4 个内嵌形态不重复计数。
+- 选择依据：`scripts/data/card_db.gd` 注册 86 个定义，`selectable_ids()` 对编译结果采用 `selectable` 默认 true；`scripts/ui/deck_builder.gd` 使用此入口。结果为 73 个可选、13 个不可选。5 个内嵌形态不重复计数。
 - 配置依据：完整编译全部注册卡牌定义，使用原 `card_definition_compiler.gd` 与原 `card_schema.gd`。网站不解析 GDScript 数值表达式、不启动整场游戏、不执行重压力测试。
 - 部署默认等待：`scripts/unit.gd` 的 `stats.get("deploy_time", 1.0)`；编队不虚构单实体生命值。
 - 比赛规则：`docs/units/arena.md` 与 `scripts/battle/match_rules.gd`。胜负、加时、平局依照当前实现。

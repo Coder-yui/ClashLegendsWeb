@@ -122,3 +122,32 @@ damage_by_use|逐次施放伤害|Damage per cast|points
 attack_lifesteal_ratios|普攻循环吸血比例|Life steal through attack cycle|percent
 attack_passive_multipliers|普攻循环被动倍率|Passive multiplier through attack cycle|multiplier
 resource_hit_damage_sequences|充能剪切伤害序列|Snip damage by charge|points
+tick_interval|伤害间隔|Damage tick interval|seconds
+attack_count|强化普攻次数|Empowered attacks|count
+rewind_seconds|回溯时间|Rewind history|seconds
+execute_health_ratio|斩杀生命阈值|Execute health threshold|percent
+death_burst_damage|死亡爆炸伤害|Death explosion damage|points
+death_burst_radius|死亡爆炸半径|Death explosion radius|distance
+death_burst_reward|爆炸击杀金币|Gold on explosion kill|gold
+form_cycle_interval|换形周期|Form cycle|seconds
+form_first_attack_damage|换形首击附伤|First-hit bonus damage|points
+form_first_attack_health_ratio|换形首击最大生命附伤|First-hit max-health damage|percent
+form_first_attack_tower_damage|换形首击塔与水晶附伤|First-hit structure bonus|points
+wave_width|浪潮宽度|Wave width|distance
+spell_windup|法术起手时间|Spell wind-up|seconds
+auto_pull_min_range|牵引最小距离|Minimum pull range|distance
+auto_pull_range|牵引最大距离|Maximum pull range|distance
+auto_pull_windup|牵引瞄准时间|Pull wind-up|seconds
+repeat_hit_count|被动触发命中数|Hits to trigger passive|count
+repeat_hit_multiplier|被动伤害倍率|Passive damage multiplier|multiplier
+repeat_hit_haste_duration|被动加速持续|Passive haste duration|seconds
+repeat_hit_speed_multiplier|被动移速倍率|Passive movement multiplier|multiplier
+charge_distance|冲锋蓄势距离|Charge preparation distance|distance
+charge_attack_range|冲锋攻击距离|Charge attack range|distance
+charge_follow_distance|踢击后续冲距离|Post-kick travel|distance
+charge_knockback|冲锋击退距离|Charge knockback|distance
+charge_stun_duration|冲锋眩晕时间|Charge stun|seconds
+close_attack_range|近战切换距离|Melee switch distance|distance
+close_attack_damage_multiplier|近战伤害倍率|Melee damage multiplier|multiplier
+close_attack_speed_multiplier|近战攻速倍率|Melee attack-speed multiplier|multiplier
+skill_resource_duration|资源持续时间|Resource duration|seconds

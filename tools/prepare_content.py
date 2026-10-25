@@ -1,6 +1,9 @@
 """Create a minimal, reviewed website snapshot from the isolated compiler export."""
 from pathlib import Path
 import json, re, subprocess, sys
+from datetime import datetime
+from zoneinfo import ZoneInfo
+checked_at=datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else (ROOT.parent / 'ClashLegends')
@@ -33,7 +36,7 @@ for id,c in raw.items():
  related.update(m for m in members if m!=id)
  skills=[]
  for i,a in enumerate(c.get('active_skills',[])):
-  aen,az,ae=abilities[a['name']]
+  aen,az,ae=abilities.get(f"{id}:{a['name']}", abilities.get(a['name']))
   if a.get('spawn_id') in raw:related.add(a['spawn_id'])
   skills.append({'name':{'zh':a['name'],'en':aen},'description':{'zh':az,'en':ae},'values':{k:v for k,v in a.items() if k in fields and isinstance(v,(int,float,list)) and not isinstance(v,bool)},'icon':image(a.get('icon_path'),f'{id}-skill-{i}',96),'unlimited':a.get('unlimited_uses',False)})
  flags={k:c.get(k,False) for k in ['is_air','building_only','can_attack_air','river_traversal','permanent_unit_phasing']}
@@ -42,15 +45,15 @@ for id,c in raw.items():
  for key in ['resource_cost_sequence','resource_damage_sequence','damage_sequence']:
   if key in c:e[key]=c[key]
  if c.get('transformed_stats'):
-  form=c['transformed_stats']; labels={'gnar':('大纳尔','Mega Gnar'),'aatrox':('大灭形态','World Ender'),'jinx':('轻机枪形态','Minigun'),'sion':('狂暴形态','Berserk')}
-  z,n=labels[id];e['forms']=[{'id':id+'-form','name':{'zh':z,'en':n},'values':{k:v for k,v in form.items() if k in fields and isinstance(v,(int,float,list)) and not isinstance(v,bool)}}]
+  form=c['transformed_stats']; labels={'gnar':('大纳尔','Mega Gnar'),'aatrox':('大灭形态','World Ender'),'jinx':('轻机枪形态','Minigun'),'sion':('狂暴形态','Berserk'),'jayce':('战锤形态','Hammer form')}
+  z,n=labels[id];e['forms']=[{'id':id+'-form','name':{'zh':z,'en':n},'values':{k:v for k,v in form.items() if k in fields and k != 'radius' and isinstance(v,(int,float,list)) and not isinstance(v,bool)}}]
  if id=='freeze':
   e['skills'][0]['values']['zone_duration']=c['duration']+c['active_skills'][0]['slow_duration']
   e['skills'][0]['values'].pop('slow_duration',None)
  if c.get('can_attack') is False or id=='anivia_egg':
   for key in ['damage','interval','range']: e['values'].pop(key,None)
  entities.append(e)
-content={'sourceCommit':sha,'checkedAt':'2026-10-20','cards':entities,'fields':fields}
+content={'sourceCommit':sha,'checkedAt':checked_at,'cards':entities,'fields':fields}
 (ROOT/'content/catalog.json').write_text(json.dumps(content,ensure_ascii=False,indent=2)+'\n')
-(ROOT/'content/sources.json').write_text(json.dumps({'sourceCommit':sha,'checkedAt':'2026-10-20','selectionEvidence':'scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd','entities':[{'id':e['id'],'file':e['source'],'selectable':e['selectable'],'status':'compiled-and-editorially-reviewed','image':e['image']} for e in entities],'media':media,'discrepancies':[{'id':'mirror','issue':'Configuration description omits active-seat inheritance. Follow current docs/units/mirror.md and match_runtime.gd instead.'}]},ensure_ascii=False,indent=2)+'\n')
+(ROOT/'content/sources.json').write_text(json.dumps({'sourceCommit':sha,'checkedAt':checked_at,'selectionEvidence':'scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd','entities':[{'id':e['id'],'file':e['source'],'selectable':e['selectable'],'status':'compiled-and-editorially-reviewed','image':e['image']} for e in entities],'media':media,'discrepancies':[{'id':'mirror','issue':'Configuration description omits active-seat inheritance. Follow current docs/units/mirror.md and match_runtime.gd instead.'}]},ensure_ascii=False,indent=2)+'\n')
 print(len(entities),'entities;',sum(e['selectable'] for e in entities),'selectable;',len(media),'media references')

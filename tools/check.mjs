@@ -13,7 +13,7 @@ for(const c of data.cards){
  for(const values of [c.values,...c.skills.map(s=>s.values),...c.forms.map(f=>f.values)])for(const [k,v] of Object.entries(values)){assert(data.fields[k]?.en&&data.fields[k]?.zh,`Unknown field ${k}`);const nums=Array.isArray(v)?v.flat(Infinity):[v];assert(nums.every(Number.isFinite),`Bad number ${c.id}.${k}`)}
 }
 const counts={selectable:data.cards.filter(c=>c.selectable).length,related:data.cards.filter(c=>!c.selectable).length,forms:data.cards.reduce((n,c)=>n+c.forms.length,0)};
-assert.deepEqual(counts,{selectable:66,related:13,forms:4});
+assert.deepEqual(counts,{selectable:73,related:13,forms:5});
 let files=0,links=0;
 function walk(dir){for(const d of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,d.name);if(d.isDirectory())walk(p);else if(p.endsWith('.html')){
  if(p.endsWith('/qa.html'))continue;

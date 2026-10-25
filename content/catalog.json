@@ -1,6 +1,6 @@
 {
-  "sourceCommit": "f190774c85ef7f8207247d59a25c2496f41a5ec2",
-  "checkedAt": "2026-10-20",
+  "sourceCommit": "b33fac18c20bd477918ead43ce9e903ce97e21d2",
+  "checkedAt": "2026-10-25",
   "cards": [
     {
       "id": "aatrox",
@@ -100,7 +100,6 @@
             "interval": 1.1,
             "on_hit_max_health_ratio": 0.1,
             "on_hit_tower_damage": 20,
-            "radius": 21.0,
             "range": 64.0,
             "speed": 52.0
           }
@@ -546,6 +545,69 @@
       "forms": []
     },
     {
+      "id": "blitzcrank",
+      "name": {
+        "zh": "蒸汽机器人",
+        "en": "Blitzcrank"
+      },
+      "description": {
+        "zh": "近战机器人，近身优先，锁定2至4.5格内的敌方地面单位，瞄准1秒后拉到身前；不牵引建筑。",
+        "en": "A melee robot that prioritizes nearby enemies. Locks onto a ground unit 2–4.5 tiles away, aims for 1 second, then pulls it close. Cannot pull structures."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 3,
+      "values": {
+        "auto_pull_min_range": 80.0,
+        "auto_pull_range": 180.0,
+        "auto_pull_windup": 1.0,
+        "cost": 3,
+        "damage": 70,
+        "hp": 560,
+        "interval": 1.6,
+        "range": 56.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/blitzcrank.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "能量铁拳",
+            "en": "Power Fist"
+          },
+          "description": {
+            "zh": "刷新普攻，下一次攻击造成1.5倍伤害并眩晕敌方单位1秒。",
+            "en": "Reset the attack and empower the next hit to deal 1.5 times damage and stun an enemy unit for 1 second."
+          },
+          "values": {
+            "cooldown": 7.0,
+            "cost": 1,
+            "empowered_damage_multiplier": 1.5,
+            "max_uses": 2,
+            "stun_duration": 1.0
+          },
+          "icon": "/media/blitzcrank-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "blitzcrank"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/blitzcrank.gd",
+      "forms": []
+    },
+    {
       "id": "corki",
       "name": {
         "zh": "库奇",
@@ -737,6 +799,73 @@
       "forms": []
     },
     {
+      "id": "ekko",
+      "name": {
+        "zh": "时间刺客",
+        "en": "Ekko"
+      },
+      "description": {
+        "zh": "Z型驱动共振：对每个目标的第三次有效普攻造成2倍普攻伤害，并获得3秒80%移动速度。不同目标独立计数，每个目标只触发一次。",
+        "en": "The third basic-attack hit against each target deals double damage and grants 80% movement speed for 3 seconds. Targets track hits separately and each can trigger this passive only once."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 110,
+        "deploy_time": 1.0,
+        "hp": 780,
+        "interval": 1.2,
+        "range": 48.0,
+        "repeat_hit_count": 3,
+        "repeat_hit_haste_duration": 3.0,
+        "repeat_hit_multiplier": 2.0,
+        "repeat_hit_speed_multiplier": 1.8,
+        "speed": 60.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/ekko.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "时空断裂",
+            "en": "Chronobreak"
+          },
+          "description": {
+            "zh": "开始回溯时回复满血，不可选中回溯0.75秒，回到施法时4秒前的位置并对半径140内敌人造成300伤害。历史不足时使用最早位置。",
+            "en": "Restore full health at cast start, become untargetable for 0.75 seconds, then return to the position from 4 seconds before casting and deal 300 damage within 140 units. Use the earliest recorded position if history is shorter."
+          },
+          "values": {
+            "cast_duration": 0.75,
+            "cooldown": 15.0,
+            "cost": 2,
+            "damage": 300,
+            "impact_delay": 0.75,
+            "max_uses": 1,
+            "radius": 140.0,
+            "rewind_seconds": 4.0
+          },
+          "icon": "/media/ekko-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "ekko"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/ekko.gd",
+      "forms": []
+    },
+    {
       "id": "explosive_cask",
       "name": {
         "zh": "爆破酒桶",
@@ -917,7 +1046,8 @@
             "duration": 3.0,
             "impact_delay": 0.0,
             "max_uses": 1,
-            "radius": 90.0
+            "radius": 90.0,
+            "tick_interval": 1.0
           },
           "icon": "/media/garen-skill-1.webp",
           "unlimited": false
@@ -1006,7 +1136,6 @@
             "damage": 85,
             "hp": 820,
             "interval": 1.15,
-            "radius": 24.0,
             "range": 32.0,
             "speed": 52.0
           }
@@ -1263,6 +1392,76 @@
       "forms": []
     },
     {
+      "id": "hecarim",
+      "name": {
+        "zh": "战争之影",
+        "en": "Hecarim"
+      },
+      "description": {
+        "zh": "旋斩攻击四周地面敌人。连续自主移动3.5格后加速，下一击可从2.5格内接触目标时踢击，随后沿原方向续冲；击退0.5秒并眩晕1.5秒；致盲时只突进，不造成伤害或控制；蓄势时受阻会重置；突进可穿障，踢击不被眩晕打断，冰冻、凝滞、禁锢和击退会打断；落地可立即普攻。",
+        "en": "Sweeps surrounding ground enemies. After moving 3.5 tiles continuously, gains speed and can charge a target from 2.5 tiles away, then continue forward. The kick knocks back over 0.5 seconds and stuns for 1.5 seconds. Blind prevents damage and control. Obstruction resets preparation. The dash crosses obstacles; stun does not interrupt the kick, but freeze, stasis, root and knockback do. Can attack immediately after landing."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "charge_attack_range": 100.0,
+        "charge_distance": 140.0,
+        "charge_follow_distance": 48.0,
+        "charge_knockback": 40.0,
+        "charge_stun_duration": 1.5,
+        "cost": 4,
+        "damage": 80,
+        "hp": 850,
+        "interval": 1.2,
+        "range": 32.0,
+        "speed": 76.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/hecarim.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "恐惧之灵",
+            "en": "Spirit of Dread"
+          },
+          "description": {
+            "zh": "起手0.44秒期间锁攻击，随后开启4秒领域，每0.5秒对周围地面敌人造成20伤害。领域伤害和普通攻击按实际生命伤害的30%治疗自身；期间可以移动和攻击。",
+            "en": "After a 0.44-second wind-up that locks attacks, create a 4-second field dealing 20 damage to nearby ground enemies every 0.5 seconds. Field damage and basic attacks heal for 30% of actual health damage. Movement and attacks remain available during the field."
+          },
+          "values": {
+            "cast_duration": 0.44,
+            "cooldown": 15.0,
+            "cost": 2,
+            "damage": 20,
+            "duration": 4.0,
+            "heal_ratio": 0.3,
+            "impact_delay": 0.44,
+            "max_uses": 1,
+            "radius": 120.0,
+            "tick_interval": 0.5
+          },
+          "icon": "/media/hecarim-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "hecarim"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/hecarim.gd",
+      "forms": []
+    },
+    {
       "id": "imp",
       "name": {
         "zh": "雾行者",
@@ -1355,7 +1554,7 @@
             "duration": 2.0,
             "max_dodges": 5,
             "max_uses": 2,
-            "radius": 159.38,
+            "radius": 150,
             "stun_duration": 1.5
           },
           "icon": "/media/jax-skill-0.webp",
@@ -1369,6 +1568,91 @@
       "zone": "own_side",
       "source": "scripts/data/cards/jax.gd",
       "forms": []
+    },
+    {
+      "id": "jayce",
+      "name": {
+        "zh": "未来守护者",
+        "en": "Jayce"
+      },
+      "description": {
+        "zh": "杰斯以远程形态部署，每8秒切换锤炮形态；到时打断普攻换形，硬控结束后补换形。远程首击额外40伤害，近战首击对主目标额外造成8%最大生命值伤害，对塔与水晶改为60；战锤形态只攻击地面目标。",
+        "en": "Deploys in ranged form and switches between cannon and hammer every 8 seconds, interrupting attacks or waiting for hard control to end. The first cannon hit adds 40 damage; the first hammer hit adds 8% of the primary target’s maximum health, or 60 against towers and Nexuses. Hammer form attacks ground targets only."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "damage": 65,
+        "form_cycle_interval": 8.0,
+        "form_first_attack_damage": 40,
+        "hp": 650,
+        "interval": 1.4,
+        "range": 180.0,
+        "speed": 60.0,
+        "splash_radius": 0.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/jayce.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "超能电荷 / 闪电领域",
+            "en": "Hyper Charge / Lightning Field"
+          },
+          "description": {
+            "zh": "炮形态：4秒内接下来3次普攻获得3倍攻速，次数用完或时间到期即结束。锤形态：开启4秒电场，每0.5秒对周围敌军造成10伤害。两种效果换形后均保留。",
+            "en": "Cannon: the next 3 attacks within 4 seconds gain triple attack speed. Hammer: create a 4-second field dealing 10 damage to nearby enemies every 0.5 seconds. Both effects persist through form changes."
+          },
+          "values": {
+            "attack_count": 3,
+            "attack_speed_multiplier": 3.0,
+            "cooldown": 10.0,
+            "cost": 1,
+            "damage": 10,
+            "duration": 4.0,
+            "max_uses": 2,
+            "radius": 95.0,
+            "tick_interval": 0.5
+          },
+          "icon": "/media/jayce-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "jayce"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/jayce.gd",
+      "forms": [
+        {
+          "id": "jayce-form",
+          "name": {
+            "zh": "战锤形态",
+            "en": "Hammer form"
+          },
+          "values": {
+            "damage": 80,
+            "form_first_attack_health_ratio": 0.08,
+            "form_first_attack_tower_damage": 60,
+            "hp": 650,
+            "interval": 1.1,
+            "range": 32.0,
+            "speed": 60.0,
+            "splash_radius": 0.0
+          }
+        }
+      ]
     },
     {
       "id": "jinx",
@@ -1441,7 +1725,6 @@
             "hit_haste_per_stack": 0.15,
             "hp": 440,
             "interval": 1.0,
-            "radius": 18.0,
             "range": 170.0,
             "speed": 60.0,
             "splash_radius": 0.0
@@ -2970,6 +3253,67 @@
       "forms": []
     },
     {
+      "id": "powder_keg",
+      "name": {
+        "zh": "火药桶",
+        "en": "Powder Keg"
+      },
+      "description": {
+        "zh": "无法攻击的防守建筑，20秒内自然衰减。死亡对半径140像素内地面敌人造成300伤害；本次爆炸击杀任意敌方目标时获得1金币。",
+        "en": "A defensive building that cannot attack and loses health over its 20-second lifetime. On death, deals 300 damage to ground enemies within 140 units. If the explosion kills any enemy target, gain 1 gold."
+      },
+      "selectable": true,
+      "type": "building",
+      "cost": 4,
+      "values": {
+        "cost": 4,
+        "death_burst_damage": 300.0,
+        "death_burst_radius": 140.0,
+        "death_burst_reward": 1.0,
+        "hp": 750,
+        "lifespan": 20.0,
+        "speed": 0.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": false
+      },
+      "image": "/media/powder_keg.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "烈性火药",
+            "en": "Volatile Powder"
+          },
+          "description": {
+            "zh": "立即引爆。爆炸造成生命伤害后，生命低于15%的敌方单位被斩杀；不斩杀建筑，无法突破拒绝死亡。",
+            "en": "Detonate immediately. After the explosion deals health damage, execute enemy units below 15% health. Cannot execute structures or bypass death prevention."
+          },
+          "values": {
+            "cast_duration": 0.0,
+            "cooldown": 10.0,
+            "cost": 0,
+            "execute_health_ratio": 0.15,
+            "max_uses": 1
+          },
+          "icon": "/media/powder_keg-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [
+        "powder_keg"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/powder_keg.gd",
+      "forms": []
+    },
+    {
       "id": "ranged_minion",
       "name": {
         "zh": "远程兵",
@@ -3156,6 +3500,75 @@
       ],
       "zone": "own_side",
       "source": "scripts/data/cards/rift_herald.gd",
+      "forms": []
+    },
+    {
+      "id": "samira",
+      "name": {
+        "zh": "沙漠玫瑰",
+        "en": "Samira"
+      },
+      "description": {
+        "zh": "远程双枪射手；目标表面间距1.6格以内改用刀刃，伤害提高50%，攻击间隔由1.4秒变为1秒。被动悍勇本色：远程命中叠1层、近战叠2层，每层加5%移速，满5层改为加30%。命中刷新4秒持续时间；炼狱扳机消耗满层，期间不能叠层。",
+        "en": "A ranged gunslinger who switches to blades within a 1.6-tile surface gap, gaining 50% damage and reducing her attack interval from 1.4 to 1 second. Ranged hits add 1 Style stack and melee hits add 2. Each stack grants 5% movement speed, replaced by 30% at 5 stacks. Hits refresh the 4-second duration. Inferno Trigger consumes full Style and prevents stacking during its cast."
+      },
+      "selectable": true,
+      "type": "unit",
+      "cost": 4,
+      "values": {
+        "close_attack_damage_multiplier": 1.5,
+        "close_attack_range": 64.0,
+        "close_attack_speed_multiplier": 1.4,
+        "cost": 4,
+        "damage": 72,
+        "hp": 620,
+        "interval": 1.4,
+        "range": 165.0,
+        "skill_resource_duration": 4.0,
+        "skill_resource_max": 5.0,
+        "speed": 60.0,
+        "deploy_time": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": true,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/samira.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "炼狱扳机",
+            "en": "Inferno Trigger"
+          },
+          "description": {
+            "zh": "消耗悍勇本色全部5层，旋转射击2秒并沿释放时记住的朝向持续移动，每秒对半径180内的地面与空中敌军造成120伤害；期间不能普攻或叠加被动层数。每次1金币，冷却5秒，次数不限。",
+            "en": "Consume all 5 Style stacks to fire for 2 seconds while moving along the direction fixed at cast start. Deal 120 damage per second to ground and air enemies within 180 units. Cannot attack or gain Style while casting. Costs 1 gold, has a 5-second cooldown and unlimited uses."
+          },
+          "values": {
+            "cast_duration": 2.0,
+            "cooldown": 5.0,
+            "cost": 1,
+            "damage": 24,
+            "duration": 2.0,
+            "impact_delay": 0.0,
+            "max_uses": 1,
+            "radius": 180.0,
+            "tick_interval": 0.2
+          },
+          "icon": "/media/samira-skill-0.webp",
+          "unlimited": true
+        }
+      ],
+      "related": [],
+      "members": [
+        "samira"
+      ],
+      "zone": "own_side",
+      "source": "scripts/data/cards/samira.gd",
       "forms": []
     },
     {
@@ -3616,7 +4029,6 @@
             "damage": 180,
             "hp": 2400,
             "interval": 0.6,
-            "radius": 27.0,
             "range": 40.0,
             "speed": 76.0
           }
@@ -3980,6 +4392,68 @@
       ],
       "zone": "own_side",
       "source": "scripts/data/cards/teemo.gd",
+      "forms": []
+    },
+    {
+      "id": "tidal_wave",
+      "name": {
+        "zh": "浪潮法术",
+        "en": "Tidal Wave"
+      },
+      "description": {
+        "zh": "仅在己方半场释放。4格宽的浪潮向敌方推进11格，对碰到的敌方地面目标造成120伤害并向前击退1格，每个目标仅命中一次。建筑不被击退，防御塔和水晶承受30%伤害。",
+        "en": "Cast only in your own half. A wave 4 tiles wide travels 11 tiles toward the enemy, dealing 120 damage and pushing ground enemies forward 1 tile, once per target. Structures cannot be pushed; towers and Nexuses take 30% damage."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 2,
+      "values": {
+        "active_cost_bonus": 0,
+        "cost": 2,
+        "damage": 120,
+        "duration": 1.4,
+        "knockback": 40.0,
+        "radius": 80.0,
+        "range": 440.0,
+        "speed": 320.0,
+        "spell_windup": 0.5,
+        "tower_damage_multiplier": 0.3,
+        "wave_width": 160.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/tidal_wave.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "踏浪而行",
+            "en": "Surging Tides"
+          },
+          "description": {
+            "zh": "浪潮经过己方地面单位时，给予2秒30%移速加成；每次浪潮对每个单位只生效一次，不作用于建筑。",
+            "en": "The wave grants allied ground units 30% movement speed for 2 seconds, once per unit per wave. Does not affect buildings."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 0,
+            "duration": 2.0,
+            "max_uses": 1,
+            "speed_multiplier": 1.3
+          },
+          "icon": "/media/tidal_wave-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "own_side",
+      "source": "scripts/data/cards/tidal_wave.gd",
       "forms": []
     },
     {
@@ -4440,7 +4914,7 @@
         "hp": 166,
         "sacrifice_damage": 240.0,
         "sacrifice_delay": 0.8,
-        "speed": 76.0
+        "speed": 80.0
       },
       "flags": {
         "is_air": false,
@@ -4502,7 +4976,7 @@
         "hp": 166,
         "sacrifice_damage": 240.0,
         "sacrifice_delay": 0.8,
-        "speed": 76.0
+        "speed": 80.0
       },
       "flags": {
         "is_air": false,
@@ -4964,6 +5438,28 @@
             "radius": 90.0
           },
           "icon": "/media/xin-skill-0.webp",
+          "unlimited": false
+        },
+        {
+          "name": {
+            "zh": "无畏冲锋",
+            "en": "Audacious Charge"
+          },
+          "description": {
+            "zh": "下一次攻击距离提升至4格，突进至目标身前，对目标周围70像素内地面敌人造成一次普攻伤害，不受致盲影响；命中后攻击速度提高40%，持续5秒。",
+            "en": "The next attack gains a 4-tile range and dashes to the target, dealing basic-attack damage to ground enemies within 70 units of it. Ignores blind. On hit, gain 40% attack speed for 5 seconds."
+          },
+          "values": {
+            "attack_speed_multiplier": 1.4,
+            "cast_duration": 0.0,
+            "charge_attack_range": 160.0,
+            "cooldown": 8.0,
+            "cost": 1,
+            "duration": 5.0,
+            "impact_delay": 0.0,
+            "max_uses": 2
+          },
+          "icon": "/media/xin-skill-1.webp",
           "unlimited": false
         }
       ],
@@ -5717,6 +6213,151 @@
       "zh": "充能剪切伤害序列",
       "en": "Snip damage by charge",
       "unit": "points"
+    },
+    "tick_interval": {
+      "zh": "伤害间隔",
+      "en": "Damage tick interval",
+      "unit": "seconds"
+    },
+    "attack_count": {
+      "zh": "强化普攻次数",
+      "en": "Empowered attacks",
+      "unit": "count"
+    },
+    "rewind_seconds": {
+      "zh": "回溯时间",
+      "en": "Rewind history",
+      "unit": "seconds"
+    },
+    "execute_health_ratio": {
+      "zh": "斩杀生命阈值",
+      "en": "Execute health threshold",
+      "unit": "percent"
+    },
+    "death_burst_damage": {
+      "zh": "死亡爆炸伤害",
+      "en": "Death explosion damage",
+      "unit": "points"
+    },
+    "death_burst_radius": {
+      "zh": "死亡爆炸半径",
+      "en": "Death explosion radius",
+      "unit": "distance"
+    },
+    "death_burst_reward": {
+      "zh": "爆炸击杀金币",
+      "en": "Gold on explosion kill",
+      "unit": "gold"
+    },
+    "form_cycle_interval": {
+      "zh": "换形周期",
+      "en": "Form cycle",
+      "unit": "seconds"
+    },
+    "form_first_attack_damage": {
+      "zh": "换形首击附伤",
+      "en": "First-hit bonus damage",
+      "unit": "points"
+    },
+    "form_first_attack_health_ratio": {
+      "zh": "换形首击最大生命附伤",
+      "en": "First-hit max-health damage",
+      "unit": "percent"
+    },
+    "form_first_attack_tower_damage": {
+      "zh": "换形首击塔与水晶附伤",
+      "en": "First-hit structure bonus",
+      "unit": "points"
+    },
+    "wave_width": {
+      "zh": "浪潮宽度",
+      "en": "Wave width",
+      "unit": "distance"
+    },
+    "spell_windup": {
+      "zh": "法术起手时间",
+      "en": "Spell wind-up",
+      "unit": "seconds"
+    },
+    "auto_pull_min_range": {
+      "zh": "牵引最小距离",
+      "en": "Minimum pull range",
+      "unit": "distance"
+    },
+    "auto_pull_range": {
+      "zh": "牵引最大距离",
+      "en": "Maximum pull range",
+      "unit": "distance"
+    },
+    "auto_pull_windup": {
+      "zh": "牵引瞄准时间",
+      "en": "Pull wind-up",
+      "unit": "seconds"
+    },
+    "repeat_hit_count": {
+      "zh": "被动触发命中数",
+      "en": "Hits to trigger passive",
+      "unit": "count"
+    },
+    "repeat_hit_multiplier": {
+      "zh": "被动伤害倍率",
+      "en": "Passive damage multiplier",
+      "unit": "multiplier"
+    },
+    "repeat_hit_haste_duration": {
+      "zh": "被动加速持续",
+      "en": "Passive haste duration",
+      "unit": "seconds"
+    },
+    "repeat_hit_speed_multiplier": {
+      "zh": "被动移速倍率",
+      "en": "Passive movement multiplier",
+      "unit": "multiplier"
+    },
+    "charge_distance": {
+      "zh": "冲锋蓄势距离",
+      "en": "Charge preparation distance",
+      "unit": "distance"
+    },
+    "charge_attack_range": {
+      "zh": "冲锋攻击距离",
+      "en": "Charge attack range",
+      "unit": "distance"
+    },
+    "charge_follow_distance": {
+      "zh": "踢击后续冲距离",
+      "en": "Post-kick travel",
+      "unit": "distance"
+    },
+    "charge_knockback": {
+      "zh": "冲锋击退距离",
+      "en": "Charge knockback",
+      "unit": "distance"
+    },
+    "charge_stun_duration": {
+      "zh": "冲锋眩晕时间",
+      "en": "Charge stun",
+      "unit": "seconds"
+    },
+    "close_attack_range": {
+      "zh": "近战切换距离",
+      "en": "Melee switch distance",
+      "unit": "distance"
+    },
+    "close_attack_damage_multiplier": {
+      "zh": "近战伤害倍率",
+      "en": "Melee damage multiplier",
+      "unit": "multiplier"
+    },
+    "close_attack_speed_multiplier": {
+      "zh": "近战攻速倍率",
+      "en": "Melee attack-speed multiplier",
+      "unit": "multiplier"
+    },
+    "skill_resource_duration": {
+      "zh": "资源持续时间",
+      "en": "Resource duration",
+      "unit": "seconds"
     },
     "summon_tick": {
       "zh": "召唤间隔",

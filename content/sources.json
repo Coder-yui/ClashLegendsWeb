@@ -1,6 +1,6 @@
 {
-  "sourceCommit": "f190774c85ef7f8207247d59a25c2496f41a5ec2",
-  "checkedAt": "2026-10-20",
+  "sourceCommit": "b33fac18c20bd477918ead43ce9e903ce97e21d2",
+  "checkedAt": "2026-10-25",
   "selectionEvidence": "scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd",
   "entities": [
     {
@@ -60,6 +60,13 @@
       "image": "/media/belveth.webp"
     },
     {
+      "id": "blitzcrank",
+      "file": "scripts/data/cards/blitzcrank.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/blitzcrank.webp"
+    },
+    {
       "id": "corki",
       "file": "scripts/data/cards/corki.gd",
       "selectable": true,
@@ -79,6 +86,13 @@
       "selectable": true,
       "status": "compiled-and-editorially-reviewed",
       "image": "/media/darius.webp"
+    },
+    {
+      "id": "ekko",
+      "file": "scripts/data/cards/ekko.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/ekko.webp"
     },
     {
       "id": "explosive_cask",
@@ -130,6 +144,13 @@
       "image": "/media/heavy_minion_squad.webp"
     },
     {
+      "id": "hecarim",
+      "file": "scripts/data/cards/hecarim.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/hecarim.webp"
+    },
+    {
       "id": "imp",
       "file": "scripts/data/cards/imp.gd",
       "selectable": false,
@@ -142,6 +163,13 @@
       "selectable": true,
       "status": "compiled-and-editorially-reviewed",
       "image": "/media/jax.webp"
+    },
+    {
+      "id": "jayce",
+      "file": "scripts/data/cards/jayce.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/jayce.webp"
     },
     {
       "id": "jinx",
@@ -312,6 +340,13 @@
       "image": "/media/pix_single.webp"
     },
     {
+      "id": "powder_keg",
+      "file": "scripts/data/cards/powder_keg.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/powder_keg.webp"
+    },
+    {
       "id": "ranged_minion",
       "file": "scripts/data/cards/ranged_minion.gd",
       "selectable": true,
@@ -331,6 +366,13 @@
       "selectable": true,
       "status": "compiled-and-editorially-reviewed",
       "image": "/media/rift_herald.webp"
+    },
+    {
+      "id": "samira",
+      "file": "scripts/data/cards/samira.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/samira.webp"
     },
     {
       "id": "sand_soldier",
@@ -422,6 +464,13 @@
       "selectable": true,
       "status": "compiled-and-editorially-reviewed",
       "image": "/media/teemo.webp"
+    },
+    {
+      "id": "tidal_wave",
+      "file": "scripts/data/cards/tidal_wave.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/tidal_wave.webp"
     },
     {
       "id": "tombstone",
@@ -634,6 +683,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/blitzcrank-skill-0.webp",
+      "source": "assets/skills/blitzcrank_e.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/blitzcrank.webp",
+      "source": "assets/cards/blitzcrank_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/corki-skill-0.webp",
       "source": "assets/skills/corki_0.png",
       "publicRights": "review-before-publication"
@@ -661,6 +720,16 @@
     {
       "path": "/media/darius.webp",
       "source": "assets/cards/darius_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ekko-skill-0.webp",
+      "source": "assets/skills/ekko_r.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/ekko.webp",
+      "source": "assets/cards/ekko_loading.png",
       "publicRights": "review-before-publication"
     },
     {
@@ -749,6 +818,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/hecarim-skill-0.webp",
+      "source": "assets/skills/hecarim_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/hecarim.webp",
+      "source": "assets/cards/hecarim_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/imp.webp",
       "source": "assets/cards/imp_loading.png",
       "publicRights": "review-before-publication"
@@ -761,6 +840,16 @@
     {
       "path": "/media/jax.webp",
       "source": "assets/cards/jax_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/jayce-skill-0.webp",
+      "source": "assets/skills/jayce_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/jayce.webp",
+      "source": "assets/cards/jayce_loading.png",
       "publicRights": "review-before-publication"
     },
     {
@@ -1009,6 +1098,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/powder_keg-skill-0.webp",
+      "source": "assets/skills/gangplank_e.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/powder_keg.webp",
+      "source": "assets/cards/powder_keg_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/ranged_minion-skill-0.webp",
       "source": "assets/skills/ranged_minion_0.png",
       "publicRights": "review-before-publication"
@@ -1036,6 +1135,16 @@
     {
       "path": "/media/rift_herald.webp",
       "source": "assets/cards/rift_herald_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/samira-skill-0.webp",
+      "source": "assets/skills/samira_r.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/samira.webp",
+      "source": "assets/cards/samira_loading.png",
       "publicRights": "review-before-publication"
     },
     {
@@ -1169,6 +1278,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/tidal_wave-skill-0.webp",
+      "source": "assets/skills/nami_passive.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/tidal_wave.webp",
+      "source": "assets/cards/tidal_wave_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/tombstone-skill-0.webp",
       "source": "assets/skills/tombstone_0.png",
       "publicRights": "review-before-publication"
@@ -1235,7 +1354,7 @@
     },
     {
       "path": "/media/void_scuttle_crab.webp",
-      "source": "assets/cards/scuttle_crab_loading.png",
+      "source": "assets/cards/void_scuttle_crab_loading.png",
       "publicRights": "review-before-publication"
     },
     {
@@ -1316,6 +1435,11 @@
     {
       "path": "/media/xin-skill-0.webp",
       "source": "assets/skills/xin_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/xin-skill-1.webp",
+      "source": "assets/skills/xin_e.png",
       "publicRights": "review-before-publication"
     },
     {
