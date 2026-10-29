@@ -151,3 +151,15 @@ close_attack_range|近战切换距离|Melee switch distance|distance
 close_attack_damage_multiplier|近战伤害倍率|Melee damage multiplier|multiplier
 close_attack_speed_multiplier|近战攻速倍率|Melee attack-speed multiplier|multiplier
 skill_resource_duration|资源持续时间|Resource duration|seconds
+inner_radius|中心半径|Center radius|distance
+inner_damage|中心伤害|Center damage|points
+isolated_damage_multiplier|单体伤害倍率|Single-target damage multiplier|multiplier
+controlled_damage_multiplier|硬控伤害倍率|Hard-control damage multiplier|multiplier
+shield_per_second|每秒补充护盾|Shield granted per second|perSecond
+pull_distance|强制位移距离|Forced travel distance|distance
+dark_matter_delay|黑暗物质延迟|Dark Matter delay|seconds
+flight_speed|飞行速度|Flight speed|speed
+flight_min_duration|最短飞行时间|Minimum flight time|seconds
+warning_duration|预警时间|Warning duration|seconds
+visual_duration|余光结束时间（自起手）|Afterglow ends after wind-up starts|seconds
+tower_disable_duration|防御塔失效时间|Tower disable duration|seconds

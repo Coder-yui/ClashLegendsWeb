@@ -1,6 +1,9 @@
 {
-  "sourceCommit": "b33fac18c20bd477918ead43ce9e903ce97e21d2",
-  "checkedAt": "2026-10-25",
+  "sourceCommit": "82005019aad31480b31a74dd5b275c64f8c4f9fd",
+  "checkedAt": "2026-10-29",
+  "excludedIds": [
+    "soul_tentacle"
+  ],
   "cards": [
     {
       "id": "aatrox",
@@ -608,6 +611,67 @@
       "forms": []
     },
     {
+      "id": "convergent_pulse",
+      "name": {
+        "zh": "聚合脉冲",
+        "en": "Convergent Pulse"
+      },
+      "description": {
+        "zh": "蓄能0.65秒后，对半径2.625格内地面、空中与建筑目标造成180伤害，将可移动单位向中心方向强制位移2格，基础持续0.4秒。途中无碰撞，可穿过单位与中心，结束时校正至合法落点。防御塔与水晶承受30%伤害，建筑不被拉动。",
+        "en": "After charging for 0.65 seconds, deal 180 damage to ground, air and structure targets within 2.625 tiles. Movable units travel 2 tiles toward the center over a base duration of 0.4 seconds, passing through units and the center before settling at a valid position. Towers and Nexuses take 30% damage; structures cannot be pulled."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 3,
+        "damage": 180,
+        "duration": 0.4,
+        "pull_distance": 80.0,
+        "radius": 105.0,
+        "spell_windup": 0.65,
+        "tower_damage_multiplier": 0.3
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/convergent_pulse.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "强化脉冲",
+            "en": "Empowered Pulse"
+          },
+          "description": {
+            "zh": "伤害提高至270，半径扩大至3.25格，强制位移提高至2.5格，基础持续0.5秒。",
+            "en": "Increase damage to 270, radius to 3.25 tiles and forced travel to 2.5 tiles over a base duration of 0.5 seconds."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "damage": 270,
+            "duration": 0.5,
+            "max_uses": 1,
+            "pull_distance": 100.0,
+            "radius": 130.0
+          },
+          "icon": "/media/convergent_pulse-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/convergent_pulse.gd",
+      "forms": []
+    },
+    {
       "id": "corki",
       "name": {
         "zh": "库奇",
@@ -866,6 +930,65 @@
       "forms": []
     },
     {
+      "id": "event_horizon",
+      "name": {
+        "zh": "扭曲空间",
+        "en": "Event Horizon"
+      },
+      "description": {
+        "zh": "延迟0.75秒后形成半径3格、持续3秒的空间边界，碰到边界的敌方地面或空中单位眩晕1.5秒。每次施法对每个单位最多生效一次，圈内不会自动眩晕，所有建筑免疫。",
+        "en": "After 0.75 seconds, create a boundary with a 3-tile radius for 3 seconds. Enemy ground and air units touching it are stunned for 1.5 seconds, at most once per unit per cast. Being inside does not trigger a stun. All structures are immune."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 2,
+      "values": {
+        "active_cost_bonus": 2,
+        "cost": 2,
+        "duration": 3.0,
+        "radius": 120.0,
+        "spell_windup": 0.75,
+        "stun_duration": 1.5
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/event_horizon.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "黑暗物质",
+            "en": "Dark Matter"
+          },
+          "description": {
+            "zh": "首个成功眩晕的位置在1.2秒后落下黑暗物质，对半径1.625格内敌军造成220伤害，包括建筑；防御塔与水晶承受30%。每次法术仅触发一次。",
+            "en": "The first successful stun calls down Dark Matter at that position after 1.2 seconds, dealing 220 damage to enemies within 1.625 tiles, including structures. Towers and Nexuses take 30% damage. Triggers only once per cast."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 2,
+            "damage": 220,
+            "dark_matter_delay": 1.2,
+            "max_uses": 1,
+            "radius": 65.0,
+            "tower_damage_multiplier": 0.3
+          },
+          "icon": "/media/event_horizon-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/event_horizon.gd",
+      "forms": []
+    },
+    {
       "id": "explosive_cask",
       "name": {
         "zh": "爆破酒桶",
@@ -883,6 +1006,8 @@
         "cost": 3,
         "damage": 180,
         "duration": 1.5,
+        "flight_min_duration": 0.4,
+        "flight_speed": 900.0,
         "knockback": 40.0,
         "radius": 105.0,
         "tower_damage_multiplier": 0.3
@@ -920,6 +1045,64 @@
       "members": [],
       "zone": "global",
       "source": "scripts/data/cards/explosive_cask.gd",
+      "forms": []
+    },
+    {
+      "id": "final_spark",
+      "name": {
+        "zh": "终极闪光",
+        "en": "Final Spark"
+      },
+      "description": {
+        "zh": "仅在己方半场释放。预警1秒后，向敌方发射1格宽、20格长的闪光，对直线内地面、空中与建筑目标造成一次300伤害，防御塔与水晶承受30%。光束不被前排阻挡；余光在起手后2.5秒结束，无持续伤害。",
+        "en": "Cast only in your own half. After a 1-second warning, fire a beam 1 tile wide and 20 tiles long toward the enemy, dealing 300 damage once to ground, air and structure targets. Towers and Nexuses take 30% damage. The beam passes through targets; its afterglow ends 2.5 seconds after the wind-up begins and deals no further damage."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 3,
+        "damage": 300,
+        "spell_windup": 1.0,
+        "tower_damage_multiplier": 0.3,
+        "length": 800.0,
+        "width": 40.0,
+        "visual_duration": 2.5
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/final_spark.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "夺目光辉",
+            "en": "Dazzling Radiance"
+          },
+          "description": {
+            "zh": "命中的敌方非建筑单位获得1次致盲，使下一次普通或强化攻击落空，仍消耗攻击。重复施加不叠加次数，技能不受影响。",
+            "en": "Blind hit enemy non-structure units for 1 basic or empowered attack. The attack is consumed but misses. Repeated applications do not stack charges; ability strikes are unaffected."
+          },
+          "values": {
+            "blind_charges": 1,
+            "cooldown": 0.0,
+            "cost": 1,
+            "max_uses": 1
+          },
+          "icon": "/media/final_spark-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "own_side",
+      "source": "scripts/data/cards/final_spark.gd",
       "forms": []
     },
     {
@@ -2498,6 +2681,124 @@
       "forms": []
     },
     {
+      "id": "medium_lightning",
+      "name": {
+        "zh": "中型雷电法术",
+        "en": "Medium Lightning"
+      },
+      "description": {
+        "zh": "蓄雷2秒后，对半径2.5格内敌方地面、空中与建筑目标造成240伤害，防御塔与水晶承受30%。命中的防御塔失效2秒，建筑卡与水晶不受失效控制。",
+        "en": "Charge for 2 seconds, then deal 240 damage to enemy ground, air and structure targets within 2.5 tiles. Towers and Nexuses take 30% damage. Hit towers are disabled for 2 seconds; building cards and Nexuses are immune to the disable."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 4,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 4,
+        "damage": 240,
+        "radius": 100.0,
+        "spell_windup": 2.0,
+        "tower_damage_multiplier": 0.3,
+        "tower_disable_duration": 2.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/medium_lightning.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "霹天雳地",
+            "en": "Sky Splitter"
+          },
+          "description": {
+            "zh": "落雷时为范围内友方非建筑单位提供180护盾，持续3秒；命中的敌方非建筑单位减速30%，持续2秒。",
+            "en": "On impact, grant allied non-structure units in the area 180 shield for 3 seconds and slow hit enemy non-structure units by 30% for 2 seconds."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "max_uses": 1,
+            "shield": 180,
+            "shield_duration": 3.0,
+            "slow_duration": 2.0,
+            "slow_multiplier": 0.7
+          },
+          "icon": "/media/medium_lightning-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/medium_lightning.gd",
+      "forms": []
+    },
+    {
+      "id": "mega_inferno_bomb",
+      "name": {
+        "zh": "终极爆弹",
+        "en": "Mega Inferno Bomb"
+      },
+      "description": {
+        "zh": "从己方水晶抛出炸弹，中心2格造成600伤害，外围至4格造成360伤害。对地面、空中与建筑有效，防御塔与水晶承受30%。飞行速度每秒17.5格，至少飞行0.8秒。",
+        "en": "Launch a bomb from your Nexus, dealing 600 damage within the central 2 tiles and 360 in the outer area up to 4 tiles. Affects ground, air and structure targets; towers and Nexuses take 30% damage. Travels at 17.5 tiles per second for at least 0.8 seconds."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 6,
+      "values": {
+        "active_cost_bonus": 0,
+        "cost": 6,
+        "damage": 360,
+        "flight_min_duration": 0.8,
+        "flight_speed": 700.0,
+        "inner_damage": 600,
+        "inner_radius": 80.0,
+        "radius": 160.0,
+        "tower_damage_multiplier": 0.3
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/mega_inferno_bomb.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "地狱火炮",
+            "en": "Inferno Cannon"
+          },
+          "description": {
+            "zh": "命中时先清除普通伤害护盾，再造成伤害。命中的非建筑单位受到100%重伤，持续至死亡，阻止治疗和吸血，不影响最大生命提升。重复命中不叠加，梦魇的效果护盾可抵挡整次法术。",
+            "en": "Remove ordinary damage shields before dealing damage. Hit non-structure units suffer 100% Grievous Wounds until death, preventing healing and life steal without affecting maximum-health increases. Repeated hits do not stack. Nocturne’s spell shield can block the entire spell."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 0,
+            "max_uses": 1
+          },
+          "icon": "/media/mega_inferno_bomb-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/mega_inferno_bomb.gd",
+      "forms": []
+    },
+    {
       "id": "melee_minion",
       "name": {
         "zh": "近战兵",
@@ -3253,6 +3554,62 @@
       "forms": []
     },
     {
+      "id": "pool_of_reflection",
+      "name": {
+        "zh": "庇护清泉",
+        "en": "Pool of Reflection"
+      },
+      "description": {
+        "zh": "清泉持续3秒，为半径2.75格内友方非建筑单位每秒补充60护盾，不设上限。离开清泉或清泉结束后护盾保留1秒，重叠清泉不加快补充。",
+        "en": "Create a pool for 3 seconds that grants allied non-structure units within 2.75 tiles 60 shield per second, with no cap. Shield remains for 1 second after leaving the pool or its expiration. Overlapping pools do not increase the rate."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 3,
+        "duration": 3.0,
+        "radius": 110.0,
+        "shield_duration": 1.0,
+        "shield_per_second": 60
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/pool_of_reflection.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "渲浓",
+            "en": "Deepened Reflection"
+          },
+          "description": {
+            "zh": "落地立即为范围内友方非建筑单位提供120护盾。",
+            "en": "Immediately grant allied non-structure units in the area 120 shield on arrival."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "max_uses": 1,
+            "shield": 120
+          },
+          "icon": "/media/pool_of_reflection-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/pool_of_reflection.gd",
+      "forms": []
+    },
+    {
       "id": "powder_keg",
       "name": {
         "zh": "火药桶",
@@ -3764,6 +4121,66 @@
       "forms": []
     },
     {
+      "id": "severing_bolt",
+      "name": {
+        "zh": "攢聚雷",
+        "en": "Severing Bolt"
+      },
+      "description": {
+        "zh": "0.5秒前奏、1秒预警后，对半径1.625格内地面、空中与建筑目标造成120伤害。仅命中一个敌军时伤害为2.5倍，硬控目标为2倍，同时满足取较高值。防御塔与水晶最终承受30%伤害。",
+        "en": "After a 0.5-second wind-up and 1-second warning, deal 120 damage to ground, air and structure targets within 1.625 tiles. Damage is multiplied by 2.5 when only one enemy is hit, or by 2 against hard-controlled targets; use the higher multiplier when both apply. Towers and Nexuses take 30% of the final damage."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 3,
+      "values": {
+        "active_cost_bonus": 0,
+        "controlled_damage_multiplier": 2.0,
+        "cost": 3,
+        "damage": 120,
+        "isolated_damage_multiplier": 2.5,
+        "radius": 65.0,
+        "spell_windup": 0.5,
+        "tower_damage_multiplier": 0.3,
+        "warning_duration": 1.0
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/severing_bolt.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "攢聚惊雷",
+            "en": "Severing Thunder"
+          },
+          "description": {
+            "zh": "单体伤害倍率提高至3.5倍，硬控伤害倍率提高至2.5倍，同时满足取较高值，不相乘。",
+            "en": "Increase the single-target damage multiplier to 3.5 and the hard-control multiplier to 2.5. Use the higher value when both apply; the multipliers do not multiply together."
+          },
+          "values": {
+            "controlled_damage_multiplier": 2.5,
+            "cooldown": 0.0,
+            "cost": 0,
+            "isolated_damage_multiplier": 3.5,
+            "max_uses": 1
+          },
+          "icon": "/media/severing_bolt-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/severing_bolt.gd",
+      "forms": []
+    },
+    {
       "id": "shurima_guard",
       "name": {
         "zh": "恕瑞玛卫队",
@@ -4036,6 +4453,65 @@
       ]
     },
     {
+      "id": "solar_flare",
+      "name": {
+        "zh": "太阳耀斑",
+        "en": "Solar Flare"
+      },
+      "description": {
+        "zh": "0.9秒后落下日光：中心1格内敌方单位眩晕1.75秒，外围至2.5格减速80%，持续1.75秒。对空中单位有效，不造成伤害。中心也可眩晕建筑卡和防御塔，水晶免疫控制；外围减速不作用于建筑。",
+        "en": "After 0.9 seconds, stun enemies within the central 1 tile for 1.75 seconds and slow enemies in the outer area up to 2.5 tiles by 80% for 1.75 seconds. Affects air units and deals no damage. The center can also stun building cards and towers; Nexuses are control-immune. The outer slow does not affect structures."
+      },
+      "selectable": true,
+      "type": "spell",
+      "cost": 2,
+      "values": {
+        "active_cost_bonus": 1,
+        "cost": 2,
+        "duration": 1.75,
+        "inner_radius": 40.0,
+        "radius": 100.0,
+        "slow_multiplier": 0.2,
+        "spell_windup": 0.9
+      },
+      "flags": {
+        "is_air": false,
+        "building_only": false,
+        "can_attack_air": false,
+        "river_traversal": false,
+        "permanent_unit_phasing": false,
+        "can_attack": true
+      },
+      "image": "/media/solar_flare.webp",
+      "skills": [
+        {
+          "name": {
+            "zh": "日光",
+            "en": "Sunlight"
+          },
+          "description": {
+            "zh": "为命中的敌军、建筑卡、防御塔与水晶施加2.5秒日光。后续首次有效伤害消耗标记并追加100伤害，防御塔与水晶为30。重复施加刷新，不叠加。",
+            "en": "Mark hit enemies, including building cards, towers and Nexuses, with Sunlight for 2.5 seconds. The next valid damage consumes the mark to add 100 damage, or 30 against towers and Nexuses. Reapplication refreshes rather than stacks the mark."
+          },
+          "values": {
+            "cooldown": 0.0,
+            "cost": 1,
+            "damage": 100,
+            "duration": 2.5,
+            "max_uses": 1,
+            "tower_damage_multiplier": 0.3
+          },
+          "icon": "/media/solar_flare-skill-0.webp",
+          "unlimited": false
+        }
+      ],
+      "related": [],
+      "members": [],
+      "zone": "global",
+      "source": "scripts/data/cards/solar_flare.gd",
+      "forms": []
+    },
+    {
       "id": "stasis",
       "name": {
         "zh": "凝滞法术",
@@ -4052,6 +4528,8 @@
         "active_cost_bonus": 0,
         "cost": 3,
         "duration": 3.0,
+        "flight_min_duration": 0.4,
+        "flight_speed": 900.0,
         "radius": 110.0
       },
       "flags": {
@@ -6357,6 +6835,66 @@
     "skill_resource_duration": {
       "zh": "资源持续时间",
       "en": "Resource duration",
+      "unit": "seconds"
+    },
+    "inner_radius": {
+      "zh": "中心半径",
+      "en": "Center radius",
+      "unit": "distance"
+    },
+    "inner_damage": {
+      "zh": "中心伤害",
+      "en": "Center damage",
+      "unit": "points"
+    },
+    "isolated_damage_multiplier": {
+      "zh": "单体伤害倍率",
+      "en": "Single-target damage multiplier",
+      "unit": "multiplier"
+    },
+    "controlled_damage_multiplier": {
+      "zh": "硬控伤害倍率",
+      "en": "Hard-control damage multiplier",
+      "unit": "multiplier"
+    },
+    "shield_per_second": {
+      "zh": "每秒补充护盾",
+      "en": "Shield granted per second",
+      "unit": "perSecond"
+    },
+    "pull_distance": {
+      "zh": "强制位移距离",
+      "en": "Forced travel distance",
+      "unit": "distance"
+    },
+    "dark_matter_delay": {
+      "zh": "黑暗物质延迟",
+      "en": "Dark Matter delay",
+      "unit": "seconds"
+    },
+    "flight_speed": {
+      "zh": "飞行速度",
+      "en": "Flight speed",
+      "unit": "speed"
+    },
+    "flight_min_duration": {
+      "zh": "最短飞行时间",
+      "en": "Minimum flight time",
+      "unit": "seconds"
+    },
+    "warning_duration": {
+      "zh": "预警时间",
+      "en": "Warning duration",
+      "unit": "seconds"
+    },
+    "visual_duration": {
+      "zh": "余光结束时间（自起手）",
+      "en": "Afterglow ends after wind-up starts",
+      "unit": "seconds"
+    },
+    "tower_disable_duration": {
+      "zh": "防御塔失效时间",
+      "en": "Tower disable duration",
       "unit": "seconds"
     },
     "summon_tick": {

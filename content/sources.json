@@ -1,6 +1,9 @@
 {
-  "sourceCommit": "b33fac18c20bd477918ead43ce9e903ce97e21d2",
-  "checkedAt": "2026-10-25",
+  "sourceCommit": "82005019aad31480b31a74dd5b275c64f8c4f9fd",
+  "checkedAt": "2026-10-29",
+  "excludedIds": [
+    "soul_tentacle"
+  ],
   "selectionEvidence": "scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd",
   "entities": [
     {
@@ -67,6 +70,13 @@
       "image": "/media/blitzcrank.webp"
     },
     {
+      "id": "convergent_pulse",
+      "file": "scripts/data/cards/convergent_pulse.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/convergent_pulse.webp"
+    },
+    {
       "id": "corki",
       "file": "scripts/data/cards/corki.gd",
       "selectable": true,
@@ -95,11 +105,25 @@
       "image": "/media/ekko.webp"
     },
     {
+      "id": "event_horizon",
+      "file": "scripts/data/cards/event_horizon.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/event_horizon.webp"
+    },
+    {
       "id": "explosive_cask",
       "file": "scripts/data/cards/explosive_cask.gd",
       "selectable": true,
       "status": "compiled-and-editorially-reviewed",
       "image": "/media/explosive_cask.webp"
+    },
+    {
+      "id": "final_spark",
+      "file": "scripts/data/cards/final_spark.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/final_spark.webp"
     },
     {
       "id": "freeze",
@@ -256,6 +280,20 @@
       "image": "/media/masteryi.webp"
     },
     {
+      "id": "medium_lightning",
+      "file": "scripts/data/cards/medium_lightning.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/medium_lightning.webp"
+    },
+    {
+      "id": "mega_inferno_bomb",
+      "file": "scripts/data/cards/mega_inferno_bomb.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/mega_inferno_bomb.webp"
+    },
+    {
       "id": "melee_minion",
       "file": "scripts/data/cards/melee_minion.gd",
       "selectable": true,
@@ -340,6 +378,13 @@
       "image": "/media/pix_single.webp"
     },
     {
+      "id": "pool_of_reflection",
+      "file": "scripts/data/cards/pool_of_reflection.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/pool_of_reflection.webp"
+    },
+    {
       "id": "powder_keg",
       "file": "scripts/data/cards/powder_keg.gd",
       "selectable": true,
@@ -396,6 +441,13 @@
       "image": "/media/sett.webp"
     },
     {
+      "id": "severing_bolt",
+      "file": "scripts/data/cards/severing_bolt.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/severing_bolt.webp"
+    },
+    {
       "id": "shurima_guard",
       "file": "scripts/data/cards/shurima_guard.gd",
       "selectable": true,
@@ -422,6 +474,13 @@
       "selectable": true,
       "status": "compiled-and-editorially-reviewed",
       "image": "/media/sion.webp"
+    },
+    {
+      "id": "solar_flare",
+      "file": "scripts/data/cards/solar_flare.gd",
+      "selectable": true,
+      "status": "compiled-and-editorially-reviewed",
+      "image": "/media/solar_flare.webp"
     },
     {
       "id": "stasis",
@@ -693,6 +752,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/convergent_pulse-skill-0.webp",
+      "source": "assets/skills/orianna_r.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/convergent_pulse.webp",
+      "source": "assets/cards/convergent_pulse_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/corki-skill-0.webp",
       "source": "assets/skills/corki_0.png",
       "publicRights": "review-before-publication"
@@ -733,6 +802,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/event_horizon-skill-0.webp",
+      "source": "assets/skills/veigar_w.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/event_horizon.webp",
+      "source": "assets/cards/event_horizon_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/explosive_cask-skill-0.webp",
       "source": "assets/skills/explosive_cask_0.png",
       "publicRights": "review-before-publication"
@@ -740,6 +819,16 @@
     {
       "path": "/media/explosive_cask.webp",
       "source": "assets/cards/explosive_cask_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/final_spark-skill-0.webp",
+      "source": "assets/skills/lux_p.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/final_spark.webp",
+      "source": "assets/cards/final_spark_loading.png",
       "publicRights": "review-before-publication"
     },
     {
@@ -978,6 +1067,26 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/medium_lightning-skill-0.webp",
+      "source": "assets/skills/medium_lightning_0.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/medium_lightning.webp",
+      "source": "assets/cards/medium_lightning_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/mega_inferno_bomb-skill-0.webp",
+      "source": "assets/skills/inferno_cannon.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/mega_inferno_bomb.webp",
+      "source": "assets/cards/mega_inferno_bomb_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/melee_minion-skill-0.webp",
       "source": "assets/skills/melee_minion_0.png",
       "publicRights": "review-before-publication"
@@ -1098,6 +1207,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/pool_of_reflection-skill-0.webp",
+      "source": "assets/skills/hwei_ww.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/pool_of_reflection.webp",
+      "source": "assets/cards/pool_of_reflection_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/powder_keg-skill-0.webp",
       "source": "assets/skills/gangplank_e.png",
       "publicRights": "review-before-publication"
@@ -1178,6 +1297,16 @@
       "publicRights": "review-before-publication"
     },
     {
+      "path": "/media/severing_bolt-skill-0.webp",
+      "source": "assets/skills/hwei_qw.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/severing_bolt.webp",
+      "source": "assets/cards/severing_bolt_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
       "path": "/media/shurima_guard-skill-0.webp",
       "source": "assets/skills/shurima_guard_0.png",
       "publicRights": "review-before-publication"
@@ -1215,6 +1344,16 @@
     {
       "path": "/media/sion.webp",
       "source": "assets/cards/sion_loading.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/solar_flare-skill-0.webp",
+      "source": "assets/skills/leona_p.png",
+      "publicRights": "review-before-publication"
+    },
+    {
+      "path": "/media/solar_flare.webp",
+      "source": "assets/cards/solar_flare_loading.png",
       "publicRights": "review-before-publication"
     },
     {

@@ -1,15 +1,16 @@
 # 内容来源与边界
 
-- 源提交：`b33fac18c20bd477918ead43ce9e903ce97e21d2`。
-- 2026-10-25 核对本地游戏 HEAD；源工作区干净，隔离编译导出 86 个定义。
+- 源提交：`82005019aad31480b31a74dd5b275c64f8c4f9fd`。
+- 2026-10-29 核对本地游戏 HEAD；按要求排除灵魂触手（`soul_tentacle`），其余导入输入干净，隔离编译导出 94 个定义。原游戏中灵魂触手仍有未提交修改，未修改或导入这些内容。
 - 已读入口：`README.md`、`docs/README.md`、`docs/units/README.md`。
-- 选择依据：`scripts/data/card_db.gd` 注册 86 个定义，`selectable_ids()` 对编译结果采用 `selectable` 默认 true；`scripts/ui/deck_builder.gd` 使用此入口。结果为 73 个可选、13 个不可选。5 个内嵌形态不重复计数。
-- 配置依据：完整编译全部注册卡牌定义，使用原 `card_definition_compiler.gd` 与原 `card_schema.gd`。网站不解析 GDScript 数值表达式、不启动整场游戏、不执行重压力测试。
+- 选择依据：`scripts/data/card_db.gd` 注册 95 个定义；排除灵魂触手后采用 94 个，`selectable_ids()` 对编译结果采用 `selectable` 默认 true；`scripts/ui/deck_builder.gd` 使用此入口。结果为 81 个可选、13 个不可选。5 个内嵌形态不重复计数。
+- 配置依据：完整编译排除项以外的注册卡牌定义，使用原 `card_definition_compiler.gd` 与原 `card_schema.gd`。网站不解析 GDScript 数值表达式、不启动整场游戏、不执行重压力测试。
 - 部署默认等待：`scripts/unit.gd` 的 `stats.get("deploy_time", 1.0)`；编队不虚构单实体生命值。
 - 比赛规则：`docs/units/arena.md` 与 `scripts/battle/match_rules.gd`。胜负、加时、平局依照当前实现。
 - 主动席/镜像：`docs/units/mirror.md` 与 `scripts/battle/match_runtime.gd`。镜像配置的简介“复制体不携带主动”仅覆盖普通席；主动席继承预选技能，以当前实现和单位手册修正网站文案。
 - 冰冻强化：`docs/units/freeze.md`。扩大的半径只属于减速区域，不扩大冻结区域；减速区持续时间由基础冻结 duration + 技能 slow_duration 得到，当前为 5 秒。
 - 卡萨丁明确保留地面身份、独立过河与穿兵规则；天使、凯隐、纳尔形态区别独立介绍。
+- 本次新增 8 张法术的双语说明、卡面与强化图标。终极闪光按长宽展示，余光时间与伤害区分；攢聚雷将 1 秒字段标为预警；终极爆弹不将表现寿命误作重伤时限；中型雷电将控制时间标为防御塔失效时间。
 - 数值为共享 JSON；技能与基础效果中文/英文共用同一数值表。描述为编辑式概括，精确数值在表中给出；不将攻击间隔误写成攻速。
 
 逐实体文件和逐素材记录见 `content/sources.json`。媒体仅取源游戏实际使用的卡面与技能图标，转换为浏览器可用 WebP。保留本地宣传视频目录，但没有未经选择直接复制或转码视频；本版使用真实卡面与明确标注的战场结构示意。

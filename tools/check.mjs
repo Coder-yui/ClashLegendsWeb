@@ -3,6 +3,19 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 const data=JSON.parse(fs.readFileSync('content/catalog.json','utf8'));
 const seen=new Set();
+const sources=JSON.parse(fs.readFileSync('content/sources.json','utf8'));
+assert.equal(sources.sourceCommit,data.sourceCommit);
+assert.equal(sources.checkedAt,data.checkedAt);
+assert.deepEqual(sources.excludedIds,data.excludedIds);
+assert.deepEqual(data.excludedIds,['soul_tentacle']);
+for(const id of data.excludedIds){
+ assert(!data.cards.some(c=>c.id===id),`Excluded card ${id} in catalog`);
+ assert(!sources.entities.some(c=>c.id===id),`Excluded card ${id} in sources`);
+ assert(!sources.media.some(m=>m.path.includes(id)),`Excluded media ${id}`);
+ for(const lang of ['zh','en'])assert(!fs.existsSync(`dist/${lang}/cards/${id}`),`Excluded route ${id}`);
+}
+const index=JSON.parse(fs.readFileSync('dist/catalog-index.json','utf8'));
+assert.deepEqual(index.map(c=>c.id),data.cards.filter(c=>c.selectable).map(c=>c.id));
 for(const c of data.cards){
  assert(!seen.has(c.id),`Duplicate ID ${c.id}`);seen.add(c.id);
  for(const k of ['zh','en']){assert(c.name[k]?.trim(),`${c.id} missing name ${k}`);assert(c.description[k]?.trim(),`${c.id} missing description ${k}`)}
@@ -13,7 +26,7 @@ for(const c of data.cards){
  for(const values of [c.values,...c.skills.map(s=>s.values),...c.forms.map(f=>f.values)])for(const [k,v] of Object.entries(values)){assert(data.fields[k]?.en&&data.fields[k]?.zh,`Unknown field ${k}`);const nums=Array.isArray(v)?v.flat(Infinity):[v];assert(nums.every(Number.isFinite),`Bad number ${c.id}.${k}`)}
 }
 const counts={selectable:data.cards.filter(c=>c.selectable).length,related:data.cards.filter(c=>!c.selectable).length,forms:data.cards.reduce((n,c)=>n+c.forms.length,0)};
-assert.deepEqual(counts,{selectable:73,related:13,forms:5});
+assert.deepEqual(counts,{selectable:81,related:13,forms:5});
 let files=0,links=0;
 function walk(dir){for(const d of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,d.name);if(d.isDirectory())walk(p);else if(p.endsWith('.html')){
  if(p.endsWith('/qa.html'))continue;
