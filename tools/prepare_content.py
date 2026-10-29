@@ -8,6 +8,7 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else (ROOT.parent / 'ClashLegends')
 raw=json.loads((ROOT/'.work/export/facts.json').read_text())
+selection=json.loads((ROOT/'.work/export/selection.json').read_text())
 sha=subprocess.check_output(['git','-C',str(SOURCE),'rev-parse','HEAD'],text=True).strip()
 def read_tsv(name):
  return [line.split('|') for line in (ROOT/'content'/name).read_text().splitlines() if line.strip()]
@@ -29,6 +30,14 @@ for id,c in raw.items():
  numeric={k:v for k,v in c.items() if k in fields and isinstance(v,(int,float,list)) and not isinstance(v,bool)}
  if c['type']!='spell' and not c.get('spawn_plan'):numeric['deploy_time']=c.get('deploy_time',1.0)
  if c['type']!='spell':numeric.pop('radius',None)
+ if id=='final_spark':
+  numeric['length']=numeric.pop('range');numeric['width']=numeric.pop('wave_width')
+  numeric['visual_duration']=numeric.pop('duration');numeric.pop('radius',None)
+ if id=='severing_bolt':numeric['warning_duration']=numeric.pop('duration')
+ # Mega Inferno Bomb's duration is a presentation lifetime, not damage or Grievous Wounds duration.
+ if id=='mega_inferno_bomb':numeric.pop('duration',None)
+ if id=='medium_lightning':
+  numeric['tower_disable_duration']=numeric.pop('stun_duration');numeric.pop('duration',None)
  if c['type']=='spell' and 'interval' in numeric:fields['summon_tick']={'zh':'召唤间隔','en':'Summon interval','unit':'seconds'};numeric['summon_tick']=numeric.pop('interval')
  related=set(c.get(k) for k in refs if c.get(k) in raw)
  members=c.get('spawn_plan',{}).get('members',[])
@@ -53,7 +62,7 @@ for id,c in raw.items():
  if c.get('can_attack') is False or id=='anivia_egg':
   for key in ['damage','interval','range']: e['values'].pop(key,None)
  entities.append(e)
-content={'sourceCommit':sha,'checkedAt':checked_at,'cards':entities,'fields':fields}
+content={'sourceCommit':sha,'checkedAt':checked_at,**selection,'cards':entities,'fields':fields}
 (ROOT/'content/catalog.json').write_text(json.dumps(content,ensure_ascii=False,indent=2)+'\n')
-(ROOT/'content/sources.json').write_text(json.dumps({'sourceCommit':sha,'checkedAt':checked_at,'selectionEvidence':'scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd','entities':[{'id':e['id'],'file':e['source'],'selectable':e['selectable'],'status':'compiled-and-editorially-reviewed','image':e['image']} for e in entities],'media':media,'discrepancies':[{'id':'mirror','issue':'Configuration description omits active-seat inheritance. Follow current docs/units/mirror.md and match_runtime.gd instead.'}]},ensure_ascii=False,indent=2)+'\n')
+(ROOT/'content/sources.json').write_text(json.dumps({'sourceCommit':sha,'checkedAt':checked_at,**selection,'selectionEvidence':'scripts/data/card_db.gd::selectable_ids; scripts/ui/deck_builder.gd','entities':[{'id':e['id'],'file':e['source'],'selectable':e['selectable'],'status':'compiled-and-editorially-reviewed','image':e['image']} for e in entities],'media':media,'discrepancies':[{'id':'mirror','issue':'Configuration description omits active-seat inheritance. Follow current docs/units/mirror.md and match_runtime.gd instead.'}]},ensure_ascii=False,indent=2)+'\n')
 print(len(entities),'entities;',sum(e['selectable'] for e in entities),'selectable;',len(media),'media references')
